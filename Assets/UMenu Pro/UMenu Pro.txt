@@ -1,0 +1,31 @@
+Thanks for purchase UMenu Pro Asset.
+
+Requirements:
+
+- Unity 5.0+
+
+Get Started-------------------------------------------------------------
+
+- Import UMenu Pro Package into your project.
+- Open the Menu scene in: UMenu Pro -> Content -> Scene -> UMenuPro
+- in your scene / scenes put the script "UMPOptionsScene.cs" in a static gameobject.(to apply the settings menu)
+- Change the example text of Menu for your own text.
+- Ready.
+
+
+Configure a new level / scene in Menu-----------------------------------
+
+- In UMenuPro scene go to UMenu Pro Manager GameObject.
+- In UMP_Manager script go to the list "Levels".
+- Add a new space in the list.
+- set the variables as follows:
+
+     - LevelName = Correct level name of scene (same of build setting)
+     - Title = The name or title of level
+     - Description = a little description of level / scene.
+     - Preview = Sprite image preview of map / scene.
+
+For question or problems, contactme in:
+
+Mail: brinerjhonson.lc@gmail.com	
+Forum: http://lovattostudio.com/Forum/index.php

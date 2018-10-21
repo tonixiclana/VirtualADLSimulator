@@ -20,7 +20,6 @@ public class PauseMenu : MonoBehaviour
     {
         m_TimeScaleRef = Time.timeScale;
         Time.timeScale = 0f;
-
         m_VolumeRef = AudioListener.volume;
         AudioListener.volume = 0f;
 
@@ -49,15 +48,20 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-#if !MOBILE_INPUT
+
 	void Update()
 	{
-		if(Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.Escape))
 		{
 		    m_MenuToggle.isOn = !m_MenuToggle.isOn;
-            Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
-		}
+            //Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
+            Cursor.lockState = CursorLockMode.None;
+            if (m_MenuToggle.isOn)
+                MenuOn();
+            else
+                MenuOff();
+        }
 	}
-#endif
+
 
 }

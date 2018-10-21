@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class SensFloorUnderlaySfLr : MonoBehaviour {
+public class SensFloorUnderlaySfLr : Sensor {
 
     private static int _id = 0;
-    public Sensor _sensor = new Sensor();
     public SensFloorUnderlayMatLr _sensFloorUnderlayMatLr0;
     public SensFloorUnderlayMatLr _sensFloorUnderlayMatLr1;
     public float[,] _values = new float[2, 8];
@@ -15,8 +14,8 @@ public class SensFloorUnderlaySfLr : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        if (_sensor._code == "")
-            _sensor._code = gameObject.name + _id++;
+        if (_code == "")
+            _code = gameObject.name + _id++;
 
         StartCoroutine(readSensFloorUnderlayMatLr(_sensFloorUnderlayMatLr0, _values, 0));
         StartCoroutine(readSensFloorUnderlayMatLr(_sensFloorUnderlayMatLr1, _values, 1));
@@ -25,20 +24,20 @@ public class SensFloorUnderlaySfLr : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (_sensFloorUnderlayMatLr0._sensor._state || _sensFloorUnderlayMatLr1._sensor._state)
-            _sensor._state = true;
+        if (_sensFloorUnderlayMatLr0._state || _sensFloorUnderlayMatLr1._state)
+            _state = true;
         else
-            _sensor._state = false;
+            _state = false;
 
-        if (_sensFloorUnderlayMatLr0._sensor._debug != _sensor._debug)
-            _sensFloorUnderlayMatLr0._sensor._debug = _sensor._debug;
-        if (_sensFloorUnderlayMatLr1._sensor._debug != _sensor._debug)
-            _sensFloorUnderlayMatLr1._sensor._debug = _sensor._debug;
+        if (_sensFloorUnderlayMatLr0._debug != _debug)
+            _sensFloorUnderlayMatLr0._debug = _debug;
+        if (_sensFloorUnderlayMatLr1._debug != _debug)
+            _sensFloorUnderlayMatLr1._debug = _debug;
 
-        if (_sensFloorUnderlayMatLr0._sensor._value >= _sensFloorUnderlayMatLr1._sensor._value)
-            _sensor._value = _sensFloorUnderlayMatLr0._sensor._value;
+        if (_sensFloorUnderlayMatLr0._value >= _sensFloorUnderlayMatLr1._value)
+            _value = _sensFloorUnderlayMatLr0._value;
         else
-            _sensor._value = _sensFloorUnderlayMatLr1._sensor._value;
+            _value = _sensFloorUnderlayMatLr1._value;
     }
 
     IEnumerator readSensFloorUnderlayMatLr(SensFloorUnderlayMatLr sensFloorUnderlayMatLr, float[,] values, int coroutineNumber)
@@ -49,23 +48,23 @@ public class SensFloorUnderlaySfLr : MonoBehaviour {
             for (int i = 0; i < 8; i++)
                 if (values[coroutineNumber, i] != sensFloorUnderlayMatLr._values[i])
                 {
-                    if(values[coroutineNumber, i] < _sensor._activationThreshold && sensFloorUnderlayMatLr._values[i] >= _sensor._activationThreshold)
+                    if(values[coroutineNumber, i] < _activationThreshold && sensFloorUnderlayMatLr._values[i] >= _activationThreshold)
                     {
-                        _sensor.notifyEvent(sensFloorUnderlayMatLr._sensor._code
-                            + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._sensor._code
+                        notifyEvent(sensFloorUnderlayMatLr._code
+                            + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._code
                             + "\tON\t" + sensFloorUnderlayMatLr._values[i]);
                     }
                     else
                     {
-                        if(sensFloorUnderlayMatLr._values[i] <= _sensor._activationThreshold)
+                        if(sensFloorUnderlayMatLr._values[i] <= _activationThreshold)
                         {
-                            _sensor.notifyEvent(sensFloorUnderlayMatLr._sensor._code
-                                + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._sensor._code
+                            notifyEvent(sensFloorUnderlayMatLr._code
+                                + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._code
                                 + "\tOFF");
                         }
                         else{
-                            _sensor.notifyEvent(sensFloorUnderlayMatLr._sensor._code
-                                + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._sensor._code
+                            notifyEvent(sensFloorUnderlayMatLr._code
+                                + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._code
                                 + "\tCH\t" + sensFloorUnderlayMatLr._values[i]);
                         }
 
@@ -74,7 +73,7 @@ public class SensFloorUnderlaySfLr : MonoBehaviour {
 
                 }
 
-            yield return new WaitForSecondsRealtime(1 / _sensor._frecuency);
+            yield return new WaitForSecondsRealtime(1 / _frecuency);
         }
 
 
