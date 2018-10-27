@@ -61,22 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\crosstales\Common\Editor\Task\BaseCompileDefines.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Editor\Task\BaseSetupResources.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Editor\Task\NYCheck.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Editor\Util\BaseGAApi.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\CompileDefines.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\ConfigLoader.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\ReminderCheck.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\ReminderCT.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\SetApiLevel.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\Tracer.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\UpdateCheck.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\WSACheck.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Task\ZInstaller.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Util\EditorConfig.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Util\EditorConstants.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Editor\Util\GAApi.cs" />
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
@@ -337,12 +321,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:/Instalaciones/unity2018/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Ookii.Dialogs">
-      <HintPath>D:/Unity/VirtualADLSimulator/Assets/Plugins/crosstales/FileBrowser/Native/Windows/Ookii.Dialogs.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <HintPath>D:/Unity/VirtualADLSimulator/Assets/Plugins/crosstales/FileBrowser/Native/Windows/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/Toni/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

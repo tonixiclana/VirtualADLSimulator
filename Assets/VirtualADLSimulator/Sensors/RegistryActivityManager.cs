@@ -44,7 +44,7 @@ public class RegistryActivityManager : MonoBehaviour {
             + _nameOfActivityInput.text
             + "\nDescription Of Activity: \t"
             + _descriptionOfActivityInput.text
-            + "\nActivity Start\n"
+            + "Activity Start\n"
             , _fileNameInput.text
 
             );
@@ -60,7 +60,8 @@ public class RegistryActivityManager : MonoBehaviour {
             _stopRecordButton.gameObject.SetActive(false);
 
         _fileBrowser.editFileInActualPath(
-            System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss.ffffff")
+             "\n" 
+            + System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss.ffffff")
             + "\t Name Of Activity: "
             + _nameOfActivityInput.text
             + "\nActivity ended"

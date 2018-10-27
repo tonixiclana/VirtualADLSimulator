@@ -61,44 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\ExtensionMethods.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Model\Enum\Platform.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\BaseConstants.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\BaseHelper.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\CTPlayerPrefs.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\CTWebClient.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\PlatformController.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\RandomColor.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\RandomRotator.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\RandomScaler.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\SerializableDictionary.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\XmlHelper.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Social.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\StaticManager.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIDrag.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIFocus.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIHint.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIResize.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIWindowManager.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\AudioFilterController.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\AudioSourceController.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\FPSDisplay.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\ScrollRectHandler.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\TakeScreenshot.cs" />
-    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\WindowManager.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Demo\Scripts\Examples.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Demo\Scripts\GUIMain.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Demo\Scripts\GUIScenes.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\FileBrowser.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Util\Config.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Util\Constants.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Util\Helper.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserBase.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserEditor.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserGeneric.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserMac.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserWindows.cs" />
-    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\IFileBrowser.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
@@ -243,10 +205,8 @@
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
-    <None Include="Assets\Plugins\crosstales\FileBrowser\Documentation\VERSIONS.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
-    <None Include="Assets\Plugins\crosstales\FileBrowser\README.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
@@ -263,11 +223,8 @@
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
-    <None Include="Assets\Plugins\crosstales\FileBrowser\Documentation\id\62455202-c9ff-4b04-b6c3-1d4b836a5fff.txt" />
     <None Include="Assets\Standard Assets\Environment\Water\DO_NOT_WORK_IN_VR.txt" />
-    <None Include="Assets\Plugins\crosstales\Common\README.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
-    <None Include="Assets\Plugins\crosstales\Common\UI\Colors.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
@@ -537,12 +494,6 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Instalaciones/unity2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Ookii.Dialogs">
-      <HintPath>D:/Unity/VirtualADLSimulator/Assets/Plugins/crosstales/FileBrowser/Native/Windows/Ookii.Dialogs.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <HintPath>D:/Unity/VirtualADLSimulator/Assets/Plugins/crosstales/FileBrowser/Native/Windows/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Toni/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

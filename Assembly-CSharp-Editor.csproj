@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_11;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;PowerUI</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_11;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;PowerUI;CT_FB</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -61,58 +61,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PowerUI\Editor\About\About.cs" />
-    <Compile Include="Assets\PowerUI\Editor\CreateHtmlFile\CreateHtmlContext.cs" />
-    <Compile Include="Assets\PowerUI\Editor\CreateSimpleUI\CreateSimpleUIContext.cs" />
-    <Compile Include="Assets\PowerUI\Editor\DomInspector\DomInspector.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Emoji\EmojiSettings.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Gulptask\Gulptask.cs" />
-    <Compile Include="Assets\PowerUI\Editor\ImageImport\ImageImport.cs" />
-    <Compile Include="Assets\PowerUI\Editor\ImageImport\ImageImportContext.cs" />
-    <Compile Include="Assets\PowerUI\Editor\InputSettings\InputSettings.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Loonim\SettingTickbox.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Loonim\ShaderSettings\ShaderSettings.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Loonim\SupportedNodes\SupportedNodes.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Modules\AvailableModules.cs" />
-    <Compile Include="Assets\PowerUI\Editor\NamedCharacters\NamedCharacters.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Network\NetworkInspector.cs" />
-    <Compile Include="Assets\PowerUI\Editor\NodeInspector\NodeInspector.cs" />
-    <Compile Include="Assets\PowerUI\Editor\NodeJS\NodeJS.cs" />
-    <Compile Include="Assets\PowerUI\Editor\PowerUIEditor.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Precompiler\PrecompileSettings.cs" />
-    <Compile Include="Assets\PowerUI\Editor\RenameFonts\RenameFontsContext.cs" />
-    <Compile Include="Assets\PowerUI\Editor\SettingTickbox.cs" />
-    <Compile Include="Assets\PowerUI\Editor\StyleInspector\StyleInspector.cs" />
-    <Compile Include="Assets\PowerUI\Editor\SupportedCSS\SupportedCSS.cs" />
-    <Compile Include="Assets\PowerUI\Editor\SupportedTags\SupportedTags.cs" />
-    <Compile Include="Assets\PowerUI\Editor\SymbolDefines.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Translations\AutoTranslate.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Translations\GroupToTranslate.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Translations\TranslationInfo.cs" />
-    <Compile Include="Assets\PowerUI\Editor\Upgrade\Upgrade.cs" />
-    <Compile Include="Assets\PowerUI\Editor\WebHelpers.cs" />
-    <Compile Include="Assets\PowerUI\Editor\WorldUI\CreateWorldUI.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\Pages\v1\document\content\Index.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\Pages\v1\document\Index.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\Pages\v1\document\list\Index.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\Pages\v1\file\Index.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\Pages\v1\file\list\Index.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\Pages\v1\Index.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\WebServer\DirectoryEndpoint.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\WebServer\EditorWebAPI.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\WebServer\Endpoint.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\WebServer\Response.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\API\WebServer\WebServer.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\Unity Editor Windows\About.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\Unity Editor Windows\Firebug.cs" />
-    <Compile Include="Assets\PowerUI\PowerTools\Editor\Unity Editor Windows\PowerToolsWindow.cs" />
-    <Compile Include="Assets\PowerUI\Source\Editor\Pico\FlagSet.cs" />
-    <Compile Include="Assets\PowerUI\Source\Editor\Pico\Module.cs" />
-    <Compile Include="Assets\PowerUI\Source\Editor\Pico\Precompiler.cs" />
-    <Compile Include="Assets\PowerUI\Source\Editor\Pico\SourceFileSet.cs" />
-    <Compile Include="Assets\PowerUI\Source\Engine\Remote Debug\Editor\RemoteDebug.cs" />
-    <None Include="Assets\PowerUI\PowerTools\Editor\API\About.txt" />
-    <None Include="Assets\PowerUI\Editor\Translations\languages.txt" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Task\BaseCompileDefines.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Task\BaseSetupResources.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Task\NYCheck.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Util\BaseGAApi.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\CompileDefines.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ConfigLoader.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ReminderCheck.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ReminderCT.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\SetApiLevel.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\Tracer.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\UpdateCheck.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\WSACheck.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ZInstaller.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Util\EditorConfig.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Util\EditorConstants.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Util\GAApi.cs" />
     <Reference Include="Assembly-UnityScript-firstpass">
       <HintPath>D:/Unity/VirtualADLSimulator/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
     </Reference>
@@ -385,6 +349,12 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>D:/Unity/VirtualADLSimulator/Assets/VirtualADLSimulator/UI/Plugins/crosstales/FileBrowser/Native/Windows/Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>D:/Unity/VirtualADLSimulator/Assets/VirtualADLSimulator/UI/Plugins/crosstales/FileBrowser/Native/Windows/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Instalaciones/unity2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

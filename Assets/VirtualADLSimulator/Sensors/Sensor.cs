@@ -7,7 +7,7 @@ using UnityEngine;
 [System.Serializable]
 public class Sensor : MonoBehaviour, ISensor{
 
-    private RegistryActivityManager _registryActivityManager;
+    private RegistryActivityManager registryActivityManager;
     public string _code = "";
     public bool _state = false;
     public bool _debug = true;
@@ -17,16 +17,17 @@ public class Sensor : MonoBehaviour, ISensor{
     public int _numActivations = 0;
     public bool _exportData = true;
 
+
     public RegistryActivityManager RegistryActivityManager
     {
         get
         {
-            return _registryActivityManager;
+            return registryActivityManager;
         }
 
         set
         {
-            _registryActivityManager = value;
+            registryActivityManager = value;
         }
     }
 
@@ -38,13 +39,10 @@ public class Sensor : MonoBehaviour, ISensor{
 
     public void notifyEvent(string eventNotification)
     {
-        if(_exportData == true && RegistryActivityManager != null)
+        if(_exportData == true && registryActivityManager != null)
         {
-            RegistryActivityManager.notifyEvent(_code + eventNotification);
+            registryActivityManager.notifyEvent(_code + eventNotification);
             
         }
     }
-
-
-
 }
