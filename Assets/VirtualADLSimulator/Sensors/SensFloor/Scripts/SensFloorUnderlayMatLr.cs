@@ -1,96 +1,90 @@
-﻿using System.Collections;
+﻿/*
+ * @Author Antonio J Morales Rodríguez
+ * 
+ * @Version 1.0
+ * 
+ * @Copyright Antonio J Morales Rodríguez
+ * 
+ * @Description This script simulate the SENSFLOOR® UNDERLAY Mat LR of FutureShape, you can find information about this gadget in the documentation or here
+ * https://data.future-shape.com/Future-Shape_CATALOG_4-2016.pdf
+ * 
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// This class control the signals of 8 capacitiveProximitySensors, read the max value 
+/// of sensors and set it own value y state var depending of children capacitive sensors
+/// </summary>
+[AddComponentMenu("ADLVirtualSimulator/SensFloorUnderlayMatLr")]
+[System.Serializable]
 public class SensFloorUnderlayMatLr : Sensor{
 
+    /// <summary>
+    /// List of capacitive 8 proximity sensors that has been attached with this dispositive
+    /// </summary>
+    [Tooltip("List of capacitive 8 proximity sensors that has been attached with this dispositive")]
+    public List<CapacitiveProximitySensor> _capacitiveProximitySensors = new List<CapacitiveProximitySensor>(8);
+
+    /// <summary>
+    /// Array with the values of 8 proximity Sensors
+    /// </summary>
+    [Tooltip("Array with the values of 8 proximity Sensors")]
+    public float[] _values;
+
+    /// <summary>
+    /// Id to assign a code if the code var is empty
+    /// </summary>
     private static int _id = 0;
-    private float _prevValue = 0f;
-    private bool _prevState = false;
-    public CapacitiveProximitySensor[] _capacitiveProximitySensors = new CapacitiveProximitySensor[8];
-    public float[] _values = new float[8];
 
-
-    // Use this for initialization
     void Start () {
+        //set the size of values array
+        _values = new float[_capacitiveProximitySensors.Count];
+
+        // If the code is empty assign automatically a code name based in the convention, for SensFloorUnderlayMatLr sensor is: R{id}
         if (_code == "")
             _code = gameObject.name + _id++;
-
-        StartCoroutine(readCapacitiveProximitySensor(_capacitiveProximitySensors, _values));
+    
+        //set the children's sensor with the same debug flag that this sensor
         for (int i = 0; i < 8; i++)
             if (_capacitiveProximitySensors[i]._debug != _debug)
                 _capacitiveProximitySensors[i]._debug = _debug;
     }
 	
-	// Update is called once per frame
-	void Update () {
-
-
-        for (int i = 0; i < 8; i++)
+	void FixedUpdate () {
+        //setting the debug flag in the childrens
+        for (int i = 0; i < _capacitiveProximitySensors.Count; i++)
             if (_capacitiveProximitySensors[i]._debug != _debug)
                 _capacitiveProximitySensors[i]._debug = _debug;
 
-     
-
-
+        //read the sensors attached
+        readCapacitiveProximitySensors();
+    
     }
 
-    public void exportData()
-    {
-        if (_exportData && RegistryActivityManager != null)
-        {
-            if (_value != _prevValue)
-            {
-                if (_value != 0f && !_prevState)
-                    notifyEvent("\tON\t" + _value);
-                else
-                if (_value != 0f && _prevState)
-                    notifyEvent("\tCH\t" + _value);
-                else
-                    notifyEvent("\tOFF\t");
-                _prevState = _state;
-                _prevValue = _value;
-            }
+    /// <summary>
+    /// Read the 8 values of capacitive proximity sensors attached, and set the own value with the max values of sensors
+    /// </summary>
+    public void readCapacitiveProximitySensors()
+    { 
+            float maxValue = 0f;
 
-        }
-    }
-
-    IEnumerator readCapacitiveProximitySensor(CapacitiveProximitySensor[] capacitiveProximitySensors, float[] values)
-    {
-        while (true)
-        {
-            bool state = false;
-            int numActivations = 0;
-            float value = 0f;
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < _capacitiveProximitySensors.Count; i++)
             {
-                if (capacitiveProximitySensors[i]._state)
+                _values[i] = _capacitiveProximitySensors[i]._value;
+                if (_capacitiveProximitySensors[i]._state)
                 {
-                    values[i] = capacitiveProximitySensors[i]._value;
-                    _state = true;
-                    if (!state)
-                        state = true;
+                    maxValue = (_capacitiveProximitySensors[i]._value > _value) ? _capacitiveProximitySensors[i]._value : _value;
+                    if (!this._state)
+                    {
+                        this._state = true;
+                        this._numActivations++;
+                    }
                 }
             }
-
-            for (int i = 0; i < 8; i++)
-            {
-                values[i] = capacitiveProximitySensors[i]._value;
-                numActivations += capacitiveProximitySensors[i]._numActivations;
-            }
-
-            if (!state)
-                _state = false;
-
-            _value = values.Max();
-            _numActivations = numActivations;
-
-            exportData();
-
-            yield return new WaitForSecondsRealtime(1 / _frecuency);
-        }
-
-
+            setSensorValue(maxValue);
     }
 }

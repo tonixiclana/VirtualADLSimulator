@@ -1,90 +1,143 @@
-﻿using System.Collections;
+﻿/*
+ * @Author Antonio J Morales Rodríguez
+ * 
+ * @Version 1.0
+ * 
+ * @Copyright Antonio J Morales Rodríguez
+ * 
+ * @Description This script simulate the working of a capacitive sensor
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script simulate the working of a capacitive sensor, detect collision with a trigger and normal colliders
+/// </summary>
+[RequireComponent(typeof(Collider))]
+[AddComponentMenu("ADLVirtualSimulator/CapacitiveProximitySensor")]
 [System.Serializable]
 public class CapacitiveProximitySensor : Sensor{
 
-    private static int _id = 0;
-    private float _prevValue = 0f;
-    private bool _prevState = false;
+    /// <summary>
+    /// List with the gameobjects in contact with the sensor
+    /// </summary>
+    [Tooltip("List with the gameobjects in contact with the sensor")]
     public List<string> _gameObjectsInContact = new List<string>();
 
-    // Use this for initialization
+    /// <summary>
+    /// Id to assign a code if the code var is empty
+    /// </summary>
+    [Tooltip("Id to assign a code if the code var is empty")]
+    private static int _id = 0;
+
+
     void Start () {
+        // If the code is empty assign automatically a code name based in the convention, for capacitive Proximity sensor is: CPS{id}
         if (_code == "")
-            _code = gameObject.name + _id++;
+            _code = "CPS" + _id++;
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
   
 	}
 
+    /// <summary>
+    /// Run when a gameobject collision with the sensor collider and the gameobject is a trigger and have rigidbody
+    /// </summary>
+    /// <param name="colInfo"></param>
     private void OnTriggerEnter(Collider colInfo)
     {
-        if (colInfo.gameObject.GetComponent<Rigidbody>() != null && colInfo.gameObject.GetComponent<Rigidbody>().mass >= _activationThreshold 
-            /*&& colInfo.gameObject.layer != 9*/)
+        //Apply the rigidbody validation
+        if (colInfo.gameObject.GetComponent<Rigidbody>() != null)
         {
+            _gameObjectsInContact.Add(colInfo.gameObject.name);
 
-                if (!_state)
+            //call to set Sensor value with the mass of rigidbody
+            while (!setSensorValue(_value += colInfo.GetComponent<Rigidbody>().mass)) ;
+
+
+            //If sensor state is true
+            if (_state)
+            {
+                //Debug include the highlighted of the capacitive sensor
+                if (_debug)
                 {
-                    _state = true;
-                    _numActivations++;
-                    if (_debug)
-                        this.GetComponent<Renderer>().enabled = true;
-                        this.GetComponent<Renderer>().material.color = Color.yellow;
+                    this.GetComponent<Renderer>().enabled = true;
+                    this.GetComponent<Renderer>().material.color = Color.yellow;
                 }
-
-                _gameObjectsInContact.Add(colInfo.gameObject.name);
-                StartCoroutine(readSensor(colInfo));
             }
+        }
     }
-    
 
+    /// <summary>
+    /// Run when a gameobject leave the collision with the sensor collider and the gameobject is a trigger and have rigidbody
+    /// </summary>
+    /// <param name="colInfo"></param>
     private void OnTriggerExit(Collider colInfo)
     {
         if (colInfo.gameObject.GetComponent<Rigidbody>() != null) {
-
-            _value -= colInfo.GetComponent<Rigidbody>().mass;
+            setSensorValue(_value -= colInfo.GetComponent<Rigidbody>().mass);
             _gameObjectsInContact.Remove(colInfo.gameObject.name);
 
-            if (_gameObjectsInContact.Count == 0) {
-                _state = false;
-                this.GetComponent<Renderer>().enabled = false;
-
-            }
+            if (!_state) 
+                //Debug include the highlighted of the capacitive sensor
+                if (_debug)
+                    this.GetComponent<Renderer>().enabled = false;
             
-           /* if (_sensor._debug)
-                Debug.Log(gameObject.name + " OFF " + _sensor._value + " " + System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss.ffffff"));*/
         }
     }
 
-    IEnumerator readSensor(Collider colInfo)
+
+    /// <summary>
+    /// Run when a gameobject collision with the sensor collider and the gameobject is a trigger and have rigidbody
+    /// </summary>
+    /// <param name="colInfo"></param>
+    private void OnCollisionEnter(Collision colInfo)
     {
-        _value += colInfo.GetComponent<Rigidbody>().mass;
-
-        if (_exportData && RegistryActivityManager != null)
+        //Apply the rigidbody validation
+        if (colInfo.collider.GetComponent<Rigidbody>() != null)
         {
-            if (_value != _prevValue)
+            _gameObjectsInContact.Add(colInfo.gameObject.name);
+
+            //call to set Sensor value with the mass of rigidbody
+            while (!setSensorValue(_value += colInfo.collider.GetComponent<Rigidbody>().mass)) ;
+
+
+            //If sensor state is true
+            if (_state)
             {
-                if (_value != 0f && !_prevState)
-                    notifyEvent("\tON\t" + _value);
-                else
-                if (_value != 0f && _prevState)
-                    notifyEvent("\tCH\t" + _value);
-                else
-                    notifyEvent("\tOFF\t");
-                _prevState = _state;
-                _prevValue = _value;
+                //Debug include the highlighted of the capacitive sensor
+                if (_debug)
+                {
+                    this.GetComponent<Renderer>().enabled = true;
+                    this.GetComponent<Renderer>().material.color = Color.yellow;
+                }
             }
-
         }
-
-        yield return new WaitForSecondsRealtime(1 / _frecuency);
     }
 
+    /// <summary>
+    /// Run when a gameobject leave the collision with the sensor collider and the gameobject is a trigger and have rigidbody
+    /// </summary>
+    /// <param name="colInfo"></param>
+    private void OnCollisionExit(Collision colInfo)
+    {
+        if (colInfo.collider.GetComponent<Rigidbody>() != null)
+        {
+            setSensorValue(_value -= colInfo.collider.GetComponent<Rigidbody>().mass);
+            _gameObjectsInContact.Remove(colInfo.gameObject.name);
+
+            if (!_state)
+                //Debug include the highlighted of the capacitive sensor
+                if (_debug)
+                    this.GetComponent<Renderer>().enabled = false;
+
+        }
+    }
     /*
     void OnCollisionEnter(Collision colInfo){
         
@@ -139,5 +192,5 @@ public class CapacitiveProximitySensor : Sensor{
 
             yield return new WaitForSeconds(0);
         }*/
-   
+
 }

@@ -117,6 +117,9 @@ public class FirtsPersonCamera : MonoBehaviour
         lockCursor = !lockCursor;
     }
 
+    /// <summary>
+    /// Controller the rotation of Character
+    /// </summary>
     void FixedUpdate()
     {
         // Allow the script to clamp based on a desired target value.
