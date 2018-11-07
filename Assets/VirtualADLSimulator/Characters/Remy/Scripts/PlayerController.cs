@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour {
     private float targetSpeed = 0;
 
     /// <summary>
-    /// The smooth with the Character take the final speed
+    /// The time left by arrive finish of smooth
     /// </summary>
     private float currentVelocity = 0;
 

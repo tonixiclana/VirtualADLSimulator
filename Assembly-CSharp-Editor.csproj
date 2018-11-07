@@ -61,22 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Task\BaseCompileDefines.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Task\BaseSetupResources.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Task\NYCheck.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\Common\Editor\Util\BaseGAApi.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\CompileDefines.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ConfigLoader.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ReminderCheck.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ReminderCT.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\SetApiLevel.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\Tracer.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\UpdateCheck.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\WSACheck.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Task\ZInstaller.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Util\EditorConfig.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Util\EditorConstants.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\UI\Plugins\crosstales\FileBrowser\Editor\Util\GAApi.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Utilities\Editor\SelectGameobjetCursor.cs" />
     <Reference Include="Assembly-UnityScript-firstpass">
       <HintPath>D:/Unity/VirtualADLSimulator/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
     </Reference>
@@ -349,12 +334,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Ookii.Dialogs">
-      <HintPath>D:/Unity/VirtualADLSimulator/Assets/VirtualADLSimulator/UI/Plugins/crosstales/FileBrowser/Native/Windows/Ookii.Dialogs.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <HintPath>D:/Unity/VirtualADLSimulator/Assets/VirtualADLSimulator/UI/Plugins/crosstales/FileBrowser/Native/Windows/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Instalaciones/unity2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
