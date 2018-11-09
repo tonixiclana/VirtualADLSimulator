@@ -1,27 +1,48 @@
+/*
+ * @Author Antonio J Morales Rodríguez
+ * 
+ * @Version 1.0
+ * 
+ * @Copyright Antonio J Morales Rodríguez
+ * 
+ * @Description Provide functions to load a scene or url
+ */
+
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Provide functions to load a scene or url
+/// </summary>
+[RequireComponent(typeof(PauseMenu))]
 public class SceneAndURLLoader : MonoBehaviour
 {
-    private PauseMenu m_PauseMenu;
-
+    PauseMenu pauseMenu;
 
     private void Awake ()
     {
-        m_PauseMenu = GetComponentInChildren <PauseMenu> ();
+        pauseMenu = GetComponent<PauseMenu>();
     }
 
-
-    public void SceneLoad(string sceneName)
+    /// <summary>
+    /// Load a scene by its name
+    /// </summary>
+    /// <param name="sceneName"></param>
+    public void sceneLoad(string sceneName)
 	{
-		//PauseMenu pauseMenu = (PauseMenu)FindObjectOfType(typeof(PauseMenu));
-		m_PauseMenu.MenuOff ();
-		SceneManager.LoadScene(sceneName);
+        //Put the time defaults values
+        Time.timeScale = 1;
+        AudioListener.volume = 1;
+
+        SceneManager.LoadScene(sceneName);
 	}
 
-
-	public void LoadURL(string url)
+    /// <summary>
+    /// Load a url with the default browser of system
+    /// </summary>
+    /// <param name="url"></param>
+	public void loadURL(string url)
 	{
 		Application.OpenURL(url);
 	}
