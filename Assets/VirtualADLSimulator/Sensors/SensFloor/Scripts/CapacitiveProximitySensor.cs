@@ -57,11 +57,11 @@ public class CapacitiveProximitySensor : Sensor{
             _gameObjectsInContact.Add(colInfo.gameObject.name);
 
             //call to set Sensor value with the mass of rigidbody
-            while (!setSensorValue(_value += colInfo.GetComponent<Rigidbody>().mass)) ;
+            while (!setSensorValue(Value += colInfo.GetComponent<Rigidbody>().mass)) ;
 
 
             //If sensor state is true
-            if (_state)
+            if (State)
             {
                 //Debug include the highlighted of the capacitive sensor
                 if (_debug)
@@ -80,10 +80,10 @@ public class CapacitiveProximitySensor : Sensor{
     private void OnTriggerExit(Collider colInfo)
     {
         if (colInfo.gameObject.GetComponent<Rigidbody>() != null) {
-            setSensorValue(_value -= colInfo.GetComponent<Rigidbody>().mass);
+            setSensorValue(Value -= colInfo.GetComponent<Rigidbody>().mass);
             _gameObjectsInContact.Remove(colInfo.gameObject.name);
 
-            if (!_state) 
+            if (!State) 
                 //Debug include the highlighted of the capacitive sensor
                 if (_debug)
                     this.GetComponent<Renderer>().enabled = false;
@@ -104,11 +104,11 @@ public class CapacitiveProximitySensor : Sensor{
             _gameObjectsInContact.Add(colInfo.gameObject.name);
 
             //call to set Sensor value with the mass of rigidbody
-            while (!setSensorValue(_value += colInfo.collider.GetComponent<Rigidbody>().mass)) ;
+            while (!setSensorValue(Value += colInfo.collider.GetComponent<Rigidbody>().mass)) ;
 
 
             //If sensor state is true
-            if (_state)
+            if (State)
             {
                 //Debug include the highlighted of the capacitive sensor
                 if (_debug)
@@ -128,10 +128,10 @@ public class CapacitiveProximitySensor : Sensor{
     {
         if (colInfo.collider.GetComponent<Rigidbody>() != null)
         {
-            setSensorValue(_value -= colInfo.collider.GetComponent<Rigidbody>().mass);
+            setSensorValue(Value -= colInfo.collider.GetComponent<Rigidbody>().mass);
             _gameObjectsInContact.Remove(colInfo.gameObject.name);
 
-            if (!_state)
+            if (!State)
                 //Debug include the highlighted of the capacitive sensor
                 if (_debug)
                     this.GetComponent<Renderer>().enabled = false;

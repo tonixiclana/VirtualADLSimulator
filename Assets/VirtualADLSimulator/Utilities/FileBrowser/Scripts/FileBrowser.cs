@@ -76,7 +76,7 @@ public class FileBrowser : MonoBehaviour {
         item.GetComponent<FileBrowserItem>().isFolder = true;
         item.GetComponent<FileBrowserItem>().fileBrowser = this;
         //add at gridcontent
-        gridContent.GetComponent<PopulateGrid>().addElement(item.gameObject);
+        gridContent.GetComponent<PopulateGrid>().addElement(Instantiate(item.gameObject, gridContent.transform));
 
         //add all of folders 
         foreach (DirectoryInfo d in listOfDir)
@@ -85,7 +85,7 @@ public class FileBrowser : MonoBehaviour {
             item.GetComponent<FileBrowserItem>().absolutePath = d.FullName;
             item.GetComponent<FileBrowserItem>().fileBrowser = this;
             //add at gridcontent
-            gridContent.GetComponent<PopulateGrid>().addElement(item.gameObject);
+            gridContent.GetComponent<PopulateGrid>().addElement(Instantiate(item.gameObject, gridContent.transform));
         }
 
         //add all of files
@@ -96,7 +96,7 @@ public class FileBrowser : MonoBehaviour {
             item.GetComponent<FileBrowserItem>().absolutePath = f.FullName;
             item.GetComponent<FileBrowserItem>().fileBrowser = this;
             //add at gridcontent
-            gridContent.GetComponent<PopulateGrid>().addElement(item.gameObject);
+            gridContent.GetComponent<PopulateGrid>().addElement(Instantiate(item.gameObject, gridContent.transform));
         }
     }
 

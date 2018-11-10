@@ -74,14 +74,14 @@ public class SensFloorUnderlayMatLr : Sensor{
 
             for (int i = 0; i < _capacitiveProximitySensors.Count; i++)
             {
-                _values[i] = _capacitiveProximitySensors[i]._value;
-                if (_capacitiveProximitySensors[i]._state)
+                _values[i] = _capacitiveProximitySensors[i].Value;
+                if (_capacitiveProximitySensors[i].State)
                 {
-                    maxValue = (_capacitiveProximitySensors[i]._value > _value) ? _capacitiveProximitySensors[i]._value : _value;
-                    if (!this._state)
+                    maxValue = (_capacitiveProximitySensors[i].Value > Value) ? _capacitiveProximitySensors[i].Value : Value;
+                    if (!this.State)
                     {
-                        this._state = true;
-                        this._numActivations++;
+                        this.State = true;
+                        this.NumActivations++;
                     }
                 }
             }

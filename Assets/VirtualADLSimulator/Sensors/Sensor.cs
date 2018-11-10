@@ -37,22 +37,10 @@ public class Sensor : MonoBehaviour, ISensor{
     public string _code = "";
 
     /// <summary>
-    /// The state flag value of this sensor
-    /// </summary>
-    [Tooltip("the state flag value of this sensor")]
-    public bool _state = false;
-
-    /// <summary>
     /// The debug flag for this sensor
     /// </summary>
     [Tooltip("The debug flag for this sensor")]
     public bool _debug = true;
-
-    /// <summary>
-    /// The float value for this sensor
-    /// </summary>
-    [Tooltip("The float value for this sensor")]
-    public float _value = 0;
 
     /// <summary>
     /// The activation Threshold stablish the min value needed to artivate the sensor
@@ -67,34 +55,144 @@ public class Sensor : MonoBehaviour, ISensor{
     public float _frecuency = 1f;
 
     /// <summary>
-    /// The number of activation of this sensor
-    /// </summary>
-    [Tooltip("The number of activation of this sensor")]
-    public int _numActivations = 0;
-
-    /// <summary>
     /// Flag to control the export data to registryActivityManager
     /// </summary>
     [Tooltip("Flag to control the export data to registryActivityManager")]
     public bool _exportData = true;
 
     /// <summary>
+    /// The state flag value of this sensor
+    /// </summary>
+    [Tooltip("the state flag value of this sensor")]
+    private bool _state = false;
+
+    /// <summary>
+    /// The number of activation of this sensor
+    /// </summary>
+    [Tooltip("The number of activation of this sensor")]
+    private int _numActivations = 0;
+
+    /// <summary>
+    /// The float value for this sensor
+    /// </summary>
+    [Tooltip("The float value for this sensor")]
+    private float _value = 0;
+
+    /// <summary>
     /// Previous value of sensor to determine if the value of sensor changed
     /// </summary>
     [Tooltip("Previous value of sensor to determine if the value of sensor changed")]
-    public float _prevValue = 0f;
+    private float _prevValue = 0f;
 
     /// <summary>
     /// Previous state of the sensor
     /// </summary>
     [Tooltip("Previous state of the sensor")]
-    public bool _prevState = false;
+    private bool _prevState = false;
 
     /// <summary>
     /// The time in seconds since the last read of sensor
     /// </summary>
     [Tooltip("The time in seconds since the last read of sensor")]
-    public float _timeLastRead = 0f;
+    private float _timeLastRead = 0f;
+
+
+    public string Code
+    {
+        get
+        {
+            return this._code;
+        }
+        set
+        {
+            this._code = value;
+        }
+    }
+
+    public bool Debug
+    {
+        get
+        {
+            return this._debug;
+        }
+        set
+        {
+            this._debug = value;
+        }
+    }
+
+    public float ActivationThreshold
+    {
+        get
+        {
+            return this._activationThreshold;
+        }
+        set
+        {
+            this._activationThreshold = value;
+        }
+    }
+
+    public float Frecuency
+    {
+        get
+        {
+            return this._frecuency;
+        }
+        set
+        {
+            this._frecuency = value;
+        }
+    }
+
+    public bool ExportData
+    {
+        get
+        {
+            return this._exportData;
+        }
+        set
+        {
+            this._exportData = value;
+        }
+    }
+
+    public float Value
+    {
+        get
+        {
+            return this._value;
+        }
+        set
+        {
+            this._value = value;
+        }
+    }
+
+    public bool State
+    {
+        get
+        {
+            return this._state;
+        }
+        set
+        {
+            this._state = value;
+        }
+    }
+
+    public int NumActivations
+    {
+        get
+        {
+            return this._numActivations;
+        }
+        set
+        {
+            this._numActivations = value;
+        }
+    }
+
 
     private void Start()
     {

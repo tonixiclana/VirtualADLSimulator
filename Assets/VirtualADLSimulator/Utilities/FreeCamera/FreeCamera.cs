@@ -97,7 +97,12 @@ public class FreeCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (!Cursor.visible)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
 	}
 
     private void FixedUpdate()

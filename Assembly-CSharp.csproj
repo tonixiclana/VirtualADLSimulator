@@ -110,6 +110,8 @@
     <Compile Include="Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\SensFloorUnderlayMatLr.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\SensFloorUnderlaySfLr.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Sensors\Sensor.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Sensors\SensorEditor\GenericPropertyEditor.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Sensors\SensorEditor\SensorEditorUI.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\Scripts\PauseMenu.cs" />
@@ -120,7 +122,6 @@
     <Compile Include="Assets\VirtualADLSimulator\UI\UMenu Pro\Content\Scripts\UMP_Manager.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\UMenu Pro\Content\Scripts\UMP_Options.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\UMenu Pro\Content\Scripts\UMP_SceneOptions.cs" />
-    <Compile Include="Assets\VirtualADLSimulator\Utilities\EditorMode\EditorModeManager.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\EditorMode\OutlinedDiffuseShaderFixed\temp.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\EditorMode\SelectGameobjectCursor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\FileBrowser.cs" />

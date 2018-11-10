@@ -44,7 +44,8 @@ public class PopulateGrid : MonoBehaviour
     /// <param name="gameObject"></param>
     public void addElement(GameObject gameObject)
     {
-        elements.Add((GameObject)Instantiate(gameObject, transform));
+        gameObject.transform.position = transform.position;
+        elements.Add(gameObject);
     }
 
     /// <summary>

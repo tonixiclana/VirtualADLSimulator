@@ -11,6 +11,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// This class allow have a tracking of objects selected with the cursor
@@ -125,9 +126,9 @@ public class SelectGameobjectCursor : MonoBehaviour {
             }
 
             //Action when pulse 0 mouse button
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject())
                 //If the hit gameobject is diferent at the last selectedGameobject and is not null
-                if (selectedGameObject != hit.transform.gameObject && selectedGameObject != null)
+                if (selectedGameObject != null && selectedGameObject != hit.transform.gameObject)
                 {
                     //add the selectedGameobject at the list gameObjectsSelect
                     selectGameObject();
@@ -219,6 +220,19 @@ public class SelectGameobjectCursor : MonoBehaviour {
                 }
             }
         }
+    }
+
+    /// <summary>
+    /// Detect when the pointer is over UI Object
+    /// </summary>
+    /// <returns></returns>
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
     }
 
     /*

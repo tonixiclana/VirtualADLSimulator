@@ -5,13 +5,15 @@
  * 
  * @Copyright Antonio J Morales Rodríguez
  * 
- * @Description This script simulate the SENSFLOOR® UNDERLAY SF LR of FutureShape, you can find information about this gadget in the documentation or here
+ * @Description This script simulate the SENSFLOOR® UNDERLAY SF LR of FutureShape, you can find information about
+ * this gadget in the documentation or here
  * https://data.future-shape.com/Future-Shape_CATALOG_4-2016.pdf
  * 
  */
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 /// <summary>
@@ -30,12 +32,6 @@ public class SensFloorUnderlaySfLr : Sensor {
     public bool _exportDetailPosition = true;
 
     /// <summary>
-    /// A matrix with the values of 16 sensors, distribuited in 2 row an 8 columns
-    /// </summary>
-    [Tooltip("A matrix with the values of 16 sensors, distribuited in 2 row an 8 columns")]
-    public float[,] _values = new float[2, 8];
-
-    /// <summary>
     /// The firts sensFloorUnderlayMatLr element
     /// </summary>
     [Tooltip("The firts sensFloorUnderlayMatLr element")]
@@ -47,13 +43,29 @@ public class SensFloorUnderlaySfLr : Sensor {
     [Tooltip("The second sensFloorUnderlayMatLr element")]
     public SensFloorUnderlayMatLr _sensFloorUnderlayMatLr1;
 
+
+    /// <summary>
+    /// A matrix with the values of 16 sensors, distribuited in 2 row an 8 columns
+    /// </summary>
+    [Tooltip("A matrix with the values of 16 sensors, distribuited in 2 row an 8 columns")]
+    private float[,] _values = new float[2, 8];
+
     /// <summary>
     /// Id to assign a code if the code var is empty
     /// </summary>
- 
     private static int _id = 0;
 
-
+    public bool ExportDetailPosition
+    {
+        get
+        {
+            return this._exportDetailPosition;
+        }
+        set
+        {
+            this._exportDetailPosition = value;
+        }
+    }
     // Use this for initialization
     void Start()
     {
@@ -65,6 +77,7 @@ public class SensFloorUnderlaySfLr : Sensor {
         // If the code is empty assign automatically a code name based in the convention, for SensFloorUnderlaySfLr sensor is: FL{id}
         if (_code == "")
             _code = "FL" + _id++;
+        
     }
 
     // Update is called once per frame
@@ -77,10 +90,10 @@ public class SensFloorUnderlaySfLr : Sensor {
             _sensFloorUnderlayMatLr1._debug = _debug;
 
         // Set the max value of childrens
-        if (_sensFloorUnderlayMatLr0._value >= _sensFloorUnderlayMatLr1._value)
-            setSensorValue(_sensFloorUnderlayMatLr0._value);
+        if (_sensFloorUnderlayMatLr0.Value >= _sensFloorUnderlayMatLr1.Value)
+            setSensorValue(_sensFloorUnderlayMatLr0.Value);
         else
-            setSensorValue(_sensFloorUnderlayMatLr1._value);
+            setSensorValue(_sensFloorUnderlayMatLr1.Value);
 
         if (_exportDetailPosition)
         {

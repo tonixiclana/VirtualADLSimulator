@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/VirtualADLSimulator/Scenes/TestScene.unity
+- path: Assets/VirtualADLSimulator/Scenes/EditMode.unity
   isLoaded: 1
   isActive: 1

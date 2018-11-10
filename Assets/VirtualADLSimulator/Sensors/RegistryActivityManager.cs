@@ -139,7 +139,7 @@ public class RegistryActivityManager : MonoBehaviour {
         //update the values vector with the values of sensors
         for (int i = 0; i < _sensors.Count; i++)
             if(_sensors[i] != null)
-                _values[i] = _sensors[i]._value;
+                _values[i] = _sensors[i].Value;
 	}
 
     /// <summary>
