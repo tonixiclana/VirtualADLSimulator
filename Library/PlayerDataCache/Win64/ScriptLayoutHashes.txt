@@ -78,7 +78,7 @@ a44114bd4fa541174f78b4bb92bacb48 UnityEngine.UI.dll:UnityEngine.EventSystems.Sta
 e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 2d58ca16854b99daea8c45e9c0f367b7 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-2f4d61b512633702e4f118c6deef3885 Assembly-CSharp.dll:.SensorEditorUI
+645c41bba8e97f3233e759d891af1e0c Assembly-CSharp.dll:.SensorEditorUI
 50b0b141074b216c8b53b1bd467f73c9 Unity.TextMeshPro.dll:TMPro.TMP_InputField
 b827b25f832158fdaa480c476121350e Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TiltInput
 c902e31672e5f721a2b8055d8b6fe2f3 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterBase
@@ -312,6 +312,7 @@ d61ef222d4cd1505582df3e977c2c13a Assembly-CSharp.dll:.SensFloorUnderlaySfLr
 f7dde43371003df0435af6f9df05256c Assembly-CSharp.dll:TMPro.Examples.Benchmark04
 f5476454eb86e1817e25a825263133c9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.SmokeParticles
 ebc31dc7976aeffcc84e23b049016bd0 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FollowTarget
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.GenericPropertyEditor
 1b8e83c83f5da5a5e888031b95784214 Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
 7e7ee21ab8ff1f2eb206565d6caa2bfd Assembly-CSharp.dll:TMPro.Examples.VertexShakeB
 2d5613dfea5ebe89d441816537142920 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
@@ -344,4 +345,3 @@ f59ca19b2477a0f8545617e6a1dec4b4 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 65c943673eb3c10bb85d521b987bc659 Assembly-UnityScript-firstpass.dll:.RigidbodyWalkerPlus
 36c19c5f24be9b8c56b2443cd621b0b7 Assembly-CSharp.dll:.PopulateGrid
 695c9335429d4798b6f74ca73c042ff4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.GenericPropertyEditor

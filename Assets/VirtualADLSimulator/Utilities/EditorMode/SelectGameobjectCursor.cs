@@ -159,6 +159,16 @@ public class SelectGameobjectCursor : MonoBehaviour {
         gameObjectsSelected.Clear();
     }
 
+    public void removeGameobjectOfList(GameObject gm)
+    {
+        if (gm.layer == layer)
+        {
+            highLighingGameObjectMultiple(gm);
+            gameObjectsSelected.Remove(gm);
+        }
+
+    }
+
     /// <summary>
     /// Add or remove a selectedGameObject of the list of selected gameobjects
     /// </summary>

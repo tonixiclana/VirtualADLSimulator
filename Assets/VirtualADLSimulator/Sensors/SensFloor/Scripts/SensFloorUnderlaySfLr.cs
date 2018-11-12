@@ -66,8 +66,8 @@ public class SensFloorUnderlaySfLr : Sensor {
             this._exportDetailPosition = value;
         }
     }
-    // Use this for initialization
-    void Start()
+ 
+    void Awake()
     {
         for (int u = 0; u < 8; u++) {
             _values[0, u] = _sensFloorUnderlayMatLr0._values[u];
