@@ -127,6 +127,7 @@ public class SelectGameobjectCursor : MonoBehaviour {
 
             //Action when pulse 0 mouse button
             if (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject())
+            {
                 //If the hit gameobject is diferent at the last selectedGameobject and is not null
                 if (selectedGameObject != null && selectedGameObject != hit.transform.gameObject)
                 {
@@ -142,6 +143,7 @@ public class SelectGameobjectCursor : MonoBehaviour {
                         selectedGameObject = null;
                     }
                 }
+            }
         } 
     }
 
@@ -153,6 +155,8 @@ public class SelectGameobjectCursor : MonoBehaviour {
         //Each pair of map put the original material
         foreach(var pair in gameObjectMaterialMap)
                 pair.Key.GetComponent<MeshRenderer>().material = pair.Value;
+        if(selectedGameObject != null)
+            selectedGameObject.GetComponent<MeshRenderer>().material = originalMaterialSelectedGameObject;
 
         //Clear the map and the list
         gameObjectMaterialMap.Clear();
@@ -243,6 +247,7 @@ public class SelectGameobjectCursor : MonoBehaviour {
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
         return results.Count > 0;
+        
     }
 
     /*

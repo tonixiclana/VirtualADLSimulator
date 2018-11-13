@@ -19,7 +19,7 @@ TagManager:
   - 
   - PostProcessing
   - CapacitiveProximitySensor
-  - SelectableInEditorMode
+  - Selectable
   - SelectableInUserMode
   - 
   - 

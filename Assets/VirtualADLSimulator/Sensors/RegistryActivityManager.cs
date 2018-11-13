@@ -38,7 +38,7 @@ public class RegistryActivityManager : MonoBehaviour {
     /// The vector with the values of sensors listened
     /// </summary>
     [Tooltip("The vector with the values of sensors listened")]
-    public float[] _values;
+    public List<float> _values;
 
     /// <summary>
     /// The flag that indicate if export data or not
@@ -79,7 +79,7 @@ public class RegistryActivityManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //Initialize the values vector with the size of list of sensors
-        _values= new float[_sensors.Count];
+        //_values= new List<float>();
 
         //Attach this registry activity manager in all sensors slots not empty
         for (int i = 0; i < _sensors.Count; i++)
@@ -137,10 +137,21 @@ public class RegistryActivityManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //update the values vector with the values of sensors
-        for (int i = 0; i < _sensors.Count; i++)
+       /* for (int i = 0; i < _sensors.Count; i++)
             if(_sensors[i] != null)
-                _values[i] = _sensors[i].Value;
+                _values[i] = _sensors[i].Value;*/
 	}
+
+    /// <summary>
+    /// Add sensor in the list of sensors listener
+    /// </summary>
+    /// <param name="sensor"></param>
+    public void addSensor(Sensor sensor)
+    {
+        sensor.registryActivityManager = this;
+        _sensors.Add(sensor);
+
+    }
 
     /// <summary>
     /// Create a new line in a file with a time info and write the event notification string that contain the event information
