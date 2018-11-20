@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Floor
   - Sensor
+  - Door
   layers:
   - Default
   - TransparentFX

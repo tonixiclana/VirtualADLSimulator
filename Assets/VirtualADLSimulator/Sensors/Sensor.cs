@@ -21,7 +21,7 @@ using UnityEngine;
 /// and functions to controller a multipurpose sensor activity
 /// </summary>
 [System.Serializable]
-public class Sensor : MonoBehaviour, ISensor{
+public class Sensor : ISensor{
 
     /// <summary>
     /// The registry activity manager associated at this sensor, this object catch the notify 
@@ -191,12 +191,6 @@ public class Sensor : MonoBehaviour, ISensor{
         {
             this._numActivations = value;
         }
-    }
-
-
-    private void Start()
-    {
-
     }
 
     /// <summary>
