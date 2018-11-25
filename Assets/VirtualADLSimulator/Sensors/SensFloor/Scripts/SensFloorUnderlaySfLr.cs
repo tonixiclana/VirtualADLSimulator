@@ -69,17 +69,29 @@ public class SensFloorUnderlaySfLr : Sensor {
  
     void Awake()
     {
+
+
+        /*
         for (int u = 0; u < 8; u++) {
             _values[0, u] = _sensFloorUnderlayMatLr0._values[u];
             _values[1, u] = _sensFloorUnderlayMatLr1._values[u];
         }
-
+        */
         // If the code is empty assign automatically a code name based in the convention, for SensFloorUnderlaySfLr sensor is: FL{id}
         if (_code == "")
             _code = "FL" + _id++;
         
     }
 
+
+    void Start()
+    {
+
+        FindObjectOfType<RegistryActivityManager>().addSensor(this);
+
+        _sensFloorUnderlayMatLr0 = GetComponentsInChildren<SensFloorUnderlayMatLr>()[0];
+        _sensFloorUnderlayMatLr1 = GetComponentsInChildren<SensFloorUnderlayMatLr>()[1];
+    }
     // Update is called once per frame
     void FixedUpdate()
     {

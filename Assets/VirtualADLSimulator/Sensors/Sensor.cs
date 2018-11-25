@@ -21,11 +21,11 @@ using UnityEngine;
 /// and functions to controller a multipurpose sensor activity
 /// </summary>
 [System.Serializable]
-public class Sensor : ISensor{
+public class Sensor : MonoBehaviour, ISensor{
 
     /// <summary>
     /// The registry activity manager associated at this sensor, this object catch the notify 
-    /// events of this gameobject and process the message
+    /// events of this gameobject and process the messages
     /// </summary>
     [Tooltip("The registry activity manager associated at this sensor, this object catch the notify events of this gameobject and process the message")]
     public RegistryActivityManager registryActivityManager;

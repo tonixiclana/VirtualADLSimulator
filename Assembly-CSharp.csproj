@@ -144,12 +144,16 @@
     <Compile Include="Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\FileBrowserItem.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\PopulateGrid.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\FreeCamera\FreeCamera.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCapacitiveProximitySensor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCollider.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceGameobject.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceInfo.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceManager.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshFilter.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshRenderer.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensFloorUnderlayMatLr.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensFloorUnderlaySfLr.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceTransform.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

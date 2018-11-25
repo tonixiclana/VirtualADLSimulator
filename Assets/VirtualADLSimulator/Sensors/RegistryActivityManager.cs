@@ -11,6 +11,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -78,6 +79,7 @@ public class RegistryActivityManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
         //Initialize the values vector with the size of list of sensors
         //_values= new List<float>();
 
@@ -132,10 +134,37 @@ public class RegistryActivityManager : MonoBehaviour {
                 , _fileNameInput.text
             );
         });
+
+        //StartCoroutine(addSensor());
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    IEnumerator addSensor()
+    {
+        while (true)
+        {
+            foreach (var sensor in FindObjectsOfType<Sensor>())
+            {
+                if (!_sensors.Contains(sensor))
+                {
+                    addSensor(sensor);
+                }
+            }
+
+            yield return new WaitForSeconds(1);
+        }
+
+    }
+
+
+    private void FixedUpdate()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update () {
         //update the values vector with the values of sensors
        /* for (int i = 0; i < _sensors.Count; i++)
             if(_sensors[i] != null)

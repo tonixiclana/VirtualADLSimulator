@@ -324,7 +324,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &47459482
 GameObject:
@@ -918,7 +936,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &68467238
 GameObject:
@@ -1042,7 +1078,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &78680234
 GameObject:
@@ -1240,7 +1294,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &91099958
 GameObject:
@@ -1364,7 +1436,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &111694082
 GameObject:
@@ -1488,7 +1578,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &114708747
 GameObject:
@@ -1909,7 +2017,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &144078556
 GameObject:
@@ -2033,7 +2159,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &145815687
 GameObject:
@@ -2825,7 +2969,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &190026675
 GameObject:
@@ -3111,7 +3273,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &213205671 stripped
 GameObject:
@@ -3149,7 +3329,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!4 &213205676 stripped
 Transform:
@@ -3278,7 +3476,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &217262216
 GameObject:
@@ -3402,7 +3618,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &222527017
 GameObject:
@@ -3656,7 +3890,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &244689727
 GameObject:
@@ -3935,7 +4187,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &260043344
 GameObject:
@@ -4059,7 +4329,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &272439604
 GameObject:
@@ -4262,7 +4550,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &282865341
 GameObject:
@@ -4386,7 +4692,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &287914806
 GameObject:
@@ -4510,7 +4834,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &317764736
 GameObject:
@@ -4634,7 +4976,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &329703436
 GameObject:
@@ -4920,7 +5280,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &354993113
 GameObject:
@@ -5362,7 +5740,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &429099532
 GameObject:
@@ -5573,7 +5969,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &468019724
 GameObject:
@@ -5697,7 +6111,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &468462822
 GameObject:
@@ -5980,7 +6412,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &472634754
 GameObject:
@@ -6105,8 +6555,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 605899870}
+      - m_Target: {fileID: 2066805478}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 605899872}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 605899877}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6276,7 +6748,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &486443477
 GameObject:
@@ -6435,7 +6925,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &511358513
 GameObject:
@@ -7004,7 +7512,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &543047459
 GameObject:
@@ -7128,7 +7654,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &543538130
 GameObject:
@@ -7252,7 +7796,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &568470289
 GameObject:
@@ -7376,7 +7938,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &574054133
 GameObject:
@@ -7500,7 +8080,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &576234199
 GameObject:
@@ -7624,7 +8222,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1001 &579900886
 Prefab:
@@ -7854,13 +8470,38 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
---- !u!1 &605899870 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1069168855355372, guid: 92e4f040dd2fc304f8ddf444666461aa,
+--- !u!114 &605899872 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114377162179296496, guid: 92e4f040dd2fc304f8ddf444666461aa,
     type: 2}
   m_PrefabInternal: {fileID: 628562868}
+  m_Script: {fileID: 11500000, guid: 71f305981f3587144930fb0282480626, type: 3}
+--- !u!114 &605899877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114341359125971508, guid: 92e4f040dd2fc304f8ddf444666461aa,
+    type: 2}
+  m_PrefabInternal: {fileID: 628562868}
+  m_Script: {fileID: 11500000, guid: e2a41e6839395ca4dabb5990b4a5fc98, type: 3}
 --- !u!1 &608831493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: a462508ee3d3450448847a676c3fcab2,
@@ -7897,7 +8538,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &613096707
 GameObject:
@@ -8149,7 +8808,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1001 &628562868
 Prefab:
@@ -8246,6 +8923,106 @@ Prefab:
     - target: {fileID: 1166056327008864, guid: 92e4f040dd2fc304f8ddf444666461aa, type: 2}
       propertyPath: m_TagString
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: focalLength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: focalSize
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: aperture
+      value: 11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: highResolution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: blurSampleCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: nearBlur
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: dofHdrShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: dx11BokehShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114507915786666800, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: dx11BokehTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114519683721712176, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114519683721712176, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: shader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114519683721712176, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: blurAmount
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427840595841398, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427840595841398, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: bloomIntensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427840595841398, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: lensFlareVignetteMask
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427840595841398, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: lensFlareShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427840595841398, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: screenBlendShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427840595841398, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: blurAndFlaresShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427840595841398, guid: 92e4f040dd2fc304f8ddf444666461aa,
+        type: 2}
+      propertyPath: brightPassFilterShader
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92e4f040dd2fc304f8ddf444666461aa, type: 2}
@@ -8451,7 +9228,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &667324124
 GameObject:
@@ -8575,7 +9370,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &668439630
 GameObject:
@@ -8778,7 +9591,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &694578417
 GameObject:
@@ -8902,7 +9733,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &695352222
 GameObject:
@@ -9026,7 +9875,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &708448352
 GameObject:
@@ -9429,7 +10296,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1280226506}
         m_MethodName: QuitApp
         m_Mode: 1
         m_Arguments:
@@ -9600,7 +10467,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &751829635
 GameObject:
@@ -9760,7 +10645,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &762218000
 GameObject:
@@ -9903,7 +10806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &773190230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9935,7 +10838,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!65 &773190231
 BoxCollider:
@@ -10259,7 +11180,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &788043444
 GameObject:
@@ -10383,7 +11322,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &788381935
 GameObject:
@@ -10543,7 +11500,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &821583846
 GameObject:
@@ -10705,7 +11680,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &831369973
 GameObject:
@@ -11060,7 +12053,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &871723910
 GameObject:
@@ -11333,7 +12344,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &885788880
 GameObject:
@@ -11365,8 +12394,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.099999994, z: 1}
-  m_Children:
-  - {fileID: 1108729237}
+  m_Children: []
   m_Father: {fileID: 1487669732}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11458,7 +12486,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &898848759
 GameObject:
@@ -11833,7 +12879,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &928234421
 GameObject:
@@ -11957,7 +13021,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &935677978
 GameObject:
@@ -12081,7 +13163,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &942026917
 GameObject:
@@ -12378,7 +13478,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &957640430
 GameObject:
@@ -12502,7 +13620,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &966664975
 GameObject:
@@ -12626,7 +13762,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &988331950
 GameObject:
@@ -12750,7 +13904,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &997324630
 GameObject:
@@ -12953,7 +14125,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1011840384
 GameObject:
@@ -13256,7 +14446,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1027589488
 GameObject:
@@ -13380,7 +14588,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1031383219
 GameObject:
@@ -13504,7 +14730,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1040462113
 GameObject:
@@ -13628,7 +14872,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1040610255
 GameObject:
@@ -13891,7 +15153,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1071255224
 GameObject:
@@ -14015,7 +15295,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1071936649
 GameObject:
@@ -14139,7 +15437,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1095411672
 GameObject:
@@ -14263,7 +15579,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!4 &1099083050 stripped
 Transform:
@@ -14392,13 +15726,26 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
---- !u!4 &1108729237 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-    type: 2}
-  m_PrefabInternal: {fileID: 1750345813}
 --- !u!1 &1140684739
 GameObject:
   m_ObjectHideFlags: 0
@@ -14521,7 +15868,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1142985449
 GameObject:
@@ -14645,7 +16010,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1143526938
 GameObject:
@@ -14769,7 +16152,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1145252269
 GameObject:
@@ -14893,7 +16294,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1147542678
 GameObject:
@@ -15017,7 +16436,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1149556752
 GameObject:
@@ -15300,7 +16737,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1156379859
 GameObject:
@@ -15424,7 +16879,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1160485898
 GameObject:
@@ -15726,7 +17199,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1181300477
 GameObject:
@@ -15800,7 +17291,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1208033551
 GameObject:
@@ -15892,7 +17401,7 @@ MonoBehaviour:
           m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 605899870}
+      - m_Target: {fileID: 2066805478}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -15903,8 +17412,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1208033551}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 605899872}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 605899877}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16096,7 +17616,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1232913013
 GameObject:
@@ -16220,7 +17758,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1237607207
 GameObject:
@@ -16344,7 +17900,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1240974724 stripped
 GameObject:
@@ -16382,7 +17956,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1263903751
 GameObject:
@@ -16506,7 +18098,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1269323182
 GameObject:
@@ -16630,7 +18240,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1280226504
 GameObject:
@@ -16952,7 +18580,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1300911033
 GameObject:
@@ -17076,7 +18722,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1329287709
 GameObject:
@@ -17359,7 +19023,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1336634441
 GameObject:
@@ -17483,7 +19165,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1351976895
 GameObject:
@@ -17657,7 +19357,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1369745598
 GameObject:
@@ -18161,7 +19879,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1426197130
 GameObject:
@@ -18285,7 +20021,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1426236636
 GameObject:
@@ -18409,7 +20163,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1428735101
 GameObject:
@@ -18533,7 +20305,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1447687298
 GameObject:
@@ -18657,7 +20447,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1448912947
 GameObject:
@@ -18880,7 +20688,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1461839233
 GameObject:
@@ -19004,7 +20830,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1475139051
 GameObject:
@@ -19178,7 +21022,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1482828409
 GameObject:
@@ -19217,7 +21079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.8}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.000061}
+  m_AnchoredPosition: {x: 0, y: 1.0001221}
   m_SizeDelta: {x: 0, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482828411
@@ -19378,7 +21240,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1485723153
 GameObject:
@@ -19502,7 +21382,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1486276228
 GameObject:
@@ -19626,7 +21524,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1487669731
 GameObject:
@@ -19770,7 +21686,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1492431402
 GameObject:
@@ -19894,7 +21828,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1496102716
 GameObject:
@@ -20232,7 +22184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68962d1094586824f96187ae574b715a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  persistenceGameobjects: []
 --- !u!4 &1542243453
 Transform:
   m_ObjectHideFlags: 0
@@ -20368,7 +22319,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1552464234
 GameObject:
@@ -20492,7 +22461,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1567779685
 GameObject:
@@ -20616,7 +22603,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1576584061
 GameObject:
@@ -20740,7 +22745,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1577455817
 GameObject:
@@ -20886,7 +22909,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1001 &1616099642
 Prefab:
@@ -21076,7 +23117,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1630138676
 GameObject:
@@ -21200,7 +23259,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1631851595
 GameObject:
@@ -21553,7 +23630,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1653548410
 GameObject:
@@ -21805,7 +23900,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1699226096
 GameObject:
@@ -22008,7 +24121,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1715001545
 GameObject:
@@ -22211,7 +24342,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1719329677
 GameObject:
@@ -22439,7 +24588,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1730430563
 GameObject:
@@ -22563,7 +24730,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1731146065
 GameObject:
@@ -22766,374 +24951,26 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
---- !u!1001 &1750345813
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 885788881}
-    m_Modifications:
-    - target: {fileID: 23063392708288608, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23565696220350832, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23889451302935864, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23321120849917596, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23813558290545504, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23537244310111710, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23396886514426782, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23653622632068936, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23274670706614496, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23470922869331094, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23799296084332502, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23719170943886622, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23304683247316066, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23535228893139578, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23133711087490522, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23139845799055366, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7072302
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.00000019864702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000019857768
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7069834
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1173022770792938, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 33910777338577210, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33749217553145538, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33140030551815742, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33933204775657770, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33325129373831742, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33580636613861760, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33029798776787842, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33234743978816372, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33318386032643254, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33949584284824958, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33874433795733224, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33979301889361218, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33859331614359836, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33374919713195570, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33028884041614904, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33070120923422420, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64880852541609922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64729053537414402, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64318258017909218, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64797937843280872, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64495631554280490, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64854210453052778, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64228338558936092, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64116832235492140, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64667727491394218, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64900817391013220, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64666275713842374, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64643625906898416, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64501729393311828, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64045203290632130, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64750923789646292, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64041832536618956, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 23063392708288608, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23565696220350832, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23889451302935864, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23321120849917596, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23537244310111710, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23813558290545504, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23396886514426782, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23653622632068936, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23274670706614496, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23470922869331094, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23799296084332502, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23719170943886622, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23304683247316066, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23535228893139578, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23133711087490522, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23139845799055366, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1761307456
 GameObject:
   m_ObjectHideFlags: 0
@@ -23327,7 +25164,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1793874582
 GameObject:
@@ -23560,7 +25415,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1797754739
 GameObject:
@@ -23684,7 +25557,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1807073057
 GameObject:
@@ -24040,7 +25931,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1827296590
 GameObject:
@@ -24286,7 +26195,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1858810408
 GameObject:
@@ -24410,7 +26337,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1859886038
 GameObject:
@@ -24534,7 +26479,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1865054623
 GameObject:
@@ -24658,7 +26621,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1867058958
 GameObject:
@@ -24782,7 +26763,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1872709604
 GameObject:
@@ -24898,7 +26897,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1925047090 stripped
 GameObject:
@@ -24941,7 +26958,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1931078794
 GameObject:
@@ -25065,7 +27100,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1938205153
 GameObject:
@@ -25189,7 +27242,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1948344668
 GameObject:
@@ -25313,7 +27384,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1948952211
 GameObject:
@@ -25437,7 +27526,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &1958112480
 GameObject:
@@ -25561,7 +27668,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1001 &1964602097
 Prefab:
@@ -25570,91 +27695,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 773190234}
     m_Modifications:
-    - target: {fileID: 23063392708288608, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23565696220350832, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23889451302935864, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23321120849917596, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23813558290545504, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23537244310111710, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23396886514426782, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23653622632068936, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23274670706614496, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23470922869331094, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23799296084332502, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23719170943886622, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23304683247316066, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23535228893139578, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23133711087490522, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23139845799055366, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114793261390750644, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: persistenceInfo.persistenceScripts.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4032904007324922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.25
@@ -25687,250 +27727,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1173022770792938, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 33910777338577210, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33749217553145538, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33140030551815742, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33933204775657770, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33325129373831742, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33580636613861760, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33029798776787842, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33234743978816372, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33318386032643254, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33949584284824958, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33874433795733224, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33979301889361218, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33859331614359836, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33374919713195570, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33028884041614904, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 33070120923422420, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64880852541609922, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64729053537414402, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64318258017909218, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64797937843280872, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64495631554280490, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64854210453052778, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64228338558936092, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64116832235492140, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64667727491394218, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64900817391013220, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64666275713842374, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64643625906898416, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64501729393311828, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64045203290632130, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64750923789646292, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 64041832536618956, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
-    - target: {fileID: 23063392708288608, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23565696220350832, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23889451302935864, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23321120849917596, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23537244310111710, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23813558290545504, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23396886514426782, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23653622632068936, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23274670706614496, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23470922869331094, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23799296084332502, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23719170943886622, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23304683247316066, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23535228893139578, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23133711087490522, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
-    - target: {fileID: 23139845799055366, guid: 645bf33a1aa61cc4b8c01fa6a20c9617,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 645bf33a1aa61cc4b8c01fa6a20c9617, type: 2}
   m_IsPrefabAsset: 0
@@ -26129,7 +27925,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2016774720
 GameObject:
@@ -26253,7 +28067,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2023533597
 GameObject:
@@ -26377,7 +28209,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2024483235
 GameObject:
@@ -26501,7 +28351,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2050104150
 GameObject:
@@ -26625,7 +28493,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2066805478 stripped
 GameObject:
@@ -26769,7 +28655,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2097499387
 GameObject:
@@ -26972,7 +28876,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2107201149
 GameObject:
@@ -27169,7 +29091,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2115007773
 GameObject:
@@ -27293,7 +29233,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2131842923
 GameObject:
@@ -27417,7 +29375,25 @@ MonoBehaviour:
       enabled: 0
       typeCollider: 
       meshPath: 
-    persistenceScripts: []
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!1 &2134259161
 GameObject:

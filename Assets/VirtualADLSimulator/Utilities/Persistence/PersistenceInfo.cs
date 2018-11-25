@@ -11,5 +11,10 @@ public class PersistenceInfo
     public PersistenceMeshFilter persistenceMeshFilter;
     public PersistenceMeshRenderer persistenceMeshRenderer;
     public PersistenceCollider persistenceCollider;
-    public List<MonoBehaviour> persistenceScripts;
+    public PersistenceSensFloorUnderlaySfLr persistenceSensFloorUnderlaySfLr;
+    public PersistenceSensFloorUnderlayMatLr persistenceSensFloorUnderlayMatLr;
+    public PersistenceCapacitiveProximitySensor persistenceCapacitiveProximitySensor;
+
+
+    //public PersistenceSensFloorUnderlaySfLr persistenceSensFloorUnderlaySf;
 }

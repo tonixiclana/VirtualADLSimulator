@@ -112,8 +112,8 @@ public class SensorEditorUI : MonoBehaviour {
             editor.GetComponent<Button>().onClick.AddListener(
                 delegate {
                     Sensor s = addSensor(inEditGameobject, sensor);
-                    var registryActivityManager = FindObjectOfType<RegistryActivityManager>();
-                    registryActivityManager.addSensor(s);
+                    /*var registryActivityManager = FindObjectOfType<RegistryActivityManager>();
+                    registryActivityManager.addSensor(s);*/
                     editSensor(inEditGameobject.GetComponentInChildren<Sensor>());
                 });
 

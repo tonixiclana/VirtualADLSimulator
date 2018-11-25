@@ -661,7 +661,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -695,7 +696,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -729,7 +731,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -763,7 +766,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -797,7 +801,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -831,7 +836,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -865,7 +871,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -899,7 +906,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -933,7 +941,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -967,7 +976,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1001,7 +1011,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1035,7 +1046,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1069,7 +1081,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1103,7 +1116,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1137,7 +1151,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1171,7 +1186,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: a24037aa2dae5b145b048dcaf948032a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1197,112 +1213,112 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055517483595930}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33029798776787842
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1707893824161148}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33070120923422420
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1208045846725744}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33140030551815742
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1602407904565948}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33234743978816372
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641484794779044}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33318386032643254
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1530133971349946}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33325129373831742
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1759318693624732}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33374919713195570
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502067110009690}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33580636613861760
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1019527274032098}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33749217553145538
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1713692911530816}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33859331614359836
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1206486084277990}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33874433795733224
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863125022744708}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33910777338577210
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1415880847922936}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33933204775657770
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1779470377013282}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33949584284824958
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1807335435715818}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!33 &33979301889361218
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1856277040368348}
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64041832536618956
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1316,7 +1332,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64045203290632130
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1330,7 +1346,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64116832235492140
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1344,7 +1360,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64228338558936092
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1358,7 +1374,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64318258017909218
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1372,7 +1388,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64495631554280490
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1386,7 +1402,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64501729393311828
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1400,7 +1416,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64643625906898416
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1414,7 +1430,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64666275713842374
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1428,7 +1444,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64667727491394218
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1442,7 +1458,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64729053537414402
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1456,7 +1472,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64750923789646292
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1470,7 +1486,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64797937843280872
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1484,7 +1500,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64854210453052778
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1498,7 +1514,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64880852541609922
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1512,7 +1528,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!64 &64900817391013220
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1526,7 +1542,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 0f61bd7a3bde65b4d890f6e3f697fc14, type: 3}
 --- !u!114 &114042123990375916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1556,11 +1572,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1568,10 +1586,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114091074185417634
 MonoBehaviour:
@@ -1584,11 +1623,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1596,10 +1637,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114098519218021558
 MonoBehaviour:
@@ -1630,11 +1692,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1642,10 +1706,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114136430780063658
 MonoBehaviour:
@@ -1658,11 +1743,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1670,10 +1757,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114136991431700736
 MonoBehaviour:
@@ -1704,11 +1812,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1716,10 +1826,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114179647248583960
 MonoBehaviour:
@@ -1738,15 +1869,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
-  _capacitiveProximitySensors:
-  - {fileID: 114482046822144146}
-  - {fileID: 114609075127131356}
-  - {fileID: 114411987891850080}
-  - {fileID: 114924148843942948}
-  - {fileID: 114213596555172600}
-  - {fileID: 114404595707123514}
-  - {fileID: 114240702103900168}
-  - {fileID: 114939369902748758}
+  _capacitiveProximitySensors: []
   _values:
   - 0
   - 0
@@ -1821,11 +1944,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1833,10 +1958,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114269123681027438
 MonoBehaviour:
@@ -1867,11 +2013,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1879,10 +2027,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114339048270291766
 MonoBehaviour:
@@ -1967,11 +2136,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1979,10 +2150,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114446983319271434
 MonoBehaviour:
@@ -1995,11 +2187,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2007,10 +2201,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114482046822144146
 MonoBehaviour:
@@ -2041,11 +2256,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2053,10 +2270,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114512970673841856
 MonoBehaviour:
@@ -2069,11 +2307,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2081,10 +2321,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114513366808040524
 MonoBehaviour:
@@ -2104,8 +2365,8 @@ MonoBehaviour:
   _frecuency: 50
   _exportData: 1
   _exportDetailPosition: 0
-  _sensFloorUnderlayMatLr0: {fileID: 114685000135099196}
-  _sensFloorUnderlayMatLr1: {fileID: 114179647248583960}
+  _sensFloorUnderlayMatLr0: {fileID: 0}
+  _sensFloorUnderlayMatLr1: {fileID: 0}
 --- !u!114 &114539682194974616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2117,11 +2378,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2129,10 +2392,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114565747882581198
 MonoBehaviour:
@@ -2145,11 +2429,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2157,10 +2443,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114566474510101214
 MonoBehaviour:
@@ -2209,11 +2516,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2221,10 +2530,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114685000135099196
 MonoBehaviour:
@@ -2243,15 +2573,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
-  _capacitiveProximitySensors:
-  - {fileID: 114566474510101214}
-  - {fileID: 114395830853679780}
-  - {fileID: 114269123681027438}
-  - {fileID: 114042123990375916}
-  - {fileID: 114136991431700736}
-  - {fileID: 114098519218021558}
-  - {fileID: 114214266120286618}
-  - {fileID: 114339048270291766}
+  _capacitiveProximitySensors: []
   _values:
   - 0
   - 0
@@ -2272,11 +2594,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2284,10 +2608,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114793261390750644
 MonoBehaviour:
@@ -2300,11 +2645,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2312,10 +2659,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114840759422654720
 MonoBehaviour:
@@ -2328,11 +2696,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2340,10 +2710,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114861664539448302
 MonoBehaviour:
@@ -2356,11 +2747,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2368,10 +2761,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114885874348017826
 MonoBehaviour:
@@ -2384,11 +2798,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   persistenceInfo:
     id: 0
     name: 
     persistenceTransform:
       parentId: -1
+      layer: 0
       tag: 
       goPosition: {x: 0, y: 0, z: 0}
       goRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2396,10 +2812,31 @@ MonoBehaviour:
     persistenceMeshFilter:
       meshPath: 
     persistenceMeshRenderer:
+      enabled: 0
       mainMaterialPath: 
     persistenceCollider:
+      enabled: 0
       typeCollider: 
       meshPath: 
+    persistenceSensFloorUnderlaySfLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+      _exportDetailPosition: 0
+    persistenceSensFloorUnderlayMatLr:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
+    persistenceCapacitiveProximitySensor:
+      _code: 
+      _debug: 0
+      _activationThreshold: 0
+      _frecuency: 0
+      _exportData: 0
   loaded: 0
 --- !u!114 &114924148843942948
 MonoBehaviour:

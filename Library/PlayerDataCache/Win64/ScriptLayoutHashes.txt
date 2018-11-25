@@ -7,7 +7,7 @@ Assets/VirtualADLSimulator/Scenes/TestScene.unity
 Assets/VirtualADLSimulator/Scenes/EditMode.unity
 SceneListEnd?
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LevelReset
-155e0d1732e20a10909a0495ee611b74 Assembly-CSharp.dll:.PersistenceManager
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.PersistenceManager
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SceneAndURLLoader
 95c241412033d75da3b2703947abc86e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.ExtinguishableParticleSystem
@@ -346,7 +346,7 @@ dd223b2cbb523615eee8980d99d61ddd Assembly-CSharp.dll:.EnvMapAnimator
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 985c690377822f41654d5f68210987d9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.ColorCorrectionLookup
 f59ca19b2477a0f8545617e6a1dec4b4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.Tonemapping
-3cd3247799cf135af40f04be333a3bbe Assembly-CSharp.dll:.PersistenceGameobject
+7b93d45b9b62301300de552e7e6f7fd7 Assembly-CSharp.dll:.PersistenceGameobject
 65c943673eb3c10bb85d521b987bc659 Assembly-UnityScript-firstpass.dll:.RigidbodyWalkerPlus
 36c19c5f24be9b8c56b2443cd621b0b7 Assembly-CSharp.dll:.PopulateGrid
 695c9335429d4798b6f74ca73c042ff4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch

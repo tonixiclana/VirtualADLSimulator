@@ -27,7 +27,7 @@ public class SensFloorUnderlayMatLr : Sensor{
     /// List of capacitive 8 proximity sensors that has been attached with this dispositive
     /// </summary>
     [Tooltip("List of capacitive 8 proximity sensors that has been attached with this dispositive")]
-    public List<CapacitiveProximitySensor> _capacitiveProximitySensors = new List<CapacitiveProximitySensor>(8);
+    public List<CapacitiveProximitySensor> _capacitiveProximitySensors = new List<CapacitiveProximitySensor>();
 
     /// <summary>
     /// Array with the values of 8 proximity Sensors
@@ -40,7 +40,14 @@ public class SensFloorUnderlayMatLr : Sensor{
     /// </summary>
     private static int _id = 0;
 
+
     void Start () {
+
+        foreach (var sensor in GetComponentsInChildren<CapacitiveProximitySensor>())
+        {
+            _capacitiveProximitySensors.Add(sensor);
+        }
+
         //set the size of values array
         _values = new float[_capacitiveProximitySensors.Count];
 

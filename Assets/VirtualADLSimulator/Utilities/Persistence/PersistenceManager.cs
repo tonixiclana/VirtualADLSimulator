@@ -8,7 +8,7 @@ using UnityEngine;
 [System.Serializable]
 public class PersistenceManager : MonoBehaviour {
 
-    public List<PersistenceGameobject> persistenceGameobjects;
+    static public List<PersistenceGameobject> persistenceGameobjects;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +27,15 @@ public class PersistenceManager : MonoBehaviour {
         //persistenceGameobjects = GameObject.FindObjectsOfType<PersistenceGameobject>().Cast<PersistenceGameobject>().ToList();
 	}
 
+    public static PersistenceGameobject GetPersistenceGameobject(int id)
+    {
+        var persistenceGameobjects = GameObject.FindObjectsOfType<PersistenceGameobject>().Cast<PersistenceGameobject>().ToList();
+        var targetGameObject = persistenceGameobjects.Find(delegate (PersistenceGameobject pGm) { return pGm.id == id; });
+        return targetGameObject ;
+
+        
+    }
+
 
     public List<PersistenceGameobject> getPersistenceGameobjects()
     {
@@ -43,14 +52,20 @@ public class PersistenceManager : MonoBehaviour {
 
     public void saveGameObjectsInJSON(string path)
     {
-        if (File.Exists(path))
-            File.Delete(path);
+        if(!Directory.Exists(Application.persistentDataPath + "/savegames"))
+            Directory.CreateDirectory(Application.persistentDataPath + "/savegames");
+
+        var appPath = Application.persistentDataPath + "/savegames/" + path;
+
+        if (File.Exists(appPath))
+            File.Delete(appPath);
 
         string ret = "";
 
-        foreach (PersistenceGameobject gameObject in getPersistenceGameobjects())
+        foreach (PersistenceGameobject persistanceGameObject in getPersistenceGameobjects())
         {
-            var json = JsonUtility.ToJson(gameObject.persistenceInfo);
+            persistanceGameObject.updatePersistenceInfo();
+            var json = JsonUtility.ToJson(persistanceGameObject.persistenceInfo);
             
             Debug.Log(json);
             
@@ -63,13 +78,13 @@ public class PersistenceManager : MonoBehaviour {
                 ret +=  json + "\n";
              
         }
-        File.WriteAllText(path, ret);
+        File.WriteAllText(appPath, ret);
     }
 
     public void loadPersistenceGameobjects(string path)
     {
-        
-        string[] file = File.ReadAllLines(path);
+        var appPath = Application.persistentDataPath + "/savegames/" + path;
+        string[] file = File.ReadAllLines(appPath);
         List<GameObject> gmL = new List<GameObject>();
         
         foreach (var line in file)
