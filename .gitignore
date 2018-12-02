@@ -259,3 +259,8 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+
+Temp/UnityLockfile
+Library/PlayerDataCache/Win64/Data/resources.assets.resS
+Library/PlayerDataCache/Win64/Data/resources.assets.resS

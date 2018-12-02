@@ -18,6 +18,7 @@ using UnityEngine.UI;
 /// This class Represent a one file browser item that can be file or directory
 /// </summary>
 [AddComponentMenu("ADLVirtualSimulator/Utility/FileBrowserItem")]
+[RequireComponent(typeof(Button))]
 [System.Serializable]
 public class FileBrowserItem : MonoBehaviour {
 
@@ -26,6 +27,9 @@ public class FileBrowserItem : MonoBehaviour {
     /// </summary>
     [Tooltip("The icon of item")]
     public Image icon;
+
+
+
 
     /// <summary>
     /// The below text of the icon
@@ -51,8 +55,12 @@ public class FileBrowserItem : MonoBehaviour {
     [Tooltip("The filebrowser that manage this filebrowseritem")]
     public FileBrowser fileBrowser;
 
+
+
+
     // Use this for initialization
     void Start () {
+        
         if (isFolder)
         {
 

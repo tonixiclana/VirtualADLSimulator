@@ -43,22 +43,24 @@ public class SensFloorUnderlayMatLr : Sensor{
 
     void Start () {
 
-        foreach (var sensor in GetComponentsInChildren<CapacitiveProximitySensor>())
-        {
-            _capacitiveProximitySensors.Add(sensor);
-        }
+            foreach (var sensor in GetComponentsInChildren<CapacitiveProximitySensor>())
+            {
+                _capacitiveProximitySensors.Add(sensor);
+            }
 
-        //set the size of values array
-        _values = new float[_capacitiveProximitySensors.Count];
+            //set the size of values array
+            _values = new float[_capacitiveProximitySensors.Count];
 
-        // If the code is empty assign automatically a code name based in the convention, for SensFloorUnderlayMatLr sensor is: R{id}
-        if (_code == "")
-            _code = gameObject.name + _id++;
-    
-        //set the children's sensor with the same debug flag that this sensor
-        for (int i = 0; i < 8; i++)
-            if (_capacitiveProximitySensors[i]._debug != _debug)
-                _capacitiveProximitySensors[i]._debug = _debug;
+            // If the code is empty assign automatically a code name based in the convention, for SensFloorUnderlayMatLr sensor is: R{id}
+            if (_code == "")
+                _code = gameObject.name + _id++;
+
+            //set the children's sensor with the same debug flag that this sensor
+            for (int i = 0; i < _capacitiveProximitySensors.Count; i++)
+                if (_capacitiveProximitySensors[i]._debug != _debug)
+                    _capacitiveProximitySensors[i]._debug = _debug;
+
+        
     }
 	
 	void FixedUpdate () {

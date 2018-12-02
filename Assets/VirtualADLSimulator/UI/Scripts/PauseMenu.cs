@@ -54,6 +54,8 @@ public class PauseMenu : MonoBehaviour
             if (m_MenuToggle.isOn)
             {
                 MenuOn();
+                foreach (var s in FindObjectsOfType<SelectGameobjectCursor>())
+                    s.clearSelection();
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }

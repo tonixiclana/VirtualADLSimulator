@@ -89,12 +89,25 @@ public class SensFloorUnderlaySfLr : Sensor {
 
         FindObjectOfType<RegistryActivityManager>().addSensor(this);
 
+        while(_sensFloorUnderlayMatLr0 == null || _sensFloorUnderlayMatLr1 == null){
+            loadSensorsChildren();
+        }
+      }
+
+
+    public void loadSensorsChildren()
+    {
         _sensFloorUnderlayMatLr0 = GetComponentsInChildren<SensFloorUnderlayMatLr>()[0];
         _sensFloorUnderlayMatLr1 = GetComponentsInChildren<SensFloorUnderlayMatLr>()[1];
+
     }
+
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
+
         // Set the same debug flag in childrens
         if (_sensFloorUnderlayMatLr0._debug != _debug)
             _sensFloorUnderlayMatLr0._debug = _debug;

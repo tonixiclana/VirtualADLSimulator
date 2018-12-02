@@ -2,7 +2,7 @@
 using System.Collections;
 
 [System.Serializable]
-public class PersistenceSensor
+public class PersistenceSensor<T> : PersistenceComponent<T>
 {
     /// <summary>
     /// The identification code for this sensor

@@ -1,20 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 [System.Serializable]
 public class PersistenceInfo
 {
-    public int id;
+    public int id = -1;
     public string name;
-    public PersistenceTransform persistenceTransform;
-    public PersistenceMeshFilter persistenceMeshFilter;
-    public PersistenceMeshRenderer persistenceMeshRenderer;
-    public PersistenceCollider persistenceCollider;
-    public PersistenceSensFloorUnderlaySfLr persistenceSensFloorUnderlaySfLr;
-    public PersistenceSensFloorUnderlayMatLr persistenceSensFloorUnderlayMatLr;
-    public PersistenceCapacitiveProximitySensor persistenceCapacitiveProximitySensor;
 
+    [JsonProperty("serializableComponents")]
+    public List<object> serializableComponents = new List<object>();
 
-    //public PersistenceSensFloorUnderlaySfLr persistenceSensFloorUnderlaySf;
 }
