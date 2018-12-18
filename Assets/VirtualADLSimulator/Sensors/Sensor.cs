@@ -54,11 +54,20 @@ public class Sensor : MonoBehaviour, ISensor{
     [Tooltip("The frecuency velocity of read")]
     public float _frecuency = 1f;
 
+
+
     /// <summary>
     /// Flag to control the export data to registryActivityManager
     /// </summary>
     [Tooltip("Flag to control the export data to registryActivityManager")]
     public bool _exportData = true;
+
+
+    /// <summary>
+    /// List of tag gameobject that could attach this sensor
+    /// </summary>
+    [Tooltip("List of tag gameobject that could attach this sensor")]
+    public List<string> _tagsAvailable = new List<string>();
 
     /// <summary>
     /// The state flag value of this sensor

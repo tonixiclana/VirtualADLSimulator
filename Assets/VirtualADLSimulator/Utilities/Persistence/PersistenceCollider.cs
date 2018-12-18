@@ -11,6 +11,7 @@ public class PersistenceCollider : PersistenceComponent<PersistenceCollider>, IP
     public string typeCollider;
     public string meshPath;
     public bool convex;
+    public bool isTrigger;
 
     public void addComponentInGameobject(GameObject gm)
     {
@@ -20,12 +21,16 @@ public class PersistenceCollider : PersistenceComponent<PersistenceCollider>, IP
                 gm.AddComponent<MeshCollider>().sharedMesh = PersistenceGameobject.findObjectInResources<Mesh>(meshPath, "Meshes");
                 gm.GetComponent<MeshCollider>().enabled = enabled;
                 gm.GetComponent<MeshCollider>().convex = convex;
+                gm.GetComponent<MeshCollider>().isTrigger = isTrigger;
             }
             else
             if (typeCollider == "UnityEngine.BoxCollider")
+            {
                 gm.AddComponent<BoxCollider>().enabled = enabled;
+                gm.GetComponent<BoxCollider>().isTrigger = isTrigger;
+            }
 
-            
+
 
     }
 
@@ -36,6 +41,7 @@ public class PersistenceCollider : PersistenceComponent<PersistenceCollider>, IP
             
             enabled = gm.GetComponent<Collider>().enabled;
             typeCollider = gm.GetComponent<Collider>().GetType().ToString();
+            isTrigger = gm.GetComponent<Collider>().isTrigger;
             if (typeCollider == typeof(MeshCollider).ToString())
             {
                 meshPath = gm.GetComponent<MeshCollider>().sharedMesh.name;

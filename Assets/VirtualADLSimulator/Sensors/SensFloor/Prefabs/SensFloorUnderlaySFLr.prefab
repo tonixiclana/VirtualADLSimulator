@@ -64,7 +64,7 @@ GameObject:
   m_Layer: 2
   m_Name: SensFloorUnderlaySFLr
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1560,6 +1560,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114072282002393584
 MonoBehaviour:
@@ -1576,41 +1577,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114091074185417634
 MonoBehaviour:
@@ -1627,41 +1593,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114098519218021558
 MonoBehaviour:
@@ -1680,6 +1611,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114108562298259306
 MonoBehaviour:
@@ -1696,41 +1628,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114136430780063658
 MonoBehaviour:
@@ -1747,41 +1644,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114136991431700736
 MonoBehaviour:
@@ -1800,6 +1662,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114176445932294204
 MonoBehaviour:
@@ -1816,41 +1679,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114179647248583960
 MonoBehaviour:
@@ -1869,6 +1697,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _capacitiveProximitySensors: []
   _values:
   - 0
@@ -1896,6 +1725,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114214266120286618
 MonoBehaviour:
@@ -1914,6 +1744,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114240702103900168
 MonoBehaviour:
@@ -1932,6 +1763,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114243879248809060
 MonoBehaviour:
@@ -1948,41 +1780,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114269123681027438
 MonoBehaviour:
@@ -2001,6 +1798,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114283751840373954
 MonoBehaviour:
@@ -2017,41 +1815,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114339048270291766
 MonoBehaviour:
@@ -2070,6 +1833,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114395830853679780
 MonoBehaviour:
@@ -2088,6 +1852,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114404595707123514
 MonoBehaviour:
@@ -2106,6 +1871,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114411987891850080
 MonoBehaviour:
@@ -2124,6 +1890,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114412764986017660
 MonoBehaviour:
@@ -2140,41 +1907,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114446983319271434
 MonoBehaviour:
@@ -2191,41 +1923,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114482046822144146
 MonoBehaviour:
@@ -2244,6 +1941,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114485661276013642
 MonoBehaviour:
@@ -2260,41 +1958,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114512970673841856
 MonoBehaviour:
@@ -2311,41 +1974,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114513366808040524
 MonoBehaviour:
@@ -2364,6 +1992,8 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 1
+  _tagsAvailable:
+  - Floor
   _exportDetailPosition: 0
   _sensFloorUnderlayMatLr0: {fileID: 0}
   _sensFloorUnderlayMatLr1: {fileID: 0}
@@ -2382,41 +2012,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114565747882581198
 MonoBehaviour:
@@ -2433,41 +2028,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114566474510101214
 MonoBehaviour:
@@ -2486,6 +2046,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114609075127131356
 MonoBehaviour:
@@ -2504,6 +2065,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114619909077458378
 MonoBehaviour:
@@ -2520,41 +2082,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114685000135099196
 MonoBehaviour:
@@ -2573,6 +2100,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _capacitiveProximitySensors: []
   _values:
   - 0
@@ -2598,41 +2126,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114793261390750644
 MonoBehaviour:
@@ -2649,41 +2142,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114840759422654720
 MonoBehaviour:
@@ -2700,41 +2158,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114861664539448302
 MonoBehaviour:
@@ -2751,41 +2174,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114885874348017826
 MonoBehaviour:
@@ -2802,41 +2190,6 @@ MonoBehaviour:
   persistenceInfo:
     id: 0
     name: 
-    persistenceTransform:
-      parentId: -1
-      layer: 0
-      tag: 
-      goPosition: {x: 0, y: 0, z: 0}
-      goRotation: {x: 0, y: 0, z: 0, w: 0}
-      goScale: {x: 0, y: 0, z: 0}
-    persistenceMeshFilter:
-      meshPath: 
-    persistenceMeshRenderer:
-      enabled: 0
-      mainMaterialPath: 
-    persistenceCollider:
-      enabled: 0
-      typeCollider: 
-      meshPath: 
-    persistenceSensFloorUnderlaySfLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-      _exportDetailPosition: 0
-    persistenceSensFloorUnderlayMatLr:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
-    persistenceCapacitiveProximitySensor:
-      _code: 
-      _debug: 0
-      _activationThreshold: 0
-      _frecuency: 0
-      _exportData: 0
   loaded: 0
 --- !u!114 &114924148843942948
 MonoBehaviour:
@@ -2855,6 +2208,7 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []
 --- !u!114 &114939369902748758
 MonoBehaviour:
@@ -2873,4 +2227,5 @@ MonoBehaviour:
   _activationThreshold: 0.1
   _frecuency: 50
   _exportData: 0
+  _tagsAvailable: []
   _gameObjectsInContact: []

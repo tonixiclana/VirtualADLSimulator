@@ -45,14 +45,13 @@ public class SensorEditorUI : MonoBehaviour {
     void FixedUpdate () {
 
         editSelectedGameobject();
-        
-        
-                
+               
 	}
 
     private Sensor addSensor(GameObject gm,  Sensor sensor)
     {
         Sensor ret = Instantiate(sensor.gameObject, gm.transform).GetComponent<Sensor>();
+ 
         return ret;
     }
 
@@ -107,19 +106,22 @@ public class SensorEditorUI : MonoBehaviour {
             editSensorLayout.SetActive(true);
         foreach (var sensor in availableSensors)
         {
-            GameObject editor = Instantiate(addSensorButton.gameObject, sensorPropertiesContent.transform);
+            if (sensor._tagsAvailable.Contains(inEditGameobject.tag))
+            {
+                GameObject editor = Instantiate(addSensorButton.gameObject, sensorPropertiesContent.transform);
 
-            editor.GetComponent<Button>().onClick.AddListener(
-                delegate {
-                    Sensor s = addSensor(inEditGameobject, sensor);
+                editor.GetComponent<Button>().onClick.AddListener(
+                    delegate {
+                        Sensor s = addSensor(inEditGameobject, sensor);
                     /*var registryActivityManager = FindObjectOfType<RegistryActivityManager>();
                     registryActivityManager.addSensor(s);*/
-                    editSensor(inEditGameobject.GetComponentInChildren<Sensor>());
-                });
+                        editSensor(inEditGameobject.GetComponentInChildren<Sensor>());
+                    });
 
-            editor.GetComponentInChildren<Text>().text = sensor.GetType().Name;
+                editor.GetComponentInChildren<Text>().text = sensor.GetType().Name;
 
-            sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(editor);
+                sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(editor);
+            }   
         }
     }
 

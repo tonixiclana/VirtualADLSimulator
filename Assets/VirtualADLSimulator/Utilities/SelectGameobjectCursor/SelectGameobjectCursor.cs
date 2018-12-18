@@ -11,6 +11,7 @@
 using cakeslice;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -47,6 +48,15 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     public List<string> layers;
 
     /// <summary>
+    /// the layers that apply in the filter
+    /// </summary>
+    [Tooltip("The layers that apply in the filter")]
+    public List<string> blockLayers;
+
+  
+
+
+    /// <summary>
     /// The material that contains the highLighing, that allow change the main texture
     /// </summary>
     [Tooltip("The material that contains the highLighing, that allow change the main texture")]
@@ -57,6 +67,23 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     /// </summary>
     [Tooltip("The list with the gameobjects selected with click over the gameobject")]
     public List<GameObject> gameObjectsSelected = new List<GameObject>();
+
+    /// <summary>
+    /// Color in hover
+    /// </summary>
+    [Tooltip("The color of the highlghing in hover")]
+    public int colorHover;
+
+    /// <summary>
+    /// Color in select
+    /// </summary>
+    [Tooltip("The color of the highlghing in select")]
+    public int colorSelect;
+
+    /// <summary>
+    /// Previus State of list
+    /// </summary>
+    public List<string> previousLayerList;
 
     /// <summary>
     /// The original material of selected gameobject, needed to remove the highlighing
@@ -86,16 +113,67 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
 	// Use this for initialization
 	void Start () {
 
-
-	}
+        blockLayers = new List<string>(layers);
+    }
 
     bool isTargetLayer(List<string> layers)
     {
         foreach (var l in layers)
-            if (this.layers.Contains(l))
+            if (this.blockLayers.Contains(l))
                 return true;
 
         return false;
+    }
+
+
+    void highlighingHover(bool isHit)
+    {
+        //Highlighing in hover
+        if (!isHit)
+        {
+            //If previusly had a selectedGameobject hover with the target layer remove the highlighing
+            if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers))
+                if (!gameObjectsSelected.Contains(inCursorGameobject))
+                    inCursorGameobject.GetComponent<Outline>().enabled = false;
+
+            //Put the selectedgameobject at null
+            inCursorGameobject = null;
+        }
+        else
+        {
+            //If the hit gameobject is diferent at the last selectedGameobject
+            if (inCursorGameobject != hit.transform.gameObject)
+            {
+                //If previusly had a selectedGameobject hover with the target layer remove the highlighing
+                if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>()
+                    && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers)
+                     && !gameObjectsSelected.Contains(inCursorGameobject))
+                {
+                    if (inCursorGameobject.GetComponent<Outline>().color == inCursorGameobject.GetComponent<Outline>().previousColor)
+                        inCursorGameobject.GetComponent<Outline>().enabled = false;
+                    
+                    else
+                        inCursorGameobject.GetComponent<Outline>().resetPreviousColor();
+                    
+
+                }
+
+                //set the actual selectedGameobject
+                if (hit.transform.gameObject.GetComponent<Outline>() != null && isTargetLayer(hit.transform.gameObject.GetComponent<Outline>().layers))
+                    inCursorGameobject = hit.transform.gameObject;
+                else
+                    inCursorGameobject = null;
+
+                //If the layer is the target layer
+                if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null
+                    && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers)
+                    && !gameObjectsSelected.Contains(inCursorGameobject))
+                {
+                    inCursorGameobject.GetComponent<Outline>().changeColor(colorHover);
+                    inCursorGameobject.GetComponent<Outline>().enabled = true;
+                }
+            }
+        }
     }
 
     void Update () {
@@ -106,57 +184,7 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
         ///if the timescale is 0 (pause the fixedupdate) dont work
         if(Time.timeScale != 0)
         {
-            //Highlighing in hover
-            if (!isHit)
-            {
-                //If previusly had a selectedGameobject hover with the target layer remove the highlighing
-                if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers) )
-                    if(!gameObjectsSelected.Contains(inCursorGameobject))
-                        inCursorGameobject.GetComponent<Outline>().enabled = false;
-                    //selectedGameObject.GetComponent<MeshRenderer>().material = originalMaterialSelectedGameObject;
-
-                //Put the selectedgameobject at null
-                inCursorGameobject = null;
-            }
-            else
-            {
-                //If the hit gameobject is diferent at the last selectedGameobject
-                if (inCursorGameobject != hit.transform.gameObject)
-                {
-                    //If previusly had a selectedGameobject hover with the target layer remove the highlighing
-                    if (inCursorGameobject != null  && inCursorGameobject.GetComponent<Outline>() 
-                        && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers) 
-                         && !gameObjectsSelected.Contains(inCursorGameobject))
-                    {
-                        //selectedGameObject.GetComponent<MeshRenderer>().material = originalMaterialSelectedGameObject;
-                        inCursorGameobject.GetComponent<Outline>().enabled = false;
-
-                    }
-
-                    //set the actual selectedGameobject
-                    if (hit.transform.gameObject.GetComponent<Outline>() != null && isTargetLayer(hit.transform.gameObject.GetComponent<Outline>().layers))
-                        inCursorGameobject = hit.transform.gameObject;
-                    else
-                        inCursorGameobject = null;
-
-                    //If the layer is the target layer
-                    if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null
-                        && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers) 
-                        && !gameObjectsSelected.Contains(inCursorGameobject))
-                    {
-                        inCursorGameobject.GetComponent<Outline>().enabled = true;
-/*
-                        //Create a material with the highlighing
-                        Material material = new Material(highLighingMaterial);
-                        //Set the main texture with the selected gameobject main texture
-                        material.mainTexture = selectedGameObject.GetComponent<MeshRenderer>().material.mainTexture;
-                        //Store the original material
-                        originalMaterialSelectedGameObject = selectedGameObject.GetComponent<MeshRenderer>().material;
-                        //Set the highlighing material
-                        selectedGameObject.GetComponent<MeshRenderer>().material = material;*/
-                    }
-                }
-            }
+            highlighingHover(isHit);
 
             doAction();
 
@@ -187,27 +215,142 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     /// </summary>
     public void clearSelection()
     {
-        /*
-        //Each pair of map put the original material
-        foreach(var pair in gameObjectMaterialMap)
-            if(pair.Key != null)
-                pair.Key.GetComponent<MeshRenderer>().material = pair.Value;
 
-        if(selectedGameObject != null && selectedGameObject.GetComponent<MeshRenderer>() != null)
-            selectedGameObject.GetComponent<MeshRenderer>().material = originalMaterialSelectedGameObject;
-            */
         if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null)
-            inCursorGameobject.GetComponent<Outline>().enabled = false;
+            if (inCursorGameobject.GetComponent<Outline>().previousColor == colorHover)
+            {
+                inCursorGameobject.GetComponent<Outline>().enabled = false;
+                inCursorGameobject.GetComponent<Outline>().color = inCursorGameobject.GetComponent<Outline>().previousColor;
+            }
+                
+            else
+            {
+                int c = inCursorGameobject.GetComponent<Outline>().color;
+                inCursorGameobject.GetComponent<Outline>().color = inCursorGameobject.GetComponent<Outline>().previousColor;
+                inCursorGameobject.GetComponent<Outline>().previousColor = c;
+            }
 
         foreach (var gm in gameObjectsSelected)
             if (gm != null && gm.GetComponent<MeshRenderer>() != null)
-                gm.GetComponent<Outline>().enabled = false;
-        //selectedGameObject.GetComponent<MeshRenderer>().material = originalMaterialSelectedGameObject;
+                if (gm.GetComponent<Outline>().previousColor == colorHover)
+                {
+                    gm.GetComponent<Outline>().enabled = false;
+                    gm.GetComponent<Outline>().color = gm.GetComponent<Outline>().previousColor;
+
+                }
+                else
+                    gm.GetComponent<Outline>().color = gm.GetComponent<Outline>().previousColor;
 
         //Clear the map and the list
         gameObjectMaterialMap.Clear();
         gameObjectsSelected.Clear();
     }
+
+
+    public void highlighingByTag(string tag, int color = 2)
+    {
+        foreach (var gm in GameObject.FindGameObjectsWithTag(tag))
+            highlighingGameobject(gm, color, tag);
+    }
+
+    public void highlighingAndBlockByTag(string tag)
+    {
+        clearSelection();
+        foreach (var gm in GameObject.FindGameObjectsWithTag(tag))
+            highlighingGameobject(gm, 2, tag);
+
+        blockLayer(tag);
+    }
+
+    public void highlighingAndBlockByTag(string tag, int color = 2)
+    {
+        clearSelection();
+        foreach (var gm in GameObject.FindGameObjectsWithTag(tag))
+            highlighingGameobject(gm, color, tag);
+
+        blockLayer(tag);
+    }
+
+    public void clearAllHighlighing()
+    {
+        IEnumerable<string> diferentsLayers = layers.Except(blockLayers);
+
+        if (diferentsLayers.Count() == 0)
+            foreach(var i in blockLayers)
+            {
+                highlighingByTag(i);
+            }
+    }
+
+
+    void highlighingGameobject(GameObject gm, int color = 0, string layer = null)
+    {
+
+        if (gm.GetComponent<Outline>() == null)
+        {
+            gm.AddComponent<Outline>().color = color;
+            if (layer != null)
+                gm.GetComponent<Outline>().layers.Add(layer);
+        }
+        else
+        {
+            if (!gm.GetComponent<Outline>().enabled)
+            {
+                gm.GetComponent<Outline>().enabled = true;
+                gm.GetComponent<Outline>().color = color;
+            }
+            else
+            {
+                gm.GetComponent<Outline>().enabled = false;
+                gm.GetComponent<Outline>().color = colorHover;
+                gm.GetComponent<Outline>().previousColor = colorHover;
+
+                //gm.GetComponent<Outline>().color = gm.GetComponent<Outline>().previousColor;
+            }
+
+        }
+    }
+
+    public void blockByTag(string tag)
+    {
+        blockLayer(tag);
+    }
+
+    public void blockLayer(string layer)
+    {
+        //blockLayers.Clear();
+        IEnumerable<string> diferentsLayers = layers.Except(blockLayers);
+
+        if (diferentsLayers.Count() == 0)
+            blockLayers.Clear();
+     
+        if (!blockLayers.Contains(layer))
+            blockLayers.Add(layer);
+        else
+        {
+            blockLayers.Remove(layer);
+            if(blockLayers.Count() == 0)
+                foreach(var i in layers)
+                    blockLayers.Add(i);
+
+        }
+    }
+
+    public void unlockAllLayers()
+    {
+        IEnumerable<string> diferentsLayers = layers.Except(blockLayers);
+
+        if (diferentsLayers.Count() != 0)
+        {
+            for(int i = 0; i < blockLayers.Count(); i++)
+                highlighingAndBlockByTag(blockLayers[i]);
+
+            blockLayers.Clear();
+            foreach (var i in layers)
+                blockLayers.Add(i);
+        }
+    }
+
 
     public static void clearAllSelections()
     {
@@ -222,7 +365,11 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
         if (isTargetLayer(gm.GetComponent<Outline>().layers))
         {
             //highLighingGameObjectMultiple(gm);
-            gm.GetComponent<Outline>().enabled = false;
+            if(gm.GetComponent<Outline>().color == gm.GetComponent<Outline>().previousColor)
+                gm.GetComponent<Outline>().enabled = false;
+            else
+                gm.GetComponent<Outline>().color = gm.GetComponent<Outline>().previousColor;
+
             gameObjectsSelected.Remove(gm);
         }
 
@@ -248,13 +395,25 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
 
                 //Highlighing the gameobject
                 //highLighingGameObjectMultiple(selectedGameObject);
+                int c = inCursorGameobject.GetComponent<Outline>().previousColor;
+                inCursorGameobject.GetComponent<Outline>().previousColor = inCursorGameobject.GetComponent<Outline>().color;
+                inCursorGameobject.GetComponent<Outline>().color = colorSelect;
                 inCursorGameobject.GetComponent<Outline>().enabled = true;
             }
             else
             {
                 //Quit the highlighing at gameobject and remove of the list
                 //highLighingGameObjectMultiple(selectedGameObject);
-                inCursorGameobject.GetComponent<Outline>().enabled = false;
+                if (inCursorGameobject.GetComponent<Outline>().color == inCursorGameobject.GetComponent<Outline>().previousColor)
+                    inCursorGameobject.GetComponent<Outline>().enabled = false;
+                else
+                {
+                    int c = inCursorGameobject.GetComponent<Outline>().previousColor;
+                    inCursorGameobject.GetComponent<Outline>().previousColor = inCursorGameobject.GetComponent<Outline>().color;
+                    inCursorGameobject.GetComponent<Outline>().color = c;
+                }
+
+
                 gameObjectsSelected.Remove(inCursorGameobject);
             }
         }

@@ -86,8 +86,8 @@ public class TransformActuator :  Actuator<TransformActuator>, IActuator {
 
     // Use this for initialization
     void Start () {
-        originalPosition = (isLocalPosition) ? transform.localPosition : transform.position;
-        originalRotation = (isLocalRotation) ? transform.localEulerAngles : transform.eulerAngles;
+        //originalPosition = (isLocalPosition) ? transform.localPosition : transform.position;
+        //originalRotation = (isLocalRotation) ? transform.localEulerAngles : transform.eulerAngles;
 
         
 
@@ -111,6 +111,10 @@ public class MyScriptEditor : Editor
         var myScript = target as TransformActuator;
 
         bool setTargetPosition = false;
+        bool setOriginalPosition = false;
+
+        bool setTargetRotation = false;
+        bool setOriginalRotation = false;
 
         if (myScript.enableRotationActuator || myScript.enablePositionActuator)
         {
@@ -127,11 +131,19 @@ public class MyScriptEditor : Editor
 
         if (myScript.enableRotationActuator)
         {
+            setOriginalRotation = GUILayout.Toggle(setTargetRotation, "Set original current rotation");
+            setTargetRotation = GUILayout.Toggle(setTargetRotation, "Set target current Rotation");
+
+            myScript.originalRotation = (setOriginalRotation) ? myScript.transform.localRotation.eulerAngles : myScript.originalRotation;
+            myScript.targetRotation = (setTargetRotation) ? myScript.transform.localRotation.eulerAngles : myScript.targetRotation;
+
             myScript.isLocalRotation = GUILayout.Toggle(myScript.isLocalRotation, "Actuate in local rotation coordinates?");
             myScript.rotationDegreesPerSecond = EditorGUILayout.Slider("Degrees per second", myScript.rotationDegreesPerSecond, 0, 360);
-            myScript.targetRotation.x = EditorGUILayout.Slider("Target rotation x: ", myScript.targetRotation.x, -360, 360);
-            myScript.targetRotation.y = EditorGUILayout.Slider("Target rotation y: ", myScript.targetRotation.y, -360, 360);
-            myScript.targetRotation.z = EditorGUILayout.Slider("Target rotation z: ", myScript.targetRotation.z, -360, 360);
+
+            myScript.originalRotation = EditorGUILayout.Vector3Field("Original rotation: ", myScript.originalRotation);
+
+            myScript.targetRotation = EditorGUILayout.Vector3Field("Target rotation: ", myScript.targetRotation);
+   
         }
 
         GUILayout.Space(10);
@@ -141,24 +153,18 @@ public class MyScriptEditor : Editor
 
         if (myScript.enablePositionActuator)
         {
-            setTargetPosition = GUILayout.Toggle(setTargetPosition, "Get current position");
-            if (!setTargetPosition)
-            {
-                myScript.isLocalPosition = GUILayout.Toggle(myScript.isLocalPosition, "Actuate in local position coordinates?");
-                myScript.positionUnitsPerSecond = EditorGUILayout.Slider("Position units per second", myScript.positionUnitsPerSecond, 0, 50);
-                myScript.targetPosition.x = EditorGUILayout.Slider("Target position x: ", myScript.targetPosition.x, -360, 360);
-                myScript.targetPosition.y = EditorGUILayout.Slider("Target position y: ", myScript.targetPosition.y, -360, 360);
-                myScript.targetPosition.z = EditorGUILayout.Slider("Target position z: ", myScript.targetPosition.z, -360, 360);
-            }
-            else
-            {
-                myScript.targetPosition = myScript.transform.localPosition;
-                myScript.isLocalPosition = GUILayout.Toggle(myScript.isLocalPosition, "Actuate in local position coordinates?");
-                myScript.positionUnitsPerSecond = EditorGUILayout.Slider("Position units per second", myScript.positionUnitsPerSecond, 0, 50);
-                myScript.targetPosition.x = EditorGUILayout.Slider("Target position x: ", myScript.targetPosition.x, -360, 360);
-                myScript.targetPosition.y = EditorGUILayout.Slider("Target position y: ", myScript.targetPosition.y, -360, 360);
-                myScript.targetPosition.z = EditorGUILayout.Slider("Target position z: ", myScript.targetPosition.z, -360, 360);
-            }
+            setOriginalPosition = GUILayout.Toggle(setTargetPosition, "Set original current position");
+            setTargetPosition = GUILayout.Toggle(setTargetPosition, "Set target current position");
+
+            myScript.originalPosition = (setOriginalPosition) ? myScript.transform.localPosition : myScript.originalPosition;
+            myScript.targetPosition = (setTargetPosition)? myScript.transform.localPosition : myScript.targetPosition;
+
+            myScript.isLocalPosition = GUILayout.Toggle(myScript.isLocalPosition, "Actuate in local position coordinates?");
+            myScript.positionUnitsPerSecond = EditorGUILayout.Slider("Position units per second", myScript.positionUnitsPerSecond, 0, 50);
+
+            myScript.originalPosition = EditorGUILayout.Vector3Field("Original Position: ", myScript.originalPosition);
+            myScript.targetPosition = EditorGUILayout.Vector3Field("Target Position: ", myScript.targetPosition);
+            
 
         }
 

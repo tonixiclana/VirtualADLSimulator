@@ -34,6 +34,7 @@ public class CapacitiveProximitySensor : Sensor{
 
 
     void Start () {
+        
         // If the code is empty assign automatically a code name based in the convention, for capacitive Proximity sensor is: CPS{id}
         if (_code == "")
             _code = "CPS" + _id++;

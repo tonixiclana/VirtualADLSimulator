@@ -106,7 +106,7 @@ public class RegistryActivityManager : MonoBehaviour {
                 + _nameOfActivityInput.text
                 + "\nDescription Of Activity: \t"
                 + _descriptionOfActivityInput.text
-                + "Activity Start\n"
+                + "\nActivity Start\n"
                 , _fileNameInput.text
 
             );
@@ -192,11 +192,7 @@ public class RegistryActivityManager : MonoBehaviour {
         {
 
             _fileBrowser.editFileInActualPath(System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss.ffffff") + "\t" + eventNotification, _fileNameInput.text);
-            /*
-            //Write some text to the test.txt file
-            StreamWriter writer = new StreamWriter(_outPutFilePath, true);
-            writer.WriteLine();
-            writer.Close();*/
+
         }
     }
 }

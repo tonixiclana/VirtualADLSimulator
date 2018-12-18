@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/VirtualADLSimulator/Scenes/TestScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/VirtualADLSimulator/Scenes/EditMode.unity
     guid: 8e74c6d5a7089ee4fb9d715254344070
   m_configObjects: {}

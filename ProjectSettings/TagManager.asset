@@ -9,6 +9,9 @@ TagManager:
   - Floor
   - Sensor
   - Door
+  - Drawer
+  - Tap
+  - DoorFrame
   layers:
   - Default
   - TransparentFX

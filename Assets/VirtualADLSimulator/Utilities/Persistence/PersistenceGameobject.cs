@@ -82,6 +82,9 @@ public class PersistenceGameobject : MonoBehaviour
 
             if (jObj.GetValue("Type").ToString() == typeof(PersistenceTransformActuator).ToString())
                 jObj.ToObject<PersistenceTransformActuator>().addComponentInGameobject(gameObject);
+
+            if (jObj.GetValue("Type").ToString() == typeof(PersistenceContactSensor).ToString())
+                jObj.ToObject<PersistenceContactSensor>().addComponentInGameobject(gameObject);
         }
     }
 
@@ -173,6 +176,12 @@ public class PersistenceGameobject : MonoBehaviour
                     PersistenceTransformActuator persistenceTransformActuator = new PersistenceTransformActuator();
                     persistenceTransformActuator.loadComponentInfo(gameObject);
                     persistenceInfo.serializableComponents.Add(persistenceTransformActuator);
+                    break;
+
+                case "ContactSensor":
+                    PersistenceContactSensor persistenceContactSensor = new PersistenceContactSensor();
+                    persistenceContactSensor.loadComponentInfo(gameObject);
+                    persistenceInfo.serializableComponents.Add(persistenceContactSensor);
                     break;
             } 
         }

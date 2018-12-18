@@ -113,6 +113,7 @@
     <Compile Include="Assets\VirtualADLSimulator\Characters\Remy\Scripts\HandDown.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Characters\Remy\Scripts\PlayerController.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Characters\Remy\Scripts\RemyCollider.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Sensors\ContactSensor\ContactSensor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Sensors\ISensor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Sensors\RegistryActivityManager.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\CapacitiveProximitySensor.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Assets\VirtualADLSimulator\Sensors\Sensor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Sensors\SensorEditor\scripts\GenericPropertyEditor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Sensors\SensorEditor\scripts\SensorEditorUI.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\UI\Scripts\CreateElementInScene.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\VirtualADLSimulator\UI\Scripts\PauseMenu.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Actuator\ActuatorTrigger.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Actuator\IActuator.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Actuator\TransformActuator.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Utilities\DayNightSystem\DayNight.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\FileBrowser.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\FileBrowserItem.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\PopulateGrid.cs" />
@@ -143,6 +146,7 @@
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCapacitiveProximitySensor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCollider.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceComponent.cs" />
+    <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceContactSensor.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceGameobject.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceInfo.cs" />
     <Compile Include="Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceManager.cs" />
@@ -167,6 +171,7 @@
     <None Include="Assets\VirtualADLSimulator\Utilities\SelectGameobjectCursor\UniformOutline.shader" />
     <None Include="Assets\OutlineEffect\Resources\OutlineBufferShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\VirtualADLSimulator\Utilities\Persistence\Resources\DefaultSavegames\CEATIC_Default.txt" />
     <None Include="Assets\VirtualADLSimulator\Utilities\SelectGameobjectCursor\OutlinedDiffuseShaderFixed\CustomOutline.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Real Materials\Showcase\Sounds\Seisemic - license.txt" />
@@ -184,7 +189,6 @@
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Real Materials\Showcase\Sounds\Waves background - license.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\VirtualADLSimulator\Utilities\Persistence\Resources\DefaultSavegames\CEATIC_Default.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

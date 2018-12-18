@@ -24,6 +24,9 @@ public class PersistenceMeshFilter : PersistenceComponent<PersistenceMeshFilter>
 
     public PersistenceMeshFilter loadComponentInfo(GameObject gm)
     {
+        if(gm.GetComponent<MeshFilter>().sharedMesh == null)
+            Debug.Log(gm.name);
+
         meshPath = gm.GetComponent<MeshFilter>().sharedMesh.name;
         return this;        
     }

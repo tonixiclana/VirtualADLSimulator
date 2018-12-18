@@ -35,6 +35,7 @@ namespace cakeslice
         public Renderer Renderer { get; private set; }
 
         public int color;
+        public int previousColor;
         public bool eraseRenderer;
         public List<string> layers = new List<string>();
 
@@ -48,10 +49,22 @@ namespace cakeslice
         private void Awake()
         {
             Renderer = GetComponent<Renderer>();
+            previousColor = color;
  
         }
 
+        public void changeColor(int color)
+        {
+            previousColor = this.color;
+            this.color = color;
+        }
 
+        public void resetPreviousColor()
+        {
+            int c = color;
+            color = previousColor;
+            previousColor = c;
+        }
 
         void OnEnable()
         {
