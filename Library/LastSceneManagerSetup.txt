@@ -1,4 +1,7 @@
 sceneSetups:
-- path: Assets/VirtualADLSimulator/Scenes/TestScene.unity
+- path: Assets/VirtualADLSimulator/Scenes/MainMenu.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/VirtualADLSimulator/Scenes/MainScene.unity
   isLoaded: 1
   isActive: 1

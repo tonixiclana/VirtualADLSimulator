@@ -14,11 +14,11 @@ public class PersistenceSensFloorUnderlaySfLr : PersistenceSensor<PersistenceSen
         if (_code != "")
         {
             gm.AddComponent<SensFloorUnderlaySfLr>();
-            gm.GetComponent<SensFloorUnderlaySfLr>()._code = _code;
-            gm.GetComponent<SensFloorUnderlaySfLr>()._debug = _debug;
-            gm.GetComponent<SensFloorUnderlaySfLr>()._exportData = _exportData;
-            gm.GetComponent<SensFloorUnderlaySfLr>()._exportDetailPosition = _exportDetailPosition;
-            gm.GetComponent<SensFloorUnderlaySfLr>()._frecuency = _frecuency;
+            gm.GetComponent<SensFloorUnderlaySfLr>().code = _code;
+            gm.GetComponent<SensFloorUnderlaySfLr>().debug = _debug;
+            gm.GetComponent<SensFloorUnderlaySfLr>().exportData = _exportData;
+            gm.GetComponent<SensFloorUnderlaySfLr>().exportDetailPosition = _exportDetailPosition;
+            gm.GetComponent<SensFloorUnderlaySfLr>().frecuency = _frecuency;
         }
     }
 
@@ -26,12 +26,12 @@ public class PersistenceSensFloorUnderlaySfLr : PersistenceSensor<PersistenceSen
     {
         if (gm.GetComponent<SensFloorUnderlaySfLr>() != null)
         {
-            _code = gm.GetComponent<SensFloorUnderlaySfLr>()._code;
-            _activationThreshold = gm.GetComponent<SensFloorUnderlaySfLr>()._activationThreshold;
-            _debug = gm.GetComponent<SensFloorUnderlaySfLr>()._debug;
-            _exportData = gm.GetComponent<SensFloorUnderlaySfLr>()._exportData;
-            _frecuency = gm.GetComponent<SensFloorUnderlaySfLr>()._frecuency;
-            _exportDetailPosition = gm.GetComponent<SensFloorUnderlaySfLr>()._exportDetailPosition;
+            _code = gm.GetComponent<SensFloorUnderlaySfLr>().code;
+            _activationThreshold = gm.GetComponent<SensFloorUnderlaySfLr>().activationThreshold;
+            _debug = gm.GetComponent<SensFloorUnderlaySfLr>().debug;
+            _exportData = gm.GetComponent<SensFloorUnderlaySfLr>().exportData;
+            _frecuency = gm.GetComponent<SensFloorUnderlaySfLr>().frecuency;
+            _exportDetailPosition = gm.GetComponent<SensFloorUnderlaySfLr>().exportDetailPosition;
         }
 
         return this;

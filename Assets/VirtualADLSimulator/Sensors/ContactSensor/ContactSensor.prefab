@@ -19,15 +19,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4796566591795600}
-  - component: {fileID: 33348917557330926}
+  - component: {fileID: 33177864937633360}
   - component: {fileID: 23903970589220836}
-  - component: {fileID: 65599322472705350}
-  - component: {fileID: 114372049959569164}
-  - component: {fileID: 54999963358022610}
-  - component: {fileID: 114123737972547898}
+  - component: {fileID: 65181778709443254}
+  - component: {fileID: 114999698485938974}
+  - component: {fileID: 54101270140803898}
+  - component: {fileID: 114798134962618594}
   m_Layer: 0
   m_Name: ContactSensor
-  m_TagString: Untagged
+  m_TagString: Sensor
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553008184568388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -0}
+  m_LocalPosition: {x: 0.0000004172325, y: 0, z: 0.0000031590462}
   m_LocalScale: {x: 0.020000042, y: 0.01, z: 0.010000018}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,14 +80,14 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33348917557330926
+--- !u!33 &33177864937633360
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553008184568388}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54999963358022610
+--- !u!54 &54101270140803898
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,7 +102,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &65599322472705350
+--- !u!65 &65181778709443254
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,7 +114,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114123737972547898
+--- !u!114 &114798134962618594
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,12 +125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597c509f7470fa7459b9c3d00c491b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 331
   persistenceInfo:
-    id: -1
-    name: 
+    id: 331
+    name: ContactSensor(Clone)
   loaded: 0
---- !u!114 &114372049959569164
+--- !u!114 &114999698485938974
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,12 +142,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   registryActivityManager: {fileID: 0}
-  _code: 
-  _debug: 1
-  _activationThreshold: 0.1
-  _frecuency: 1
-  _exportData: 1
-  _tagsAvailable:
+  code: 
+  debug: 1
+  activationThreshold: 0.1
+  frecuency: 1
+  exportData: 1
+  tagsAvailable:
   - Door
   - Drawer
   contactTag: Sensor

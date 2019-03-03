@@ -283,7 +283,7 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     }
 
 
-    void highlighingGameobject(GameObject gm, int color = 0, string layer = null)
+    public void highlighingGameobject(GameObject gm, int color = 0, string layer = null)
     {
 
         if (gm.GetComponent<Outline>() == null)
@@ -473,30 +473,6 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
             inCursorGameobject.GetComponent<TransformActuator>().doAction();
     }
 
-    /*
-    public void highLighingGameObject(GameObject gm, bool state)
-    {
-        if (gm.layer == 10)
-        {
-            Material material;
-            if (!gameObjectMaterialMap.ContainsKey(gm) && state)
-            {
-                gameObjectMaterialMap.Add(gm, gm.GetComponent<MeshRenderer>().material);
-                material = new Material(highLighingMaterial);
-                material.mainTexture = gm.GetComponent<MeshRenderer>().material.mainTexture;
-                gm.GetComponent<MeshRenderer>().material = material;
-            }
-            else
-            if (gameObjectMaterialMap.ContainsKey(gm) && !state)
-            {
-                if (gameObjectMaterialMap.TryGetValue(gm, out material))
-                {
-                    gm.GetComponent<MeshRenderer>().material = material;
-                    gameObjectMaterialMap.Remove(gm);
-                }
-
-            }
-        }
-    }*/
+   
 
 }

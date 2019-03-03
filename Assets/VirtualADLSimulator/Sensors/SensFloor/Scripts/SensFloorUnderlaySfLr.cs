@@ -13,6 +13,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Reflection;
 using UnityEngine;
 
@@ -23,13 +24,15 @@ using UnityEngine;
 /// </summary>
 [AddComponentMenu("ADLVirtualSimulator/SensFloorUnderlaySfLr")]
 [System.Serializable]
+[Description("Simulate the SENSFLOOR® UNDERLAY SF LR of FutureShape, " +
+    "is a floor sensor that detect the footsteps through of Capacitive Proximity Sensor and provide 16 zones of detection in a square meter that can be enable or disable with option")]
 public class SensFloorUnderlaySfLr : Sensor {
 
     /// <summary>
     /// The flag to allow the depthest notification events
     /// </summary>
     [Tooltip("The flag to allow the depthest notification events")]
-    public bool _exportDetailPosition = true;
+    public bool exportDetailPosition = true;
 
     /// <summary>
     /// The firts sensFloorUnderlayMatLr element
@@ -55,15 +58,16 @@ public class SensFloorUnderlaySfLr : Sensor {
     /// </summary>
     private static int _id = 0;
 
+    [Description("Allow export a detail output of this sensow, using all the capacitive sensors")]
     public bool ExportDetailPosition
     {
         get
         {
-            return this._exportDetailPosition;
+            return this.exportDetailPosition;
         }
         set
         {
-            this._exportDetailPosition = value;
+            this.exportDetailPosition = value;
         }
     }
  
@@ -71,8 +75,8 @@ public class SensFloorUnderlaySfLr : Sensor {
     {
 
         // If the code is empty assign automatically a code name based in the convention, for SensFloorUnderlaySfLr sensor is: FL{id}
-        if (_code == "")
-            _code = "FL" + _id++;
+        if (code == "")
+            code = "FL" + _id++;
         
     }
 
@@ -102,10 +106,25 @@ public class SensFloorUnderlaySfLr : Sensor {
     {
 
         // Set the same debug flag in childrens
-        if (_sensFloorUnderlayMatLr0._debug != _debug)
-            _sensFloorUnderlayMatLr0._debug = _debug;
-        if (_sensFloorUnderlayMatLr1._debug != _debug)
-            _sensFloorUnderlayMatLr1._debug = _debug;
+        if (_sensFloorUnderlayMatLr0.debug != debug)
+            _sensFloorUnderlayMatLr0.debug = debug;
+        if (_sensFloorUnderlayMatLr1.debug != debug)
+            _sensFloorUnderlayMatLr1.debug = debug;
+
+        //set the same export data flag in childrens
+        if (_sensFloorUnderlayMatLr0.exportData != exportDetailPosition)
+        {
+            _sensFloorUnderlayMatLr0.exportData = exportDetailPosition;
+            foreach(var sensor in _sensFloorUnderlayMatLr0._capacitiveProximitySensors)
+                sensor.exportData = exportDetailPosition;
+        }
+        if (_sensFloorUnderlayMatLr1.exportData != exportDetailPosition)
+        {
+            _sensFloorUnderlayMatLr1.exportData = exportDetailPosition;
+            foreach (var sensor in _sensFloorUnderlayMatLr1._capacitiveProximitySensors)
+                sensor.exportData = exportDetailPosition;
+        }
+
 
         // Set the max value of childrens
         if (_sensFloorUnderlayMatLr0.Value >= _sensFloorUnderlayMatLr1.Value)
@@ -113,7 +132,7 @@ public class SensFloorUnderlaySfLr : Sensor {
         else
             setSensorValue(_sensFloorUnderlayMatLr1.Value);
 
-        if (_exportDetailPosition)
+        if (exportDetailPosition)
         {
             readSensFloorUnderlayMatLr(_sensFloorUnderlayMatLr0, _values, 0);
             readSensFloorUnderlayMatLr(_sensFloorUnderlayMatLr1, _values, 1);
@@ -137,23 +156,23 @@ public class SensFloorUnderlaySfLr : Sensor {
             if (values[row, i] != sensFloorUnderlayMatLr._values[i])
             {
                 // Notify the ON, OFF, CH events with the detail code 
-                if (values[row, i] < _activationThreshold && sensFloorUnderlayMatLr._values[i] >= _activationThreshold)
+                if (values[row, i] < activationThreshold && sensFloorUnderlayMatLr._values[i] >= activationThreshold)
                 {
-                    notifyEvent(sensFloorUnderlayMatLr._code
-                        + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._code
+                    notifyEvent(sensFloorUnderlayMatLr.code
+                        + sensFloorUnderlayMatLr._capacitiveProximitySensors[i].code
                         + "\tON\t" + sensFloorUnderlayMatLr._values[i]);
                 }
                 else  
-                if (values[row, i] >= _activationThreshold && sensFloorUnderlayMatLr._values[i] < _activationThreshold)
+                if (values[row, i] >= activationThreshold && sensFloorUnderlayMatLr._values[i] < activationThreshold)
                 {
-                    notifyEvent(sensFloorUnderlayMatLr._code
-                        + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._code
+                    notifyEvent(sensFloorUnderlayMatLr.code
+                        + sensFloorUnderlayMatLr._capacitiveProximitySensors[i].code
                         + "\tOFF");
                 }
                 else
                 {
-                    notifyEvent(sensFloorUnderlayMatLr._code
-                        + sensFloorUnderlayMatLr._capacitiveProximitySensors[i]._code
+                    notifyEvent(sensFloorUnderlayMatLr.code
+                        + sensFloorUnderlayMatLr._capacitiveProximitySensors[i].code
                         + "\tCH\t" + sensFloorUnderlayMatLr._values[i]);
                 }
 

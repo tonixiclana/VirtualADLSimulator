@@ -14,6 +14,7 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 /// <summary>
 /// Provide the necesary logic for manage a filebrowser that allow read and write files
@@ -21,6 +22,8 @@ using TMPro;
 [AddComponentMenu("ADLVirtualSimulator/Utility/FileBrowser")]
 [System.Serializable]
 public class FileBrowser : MonoBehaviour {
+
+    public ConfirmMessage confirmMessage;
 
     /// <summary>
     /// Start path of file browsing
@@ -111,7 +114,7 @@ public class FileBrowser : MonoBehaviour {
             //add the up directory folder in the begin of list
             
             item.GetComponent<FileBrowserItem>().text.text = "UP DIRECTORY";
-            item.GetComponent<FileBrowserItem>().absolutePath = dir.Parent.FullName;
+            item.GetComponent<FileBrowserItem>().absolutePath = (dir.Parent != null)? dir.Parent.FullName : dir.FullName;
             item.GetComponent<FileBrowserItem>().isFolder = true;
             item.GetComponent<FileBrowserItem>().fileBrowser = this;
             //add at gridcontent
@@ -175,7 +178,19 @@ public class FileBrowser : MonoBehaviour {
 
     public void createFileInActualPath(string name, string text)
     {
+        //if(existInActualPath(name))
+
+        
         File.WriteAllText(actualPath + "/" + name, text);
+    }
+
+    public bool existInActualPath(string name)
+    {
+        if (File.Exists(actualPath + "/" + name))
+            return true;
+        else
+            return false;
+
     }
 
     public void deleteFileInActualPath(string name)
@@ -183,5 +198,7 @@ public class FileBrowser : MonoBehaviour {
         if (File.Exists(actualPath + "/" + name))
             File.Delete(actualPath + "/" + name);
     }
+
+    
 
 }

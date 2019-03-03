@@ -7,8 +7,6 @@ public class CreateElementInScene : MonoBehaviour {
 
     public SelectGameobjectCursor selectGameobjectCursor;
 
-    public int color = 1;
-
     GameObject createFromPrefab(GameObject gm, GameObject parent)
     {
         return Instantiate(gm, parent.transform);

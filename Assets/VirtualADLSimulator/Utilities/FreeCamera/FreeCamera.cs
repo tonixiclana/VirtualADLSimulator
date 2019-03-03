@@ -109,7 +109,7 @@ public class FreeCamera : MonoBehaviour {
     {
 
         //Rotate when pulse the middle mouse button
-        if (Input.GetMouseButton(2))
+        if (Input.GetMouseButton(1))
         {
             // Allow the script to clamp based on a desired target value.
             var targetOrientation = Quaternion.Euler(targetDirection);

@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -52,69 +53,37 @@ public class PersistenceManager : MonoBehaviour {
     [Tooltip("Button to remove game")]
     public Button _loadgameButton;
 
+
     // Use this for initialization
     void Start () {
 
-        // Create the savegame directory and load the example gameplay if the folder dont exists
-        if (!Directory.Exists(Application.persistentDataPath + "/savegames"))
-        {
-            Directory.CreateDirectory(Application.persistentDataPath + "/savegames");
-            string str = Resources.Load<TextAsset>("DefaultSavegames/CEATIC_Default").text;
-            File.WriteAllText(Application.persistentDataPath + "/savegames/CEATIC_default.txt", str);
-
-        }
-        else
-        {
-            string str = Resources.Load<TextAsset>("DefaultSavegames/CEATIC_Default").text;
-            File.WriteAllText(Application.persistentDataPath + "/savegames/CEATIC_Default.txt", str);
-
-        }
+       
 
         //Add listener to savegame button
         _savegameButton.onClick.AddListener(delegate
         {
+            if (_fileBrowser.existInActualPath(_nameOfSavegameInput.text + ".txt"))
+                _fileBrowser.confirmMessage.showConfirmMessage("Do You want Overwrite this scenary?", saveScenary); 
+            else
+                saveScenary(); 
 
-            _fileBrowser.deleteFileInActualPath(_nameOfSavegameInput.text + ".txt");
-
-            //Create or append in a file add the header with the information of this activity
-
-            SavegameInfo savegameInfo = new SavegameInfo();
-
-            savegameInfo.createdTime = System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss");
-            savegameInfo.name = (_nameOfSavegameInput.text != "")? _nameOfSavegameInput.text : savegameInfo.createdTime;
-            savegameInfo.description = _descriptionOfSavegameInput.text;
-
-
-            _fileBrowser.editFileInActualPath(
-                JsonUtility.ToJson(savegameInfo)
-                , _nameOfSavegameInput.text + ".txt"
-
-            );
-
-            saveGameObjectsInJSON(_nameOfSavegameInput.text + ".txt");
-            _fileBrowser.refreshGridContentOfActualPath();
-            updateFileBrowserItemListeners();
         });
 
         //Add listener to removegame button
         _removegameButton.onClick.AddListener(delegate
         {
-
-            _fileBrowser.deleteFileInActualPath(_nameOfSavegameInput.text + ".txt");
-
-            _nameOfSavegameInput.text = "";
-            _descriptionOfSavegameInput.text = "";
-            _fileBrowser.refreshGridContentOfActualPath();
-            updateFileBrowserItemListeners();
+            if (_fileBrowser.existInActualPath(_nameOfSavegameInput.text + ".txt"))
+                _fileBrowser.confirmMessage.showConfirmMessage("Do You want remove this scenary?", removeScenary);
         });
 
 
         //Add listener to removegame button
         _loadgameButton.onClick.AddListener(delegate
         {
-
+            _fileBrowser.confirmMessage.showConfirmMessage("Do You want load this scenary?, The changes unload will be lost", loadScenary);
             //loadPersistenceGameobjects(_nameOfSavegameInput.text + ".txt");
-            loadPersistenceGameobjects(_nameOfSavegameInput.text + ".txt");
+           
+            //loadPersistenceGameobjects("savegames/" + _nameOfSavegameInput.text + ".txt");
         });
 
 
@@ -133,27 +102,45 @@ public class PersistenceManager : MonoBehaviour {
             {
                 _nameOfSavegameInput.text = JsonUtility.FromJson<SavegameInfo>(_fileBrowser.readFileInActualPath(item.GetComponentInChildren<TextMeshProUGUI>().text)[0]).name;
                 _descriptionOfSavegameInput.text = JsonUtility.FromJson<SavegameInfo>(_fileBrowser.readFileInActualPath(item.GetComponentInChildren<TextMeshProUGUI>().text)[0]).description;
-                _loadgameButton.gameObject.SetActive(true);
-                _removegameButton.gameObject.SetActive(true);
+                _loadgameButton.interactable = true;
+                _removegameButton.interactable = true;
+
             });
         }
+
+        updateActionsButtons();
     }
 
 	// Update is called once per frame
 	void FixedUpdate () {
         //persistenceGameobjects = GameObject.FindObjectsOfType<PersistenceGameobject>().Cast<PersistenceGameobject>().ToList();
 	}
-    /*
-    public static PersistenceGameobject GetPersistenceGameobject(int id)
-    {
-        var persistenceGameobjects = GameObject.FindObjectsOfType<PersistenceGameobject>().Cast<PersistenceGameobject>().ToList();
-        var targetGameObject = persistenceGameobjects.Find(delegate (PersistenceGameobject pGm) { return pGm.id == id; });
-        return targetGameObject ;
 
-        
+    //Update the actions button to ensure the integrity of actions depending of value of inputs
+    public void updateActionsButtons()
+    {
+        _loadgameButton.interactable = false;
+        _removegameButton.interactable = false;
+        if (_nameOfSavegameInput.text == "")
+            _savegameButton.interactable = false;
+        else
+        {
+            _savegameButton.interactable = true;
+
+            foreach (FileBrowserItem item in _fileBrowser.getFileItems())
+            {
+                if(item.absolutePath.Split('\\').Last().Split('.')[0] == _nameOfSavegameInput.text)
+                {
+                    _loadgameButton.interactable = true;
+                    _removegameButton.interactable = true;
+                    break;
+                }
+
+            }
+        }
+           
     }
 
-*/
     public List<PersistenceGameobject> getPersistenceGameobjects()
     {
         persistenceGameobjects.Clear();
@@ -212,7 +199,7 @@ public class PersistenceManager : MonoBehaviour {
 
     public void loadPersistenceGameobjects(string path)
     {
-        var appPath = Application.persistentDataPath + "/savegames/" + path;
+        var appPath = Application.persistentDataPath + "/" + path;
         string[] file = File.ReadAllLines(appPath);
 
         resetScene();
@@ -264,7 +251,92 @@ public class PersistenceManager : MonoBehaviour {
         }
 
 
+        /*
+        i = 0;
+        foreach (var line in file)
+        {
+            if (line != "")
+            {
+                PersistenceInfo persistenceInfo = JsonConvert.DeserializeObject<PersistenceInfo>(line);
+                if (persistenceInfo.id != -1)
+                {
+                    gmL[i].GetComponent<PersistenceGameobject>().loadPersistenceComponents();
+                    i++;
+                }
+            }
+        }
+
+    */
+
     }
 
+    public bool saveScenary()
+    {
+        try
+        {
+            _fileBrowser.deleteFileInActualPath(_nameOfSavegameInput.text + ".txt");
+
+            //Create or append in a file add the header with the information of this activity
+
+            SavegameInfo savegameInfo = new SavegameInfo();
+
+            savegameInfo.createdTime = System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss");
+            savegameInfo.name = (_nameOfSavegameInput.text != "") ? _nameOfSavegameInput.text : savegameInfo.createdTime;
+            savegameInfo.description = _descriptionOfSavegameInput.text;
+
+
+            _fileBrowser.editFileInActualPath(
+                JsonUtility.ToJson(savegameInfo)
+                , _nameOfSavegameInput.text + ".txt"
+
+            );
+
+            saveGameObjectsInJSON(_nameOfSavegameInput.text + ".txt");
+            _fileBrowser.refreshGridContentOfActualPath();
+            updateFileBrowserItemListeners();
+        }    
+        catch (Exception e)
+        {
+            Debug.Log(e);
+            return false;
+        }
+
+
+        return true;
+    }
+
+
+    public bool removeScenary()
+    {
+        try
+        {
+            _fileBrowser.deleteFileInActualPath(_nameOfSavegameInput.text + ".txt");
+
+            _nameOfSavegameInput.text = "";
+            _descriptionOfSavegameInput.text = "";
+            _fileBrowser.refreshGridContentOfActualPath();
+            updateFileBrowserItemListeners();
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
+            return false;
+        }
+        return true;
+    }
+
+    public bool loadScenary()
+    {
+        try
+        {
+            FindObjectOfType<SceneAndURLLoader>().sceneLoad("MainScene", "savegames/" + _nameOfSavegameInput.text + ".txt");
+        }
+        catch(Exception e)
+        {
+            Debug.Log(e);
+            return false;
+        }
+        return true;
+    }
 
 }

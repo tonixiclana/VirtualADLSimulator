@@ -49,25 +49,29 @@ public class PauseMenu : MonoBehaviour
 	{
         if (Input.GetButtonUp("Cancel"))
 		{
-		    m_MenuToggle.isOn = !m_MenuToggle.isOn;
-            //Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
-            if (m_MenuToggle.isOn)
-            {
-                MenuOn();
-                foreach (var s in FindObjectsOfType<SelectGameobjectCursor>())
-                    s.clearSelection();
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
-            else
-            {
-                MenuOff();
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
+            activatePauseMenu();
         }
 	}
 
+    public void activatePauseMenu()
+    {
+        m_MenuToggle.isOn = !m_MenuToggle.isOn;
+        //Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
+        if (m_MenuToggle.isOn)
+        {
+            MenuOn();
+            foreach (var s in FindObjectsOfType<SelectGameobjectCursor>())
+                s.clearSelection();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            MenuOff();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
 
     /// <summary>
     /// Turn on the menu, that implies stop the time (Affect at FixedUpdate)
@@ -80,6 +84,13 @@ public class PauseMenu : MonoBehaviour
         m_VolumeRef = AudioListener.volume;
         AudioListener.volume = 0f;
 
+        foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+            shortCut.enabled = false;
+        if (FindObjectOfType<FreeCamera>() != null)
+            FindObjectOfType<FreeCamera>().enabled = false;
+        else
+            FindObjectOfType<PlayerController>().enabled = false;
+
         m_Paused = true;
     }
 
@@ -91,6 +102,15 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = m_TimeScaleRef;
         AudioListener.volume = m_VolumeRef;
+
+        foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+            shortCut.enabled = true;
+        
+        if (FindObjectOfType<FreeCamera>() != null)
+            FindObjectOfType<FreeCamera>().enabled = true;
+        else
+            FindObjectOfType<PlayerController>().enabled = true;
+
         m_Paused = false;
     }
 

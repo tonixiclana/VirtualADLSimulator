@@ -78,7 +78,68 @@ public class RegistryActivityManager : MonoBehaviour {
     public Button _stopRecordButton;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
+
+        //Block the shortcut keys
+        _nameOfActivityInput.GetComponent<TMP_InputField>().onSelect.AddListener(delegate
+        {
+            foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+                shortCut.enabled = false;
+            if (FindObjectOfType<FreeCamera>() != null)
+                FindObjectOfType<FreeCamera>().enabled = false;
+            else
+                FindObjectOfType<PlayerController>().enabled = false;
+        });
+
+        _nameOfActivityInput.GetComponent<TMP_InputField>().onDeselect.AddListener(delegate
+        {
+            foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+                shortCut.enabled = true;
+            if (FindObjectOfType<FreeCamera>() != null)
+                FindObjectOfType<FreeCamera>().enabled = true;
+            else
+                FindObjectOfType<PlayerController>().enabled = true;
+        });
+
+        _descriptionOfActivityInput.GetComponent<TMP_InputField>().onSelect.AddListener(delegate
+        {
+            foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+                shortCut.enabled = false;
+            if (FindObjectOfType<FreeCamera>() != null)
+                FindObjectOfType<FreeCamera>().enabled = false;
+            else
+                FindObjectOfType<PlayerController>().enabled = false;
+        });
+
+        _descriptionOfActivityInput.GetComponent<TMP_InputField>().onDeselect.AddListener(delegate
+        {
+            foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+                shortCut.enabled = true;
+            if (FindObjectOfType<FreeCamera>() != null)
+                FindObjectOfType<FreeCamera>().enabled = true;
+            else
+                FindObjectOfType<PlayerController>().enabled = true;
+        });
+
+        _fileNameInput.GetComponent<TMP_InputField>().onSelect.AddListener(delegate
+        {
+            foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+                shortCut.enabled = false;
+            if (FindObjectOfType<FreeCamera>() != null)
+                FindObjectOfType<FreeCamera>().enabled = false;
+            else
+                FindObjectOfType<PlayerController>().enabled = false;
+        });
+
+        _fileNameInput.GetComponent<TMP_InputField>().onDeselect.AddListener(delegate
+        {
+            foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+                shortCut.enabled = true;
+            if (FindObjectOfType<FreeCamera>() != null)
+                FindObjectOfType<FreeCamera>().enabled = true;
+            else
+                FindObjectOfType<PlayerController>().enabled = true;
+        });
 
         //Initialize the values vector with the size of list of sensors
         //_values= new List<float>();
@@ -194,5 +255,15 @@ public class RegistryActivityManager : MonoBehaviour {
             _fileBrowser.editFileInActualPath(System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss.ffffff") + "\t" + eventNotification, _fileNameInput.text);
 
         }
+    }
+
+    public void validateInputs()
+    {
+        if(_nameOfActivityInput.text == "" || !_fileNameInput.text.Contains(".txt"))
+        
+            _startRecordButton.interactable = false;
+        
+        else
+            _startRecordButton.interactable = true;
     }
 }

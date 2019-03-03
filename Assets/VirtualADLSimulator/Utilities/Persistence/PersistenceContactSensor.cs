@@ -11,12 +11,32 @@ public class PersistenceContactSensor  : PersistenceSensor<PersistenceContactSen
 
     public void addComponentInGameobject(GameObject gm)
     {
-        gm.AddComponent<ContactSensor>().contactTag = contactTag;
+        if (_code != "")
+        {
+            gm.AddComponent<ContactSensor>();
+            gm.GetComponent<ContactSensor>().code = _code;
+            gm.GetComponent<ContactSensor>().debug = _debug;
+            gm.GetComponent<ContactSensor>().exportData = _exportData;
+            gm.GetComponent<ContactSensor>().ContactTag = contactTag;
+            gm.GetComponent<ContactSensor>().frecuency = _frecuency;
+        }
+        
+  
     }
 
     public PersistenceContactSensor loadComponentInfo(GameObject gm)
     {
-        contactTag = gm.GetComponent<ContactSensor>().contactTag;
+
+        if (gm.GetComponent<ContactSensor>() != null)
+        {
+            _code = gm.GetComponent<ContactSensor>().code;
+            _activationThreshold = gm.GetComponent<ContactSensor>().activationThreshold;
+            _debug = gm.GetComponent<ContactSensor>().debug;
+            _exportData = gm.GetComponent<ContactSensor>().exportData;
+            _frecuency = gm.GetComponent<ContactSensor>().frecuency;
+            contactTag = gm.GetComponent<ContactSensor>().ContactTag;
+        }
+        
 
         return this;
     }

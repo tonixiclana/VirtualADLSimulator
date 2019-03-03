@@ -85,6 +85,9 @@ public class PersistenceGameobject : MonoBehaviour
 
             if (jObj.GetValue("Type").ToString() == typeof(PersistenceContactSensor).ToString())
                 jObj.ToObject<PersistenceContactSensor>().addComponentInGameobject(gameObject);
+
+            if (jObj.GetValue("Type").ToString() == typeof(PersistenceTextMesh).ToString())
+                jObj.ToObject<PersistenceTextMesh>().addComponentInGameobject(gameObject);
         }
     }
 
@@ -182,6 +185,12 @@ public class PersistenceGameobject : MonoBehaviour
                     PersistenceContactSensor persistenceContactSensor = new PersistenceContactSensor();
                     persistenceContactSensor.loadComponentInfo(gameObject);
                     persistenceInfo.serializableComponents.Add(persistenceContactSensor);
+                    break;
+
+                case "UnityEngine.TextMesh":
+                    PersistenceTextMesh persistenceTextMesh = new PersistenceTextMesh();
+                    persistenceTextMesh.loadComponentInfo(gameObject);
+                    persistenceInfo.serializableComponents.Add(persistenceTextMesh);
                     break;
             } 
         }

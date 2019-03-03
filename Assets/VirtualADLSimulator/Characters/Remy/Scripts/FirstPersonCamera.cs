@@ -102,7 +102,7 @@ public class FirstPersonCamera : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
 
         // Set target direction to the camera's initial orientation.
-        targetDirection = transform.localRotation.eulerAngles;
+        //targetDirection = transform.localRotation.eulerAngles;
 
         // Set target direction for the character body to its inital state.
         if (GetComponent<Rigidbody>())

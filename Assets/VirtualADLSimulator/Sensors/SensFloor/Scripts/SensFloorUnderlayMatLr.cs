@@ -52,13 +52,13 @@ public class SensFloorUnderlayMatLr : Sensor{
             _values = new float[_capacitiveProximitySensors.Count];
 
             // If the code is empty assign automatically a code name based in the convention, for SensFloorUnderlayMatLr sensor is: R{id}
-            if (_code == "")
-                _code = gameObject.name + _id++;
+            if (code == "")
+                code = gameObject.name + _id++;
 
             //set the children's sensor with the same debug flag that this sensor
             for (int i = 0; i < _capacitiveProximitySensors.Count; i++)
-                if (_capacitiveProximitySensors[i]._debug != _debug)
-                    _capacitiveProximitySensors[i]._debug = _debug;
+                if (_capacitiveProximitySensors[i].debug != debug)
+                    _capacitiveProximitySensors[i].debug = debug;
 
         
     }
@@ -66,8 +66,10 @@ public class SensFloorUnderlayMatLr : Sensor{
 	void FixedUpdate () {
         //setting the debug flag in the childrens
         for (int i = 0; i < _capacitiveProximitySensors.Count; i++)
-            if (_capacitiveProximitySensors[i]._debug != _debug)
-                _capacitiveProximitySensors[i]._debug = _debug;
+            if (_capacitiveProximitySensors[i].debug != debug)
+                _capacitiveProximitySensors[i].debug = debug;
+
+        
 
         //read the sensors attached
         readCapacitiveProximitySensors();

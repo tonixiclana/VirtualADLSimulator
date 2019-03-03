@@ -1,12 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System;
+using System.Xml.Linq;
+using System.ComponentModel;
 /// <summary>
 /// This script simulate the working of a contact sensor, detect collision with a trigger and normal colliders
 /// </summary>
 [RequireComponent(typeof(Collider))]
+
 [System.Serializable]
+[Description("Contact sensor is used to detect if two bodies are in contact")]
 public class ContactSensor: Sensor{
 
 
@@ -15,16 +17,38 @@ public class ContactSensor: Sensor{
     /// </summary>
     private static int _id = 0;
 
-    public string contactTag;
+    [SerializeField]
+    private string contactTag;
+
+    
+    [Description("The contact tag")]
+    public string ContactTag
+    {
+        get
+        {
+            return this.contactTag;
+        }
+        set
+        {
+            this.contactTag = value;
+        }
+    }
+    
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
 
-    void Start()
+
+    private void Awake()
     {
         // If the code is empty assign automatically a code name based in the convention, for contact Proximity sensor is: CONTACTSENSOR{id}
-        if (_code == "")
-            _code = "CONTACTSENSOR" + _id++;
+        if (code == "")
+            code = "CONTACTSENSOR" + _id++;
+    }
+
+
+    void Start()
+    {
 
         FindObjectOfType<RegistryActivityManager>().addSensor(this);
 

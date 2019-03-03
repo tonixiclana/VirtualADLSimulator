@@ -11,6 +11,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
@@ -33,26 +34,29 @@ public class Sensor : MonoBehaviour, ISensor{
     /// <summary>
     /// The identification code for this sensor
     /// </summary>
-    [Tooltip("The identification code for this sensor")]
-    public string _code = "";
+
+    public string code;
 
     /// <summary>
     /// The debug flag for this sensor
     /// </summary>
     [Tooltip("The debug flag for this sensor")]
-    public bool _debug = true;
+    
+    public bool debug = true;
 
     /// <summary>
     /// The activation Threshold stablish the min value needed to artivate the sensor
     /// </summary>
-    [Tooltip("The activation Threshold stablish the min value needed to artivate the sensor")]
-    public float _activationThreshold = 0.1f;
+    [Tooltip("The activation Threshold stablish the min value needed to activate the sensor")]
+
+    public float activationThreshold = 0.1f;
 
     /// <summary>
     /// The frecuency velocity of read
     /// </summary>
     [Tooltip("The frecuency velocity of read")]
-    public float _frecuency = 1f;
+   
+    public float frecuency = 1f;
 
 
 
@@ -60,109 +64,114 @@ public class Sensor : MonoBehaviour, ISensor{
     /// Flag to control the export data to registryActivityManager
     /// </summary>
     [Tooltip("Flag to control the export data to registryActivityManager")]
-    public bool _exportData = true;
+
+    public bool exportData = true;
 
 
     /// <summary>
     /// List of tag gameobject that could attach this sensor
     /// </summary>
     [Tooltip("List of tag gameobject that could attach this sensor")]
-    public List<string> _tagsAvailable = new List<string>();
+    public List<string> tagsAvailable = new List<string>();
 
     /// <summary>
     /// The state flag value of this sensor
     /// </summary>
     [Tooltip("the state flag value of this sensor")]
-    private bool _state = false;
+    private bool state = false;
 
     /// <summary>
     /// The number of activation of this sensor
     /// </summary>
     [Tooltip("The number of activation of this sensor")]
-    private int _numActivations = 0;
+    private int numActivations = 0;
 
     /// <summary>
     /// The float value for this sensor
     /// </summary>
     [Tooltip("The float value for this sensor")]
-    private float _value = 0;
+    private float value = 0;
 
     /// <summary>
     /// Previous value of sensor to determine if the value of sensor changed
     /// </summary>
     [Tooltip("Previous value of sensor to determine if the value of sensor changed")]
-    private float _prevValue = 0f;
+    private float prevValue = 0f;
 
     /// <summary>
     /// Previous state of the sensor
     /// </summary>
     [Tooltip("Previous state of the sensor")]
-    private bool _prevState = false;
+    private bool prevState = false;
 
     /// <summary>
     /// The time in seconds since the last read of sensor
     /// </summary>
     [Tooltip("The time in seconds since the last read of sensor")]
-    private float _timeLastRead = 0f;
+    private float timeLastRead = 0f;
 
-
+    [Description("The code that identify the sensor")]
     public string Code
     {
         get
         {
-            return this._code;
+            return this.code;
         }
         set
         {
-            this._code = value;
+            this.code = value;
         }
     }
 
+    [Description("To activate the debug tests")]
     public bool Debug
     {
         get
         {
-            return this._debug;
+            return this.debug;
         }
         set
         {
-            this._debug = value;
+            this.debug = value;
         }
     }
 
+    [Description("The minimal signal to activate the sensor")]
     public float ActivationThreshold
     {
         get
         {
-            return this._activationThreshold;
+            return this.activationThreshold;
         }
         set
         {
-            this._activationThreshold = value;
+            this.activationThreshold = value;
         }
     }
 
+    [Description("The frecuency velocity of read")]
     public float Frecuency
     {
         get
         {
-            return this._frecuency;
+            return this.frecuency;
         }
         set
         {
-            this._frecuency = value;
+            this.frecuency = value;
         }
     }
 
+    [Description("Control if this sensor export output data")]
     public bool ExportData
     {
         get
         {
-            return this._exportData;
+            return this.exportData;
         }
         set
         {
-            this._exportData = value;
+            this.exportData = value;
         }
     }
 
@@ -170,11 +179,11 @@ public class Sensor : MonoBehaviour, ISensor{
     {
         get
         {
-            return this._value;
+            return this.value;
         }
         set
         {
-            this._value = value;
+            this.value = value;
         }
     }
 
@@ -182,11 +191,11 @@ public class Sensor : MonoBehaviour, ISensor{
     {
         get
         {
-            return this._state;
+            return this.state;
         }
         set
         {
-            this._state = value;
+            this.state = value;
         }
     }
 
@@ -194,11 +203,11 @@ public class Sensor : MonoBehaviour, ISensor{
     {
         get
         {
-            return this._numActivations;
+            return this.numActivations;
         }
         set
         {
-            this._numActivations = value;
+            this.numActivations = value;
         }
     }
 
@@ -210,10 +219,10 @@ public class Sensor : MonoBehaviour, ISensor{
     public void notifyEvent(string eventNotification)
     {
         //Only export if the flag is true and the this sensor have a registryActivityManager attached
-        if(_exportData == true && registryActivityManager != null)
+        if(exportData == true && registryActivityManager != null)
         {
             //If is active the export of data y this sensor has attached with a registry activity manager
-            registryActivityManager.notifyEvent(_code + eventNotification);
+            registryActivityManager.notifyEvent(code + eventNotification);
             
         }
     }
@@ -227,38 +236,38 @@ public class Sensor : MonoBehaviour, ISensor{
     public bool setSensorValue(float value)
     {
         //If pass enough time depend of the frecuency and the last time that this function worked then read the sensor
-        if (Time.time - _timeLastRead > 1 / this._frecuency)
+        if (Time.time - timeLastRead > 1 / this.frecuency)
         {
 
             //If exist a change of value
-            if (value != _prevValue)
+            if (value != prevValue)
             {
                 //set the value
-                _value = value;
+                this.value = value;
 
                 //notify the on, change or off event
-                if (_value != 0f && !_prevState && value >= _activationThreshold)
+                if (this.value != 0f && !prevState && value >= activationThreshold)
                 {
-                    _state = true;
-                    _numActivations++;
-                    notifyEvent("\tON\t" + _value);
+                    state = true;
+                    numActivations++;
+                    notifyEvent("\tON\t" + this.value);
                 }
                 else
-                if (_value != 0f && _prevState && value >= _activationThreshold)
-                    notifyEvent("\tCH\t" + _value);
+                if (this.value != 0f && prevState && value >= activationThreshold)
+                    notifyEvent("\tCH\t" + this.value);
                 else
                 {
-                    _state = false;
+                    state = false;
                     notifyEvent("\tOFF\t");
                 }
 
                 //Asign previous values
-                _prevState = _state;
-                _prevValue = _value;
+                prevState = state;
+                prevValue = this.value;
 
                 return true;
             }
-            _timeLastRead = Time.time;
+            timeLastRead = Time.time;
             return false;
         }else
             return false;

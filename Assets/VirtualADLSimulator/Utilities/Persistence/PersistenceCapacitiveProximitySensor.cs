@@ -7,21 +7,21 @@ public class PersistenceCapacitiveProximitySensor : PersistenceSensor<Persistenc
     public void addComponentInGameobject(GameObject gm)
     {
         gm.AddComponent<CapacitiveProximitySensor>();
-        gm.GetComponent<CapacitiveProximitySensor>()._code = _code;
-        gm.GetComponent<CapacitiveProximitySensor>()._debug = _debug;
-        gm.GetComponent<CapacitiveProximitySensor>()._exportData = _exportData;
-        gm.GetComponent<CapacitiveProximitySensor>()._frecuency = _frecuency;
+        gm.GetComponent<CapacitiveProximitySensor>().code = _code;
+        gm.GetComponent<CapacitiveProximitySensor>().debug = _debug;
+        gm.GetComponent<CapacitiveProximitySensor>().exportData = _exportData;
+        gm.GetComponent<CapacitiveProximitySensor>().frecuency = _frecuency;
     }
 
     public PersistenceCapacitiveProximitySensor loadComponentInfo(GameObject gm)
     {
         if (gm.GetComponent<CapacitiveProximitySensor>() != null)
         {
-            _code = gm.GetComponent<CapacitiveProximitySensor>()._code;
-            _activationThreshold = gm.GetComponent<CapacitiveProximitySensor>()._activationThreshold;
-            _debug = gm.GetComponent<CapacitiveProximitySensor>()._debug;
-            _exportData = gm.GetComponent<CapacitiveProximitySensor>()._exportData;
-            _frecuency = gm.GetComponent<CapacitiveProximitySensor>()._frecuency;
+            _code = gm.GetComponent<CapacitiveProximitySensor>().code;
+            _activationThreshold = gm.GetComponent<CapacitiveProximitySensor>().activationThreshold;
+            _debug = gm.GetComponent<CapacitiveProximitySensor>().debug;
+            _exportData = gm.GetComponent<CapacitiveProximitySensor>().exportData;
+            _frecuency = gm.GetComponent<CapacitiveProximitySensor>().frecuency;
 
         }
 

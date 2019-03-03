@@ -10,6 +10,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -73,7 +74,7 @@ public class FileBrowserItem : MonoBehaviour {
         {
             //Action to do when click a file
             /*GetComponent<Button>().onClick.AddListener(() => {
-                fileBrowser.refreshGridContent(absolutePath);
+                Process.Start(@absolutePath);
             });*/
         }
     }

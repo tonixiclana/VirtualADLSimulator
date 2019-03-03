@@ -36,8 +36,8 @@ public class CapacitiveProximitySensor : Sensor{
     void Start () {
         
         // If the code is empty assign automatically a code name based in the convention, for capacitive Proximity sensor is: CPS{id}
-        if (_code == "")
-            _code = "CPS" + _id++;
+        if (code == "")
+            code = "CPS" + _id++;
     }
 	
 	// Update is called once per frame
@@ -65,7 +65,7 @@ public class CapacitiveProximitySensor : Sensor{
             if (State)
             {
                 //Debug include the highlighted of the capacitive sensor
-                if (_debug)
+                if (debug)
                 {
                     this.GetComponent<Renderer>().enabled = true;
                     this.GetComponent<Renderer>().material.color = Color.yellow;
@@ -86,7 +86,7 @@ public class CapacitiveProximitySensor : Sensor{
 
             if (!State) 
                 //Debug include the highlighted of the capacitive sensor
-                if (_debug)
+                if (debug)
                     this.GetComponent<Renderer>().enabled = false;
             
         }
@@ -112,7 +112,7 @@ public class CapacitiveProximitySensor : Sensor{
             if (State)
             {
                 //Debug include the highlighted of the capacitive sensor
-                if (_debug)
+                if (debug)
                 {
                     this.GetComponent<Renderer>().enabled = true;
                     this.GetComponent<Renderer>().material.color = Color.yellow;
@@ -134,7 +134,7 @@ public class CapacitiveProximitySensor : Sensor{
 
             if (!State)
                 //Debug include the highlighted of the capacitive sensor
-                if (_debug)
+                if (debug)
                     this.GetComponent<Renderer>().enabled = false;
 
         }
