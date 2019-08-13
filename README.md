@@ -6,25 +6,25 @@ The smart environment available is the CEATIC smart lab of University of Jaén. 
 The app allow manage a set of a sensor:
 
 * Floor Sensor
-* Contact Sensor
-* Button Sensor
-* Presence Sensor
+* Door Sensor
+* Window Sensor
+* Drawer Sensor
+* Button Sensor (All the home appliances)
 
 Points:
 
 - Allow create a simulation on a custom 3D scenary, and put the sensors in diferents places of scenary and change the main options
 - Save and load custom scenary.
 - Save a log with the sensors output
-- Interaction with the doors and drawers.
+- Interaction with the doors and drawers, lights, window, home appliances.
+- It is allowed to change the date and time at which the experiment is registered
+- The simulation included a day - night Simulator.
 
 
 Use instructions:
 
-* Use esc key to show the in-game menu
-* Registry activity option : To registry in a file the output of sensors putted in a scene.
-* Edit Mode / Experiment Mode : To Change between editMode (edit environment, and sensors options) and ExperimentMode (Interaction with the environment elements)
-* Scenary manager: Allow save and load the created scenary
+* Unzip the file and run VirtualADLSimulator.exe
 
 
 
-You can test the last version of simulator V0.2.4 from https://mega.nz/#!h8hATS6B!UBm0zR4kJTO0Vx2jT4tJ6Ev5GQ2tIfOrbtjbnAaiTdA
+You can test the last version of simulator V0.3.1 from https://mega.nz/#!8ppRhIbY!yhd2p6x4x5hMA1gmVoRebhRgPwYcj8m-mvKo_OHieYg
