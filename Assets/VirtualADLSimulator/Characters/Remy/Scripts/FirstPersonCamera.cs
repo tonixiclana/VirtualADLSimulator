@@ -152,6 +152,7 @@ public class FirstPersonCamera : MonoBehaviour
         // If there's a character body that acts as a parent to the camera
         if (GetComponent<Rigidbody>())
         {
+      
             var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, Vector3.up);
             GetComponent<Rigidbody>().transform.localRotation = yRotation * targetCharacterOrientation;
         }

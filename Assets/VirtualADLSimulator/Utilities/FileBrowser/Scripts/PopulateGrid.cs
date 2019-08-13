@@ -44,8 +44,10 @@ public class PopulateGrid : MonoBehaviour
     /// <param name="gameObject"></param>
     public void addElement(GameObject gameObject)
     {
+        removeAllMissingElements();
         gameObject.transform.position = transform.position;
         elements.Add(gameObject);
+ 
     }
 
     /// <summary>
@@ -56,6 +58,19 @@ public class PopulateGrid : MonoBehaviour
         foreach(GameObject g in elements)
         {
             Destroy(g);
+        }
+    }
+
+    /// <summary>
+    /// Remove all missing elements of grid
+    /// </summary>
+    public void removeAllMissingElements()
+    {
+        for(int i = 0; i < elements.Count; i++)
+        {
+            if (elements[i] == null)
+                elements.RemoveAt(i);
+
         }
     }
 }

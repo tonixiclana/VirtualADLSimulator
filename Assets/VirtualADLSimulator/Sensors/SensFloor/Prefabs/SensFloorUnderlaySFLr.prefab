@@ -1847,7 +1847,7 @@ MonoBehaviour:
   exportData: 1
   tagsAvailable:
   - Floor
-  exportDetailPosition: 1
+  exportDetailPosition: 0
   _sensFloorUnderlayMatLr0: {fileID: 114838448856605554}
   _sensFloorUnderlayMatLr1: {fileID: 114534227556213244}
 --- !u!114 &114472700485037842
@@ -1900,7 +1900,15 @@ MonoBehaviour:
   frecuency: 1
   exportData: 1
   tagsAvailable: []
-  _capacitiveProximitySensors: []
+  _capacitiveProximitySensors:
+  - {fileID: 114380278603977520}
+  - {fileID: 114806900318323640}
+  - {fileID: 114237225394218802}
+  - {fileID: 114991252451726150}
+  - {fileID: 114367022913497478}
+  - {fileID: 114459416876140958}
+  - {fileID: 114607149675099870}
+  - {fileID: 114324571910637032}
   _values:
   - 0
   - 0
@@ -2119,7 +2127,15 @@ MonoBehaviour:
   frecuency: 1
   exportData: 1
   tagsAvailable: []
-  _capacitiveProximitySensors: []
+  _capacitiveProximitySensors:
+  - {fileID: 114935193923483628}
+  - {fileID: 114597333606173110}
+  - {fileID: 114562601612657708}
+  - {fileID: 114970434305189962}
+  - {fileID: 114202848913685496}
+  - {fileID: 114099714919591450}
+  - {fileID: 114793936237271074}
+  - {fileID: 114894129595467250}
   _values:
   - 0
   - 0

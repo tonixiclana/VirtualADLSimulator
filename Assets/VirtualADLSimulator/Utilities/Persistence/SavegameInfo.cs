@@ -7,5 +7,6 @@ public class SavegameInfo
     public string name;
     public string description;
     public string createdTime;
+    public string savegameTime;
 
 }

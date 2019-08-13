@@ -10,6 +10,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 /// <summary>Simple FPS-Counter.</summary>
@@ -22,7 +23,7 @@ public class FPSDisplay : MonoBehaviour
     /// The text component to show the fps 
     /// </summary>
     [Tooltip("The text component to show the fps")]
-    public Text FPS;
+    public TextMeshProUGUI FPS;
 
     /// <summary>
     /// Delta time
@@ -47,7 +48,7 @@ public class FPSDisplay : MonoBehaviour
     /// <summary>
     /// Calculating string
     /// </summary>
-    private const string wait = "<i>...calculating <b>FPS</b>...</i>";
+    private const string wait = "<i><b>FPS: </b>...</i>";
 
     /// <summary>
     /// Red color string

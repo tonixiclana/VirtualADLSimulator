@@ -31,6 +31,11 @@ public class FileBrowserItem : MonoBehaviour {
 
 
 
+    /// <summary>
+    /// The background of item
+    /// </summary>
+    [Tooltip("The background of item")]
+    public Image background;
 
     /// <summary>
     /// The below text of the icon
@@ -56,6 +61,11 @@ public class FileBrowserItem : MonoBehaviour {
     [Tooltip("The filebrowser that manage this filebrowseritem")]
     public FileBrowser fileBrowser;
 
+    /// <summary>
+    /// Open file routine
+    /// </summary>
+
+    public Coroutine openFile;
 
 
 
@@ -72,10 +82,18 @@ public class FileBrowserItem : MonoBehaviour {
         }
         else
         {
-            //Action to do when click a file
-            /*GetComponent<Button>().onClick.AddListener(() => {
-                Process.Start(@absolutePath);
-            });*/
+            /*
+            GetComponent<Button>().onClick.AddListener(() => {
+                if(fileBrowser.fileContent != null)
+                {
+                    if (openFile != null)
+                        StopCoroutine(openFile);
+                    openFile = StartCoroutine(fileBrowser.openTextFile(absolutePath));
+                }
+   
+                
+            });
+            */
         }
     }
 	

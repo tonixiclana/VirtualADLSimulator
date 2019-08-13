@@ -63,17 +63,33 @@ public class PersistenceManager : MonoBehaviour {
         _savegameButton.onClick.AddListener(delegate
         {
             if (_fileBrowser.existInActualPath(_nameOfSavegameInput.text + ".txt"))
-                _fileBrowser.confirmMessage.showConfirmMessage("Do You want Overwrite this scenary?", saveScenary); 
+                _fileBrowser.confirmMessage.showConfirmMessage("Do You want Overwrite this scenary?", saveScenary);
             else
-                saveScenary(); 
+            {
+                saveScenary();
+            }
 
         });
 
         //Add listener to removegame button
         _removegameButton.onClick.AddListener(delegate
         {
+            try
+            {
+                 if (_fileBrowser.hasContent(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/VirtualADLSimulator/" + _nameOfSavegameInput.text))
+                    _fileBrowser.confirmMessage.showConfirmMessage("Do you want delete the experiments associated?", removeExperimentsAssociated);
+            }
+            catch(Exception e)
+            {
+                _fileBrowser.confirmMessage.showMessage("Error removing: " + e.Message);
+            }
+            //checking if folder in documents for experiments exists
+           
+
             if (_fileBrowser.existInActualPath(_nameOfSavegameInput.text + ".txt"))
-                _fileBrowser.confirmMessage.showConfirmMessage("Do You want remove this scenary?", removeScenary);
+                    _fileBrowser.confirmMessage.showConfirmMessage("Do You want delete this scenary?", removeScenary);
+            
+            
         });
 
 
@@ -86,8 +102,17 @@ public class PersistenceManager : MonoBehaviour {
             //loadPersistenceGameobjects("savegames/" + _nameOfSavegameInput.text + ".txt");
         });
 
+        _nameOfSavegameInput.onValueChanged.AddListener(delegate 
+        {
+            updateActionsButtons();
+        });
 
-        _fileBrowser.refreshGridContent(Application.persistentDataPath + "/savegames");
+        _descriptionOfSavegameInput.onValueChanged.AddListener(delegate
+        {
+            updateActionsButtons();
+        });
+
+        _fileBrowser.refreshGridContentOfActualPath();
         updateFileBrowserItemListeners();
 
 
@@ -106,6 +131,8 @@ public class PersistenceManager : MonoBehaviour {
                 _removegameButton.interactable = true;
 
             });
+
+            
         }
 
         updateActionsButtons();
@@ -121,7 +148,8 @@ public class PersistenceManager : MonoBehaviour {
     {
         _loadgameButton.interactable = false;
         _removegameButton.interactable = false;
-        if (_nameOfSavegameInput.text == "")
+
+        if (_nameOfSavegameInput.text == "" || _descriptionOfSavegameInput.text == "")
             _savegameButton.interactable = false;
         else
         {
@@ -204,10 +232,16 @@ public class PersistenceManager : MonoBehaviour {
 
         resetScene();
 
+
+        SavegameInfo savegameInfo = JsonConvert.DeserializeObject<SavegameInfo>(file[0]);
+        Debug.Log(savegameInfo.savegameTime);
+        FindObjectOfType<DayNight>().setActualDateTime(DateTime.ParseExact(savegameInfo.savegameTime, "yyyy-MM-dd HH:mm:ss", null));
+
         foreach (var line in file)
         {
             if(line != "")
             {
+
 
                 PersistenceInfo persistenceInfo = JsonConvert.DeserializeObject<PersistenceInfo>(line);
 
@@ -280,9 +314,10 @@ public class PersistenceManager : MonoBehaviour {
 
             SavegameInfo savegameInfo = new SavegameInfo();
 
-            savegameInfo.createdTime = System.DateTime.Now.ToString("MM/dd/yy HH:mm:ss");
+            savegameInfo.createdTime = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             savegameInfo.name = (_nameOfSavegameInput.text != "") ? _nameOfSavegameInput.text : savegameInfo.createdTime;
             savegameInfo.description = _descriptionOfSavegameInput.text;
+            savegameInfo.savegameTime = FindObjectOfType<DayNight>().currentDateTime.ToString("yyyy-MM-dd HH:mm:ss");
 
 
             _fileBrowser.editFileInActualPath(
@@ -290,17 +325,23 @@ public class PersistenceManager : MonoBehaviour {
                 , _nameOfSavegameInput.text + ".txt"
 
             );
-
+            
+            //save the gameobjects loaded in gameobjectlist
             saveGameObjectsInJSON(_nameOfSavegameInput.text + ".txt");
+            _fileBrowser.createFolder(_nameOfSavegameInput.text, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/VirtualADLSimulator");
             _fileBrowser.refreshGridContentOfActualPath();
             updateFileBrowserItemListeners();
+
+    
+            _fileBrowser.confirmMessage.showMessage("Scenary " + _nameOfSavegameInput.text + " saved!");
+
+            
         }    
         catch (Exception e)
         {
-            Debug.Log(e);
+            _fileBrowser.confirmMessage.showMessage("Error saving the scenary " + _nameOfSavegameInput + "! " + e.Message);
             return false;
         }
-
 
         return true;
     }
@@ -311,16 +352,16 @@ public class PersistenceManager : MonoBehaviour {
         try
         {
             _fileBrowser.deleteFileInActualPath(_nameOfSavegameInput.text + ".txt");
-
             _nameOfSavegameInput.text = "";
             _descriptionOfSavegameInput.text = "";
+
             _fileBrowser.refreshGridContentOfActualPath();
             updateFileBrowserItemListeners();
         }
         catch (Exception e)
         {
-            Debug.Log(e);
-            return false;
+            _fileBrowser.confirmMessage.showMessage("Error saving: " + e.Message);
+            return false; 
         }
         return true;
     }
@@ -330,6 +371,7 @@ public class PersistenceManager : MonoBehaviour {
         try
         {
             FindObjectOfType<SceneAndURLLoader>().sceneLoad("MainScene", "savegames/" + _nameOfSavegameInput.text + ".txt");
+
         }
         catch(Exception e)
         {
@@ -339,4 +381,17 @@ public class PersistenceManager : MonoBehaviour {
         return true;
     }
 
+
+    public bool removeExperimentsAssociated()
+    {
+        try
+        {
+            return _fileBrowser.removeFolder(_nameOfSavegameInput.text, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/VirtualADLSimulator", true);
+
+        }
+        catch (Exception e)
+        {
+            throw e;
+        }
+    }
 }

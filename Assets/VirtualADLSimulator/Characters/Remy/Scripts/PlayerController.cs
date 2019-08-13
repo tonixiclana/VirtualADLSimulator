@@ -120,14 +120,17 @@ public class PlayerController : MonoBehaviour {
         //[NEED UPDATE] modify the speedPercent of animation
         GetComponent<Animator>().SetFloat("speedPercent", ((running) ? 1 : .5f) * inputDir.magnitude, speedSmoothTime, Time.deltaTime);
 
-        //Move the Character when the Character is in ground
+        //Move the Character when is in ground
         if (inputDir.y != 0 && isGrounded)
-            transform.position += inputDir.y * transform.forward * currentSpeed * Time.deltaTime;
+            GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + inputDir.y * transform.forward * currentSpeed * Time.deltaTime);
+        //transform.position += inputDir.y * transform.forward * currentSpeed * Time.deltaTime;
+
         if (inputDir.x != 0 && isGrounded)
-            transform.position += inputDir.x * transform.right * currentSpeed * Time.deltaTime;
+            GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + inputDir.x * transform.right * currentSpeed * Time.deltaTime);
+        //transform.position += inputDir.x * transform.right * currentSpeed * Time.deltaTime;
 
         //[NEED UPDATE] Set the currentSpeed at 0 when the speed is negligible 
-        if(currentSpeed < 0.001f)
+        if (currentSpeed < 0.001f)
             currentSpeed = 0;
     }
 

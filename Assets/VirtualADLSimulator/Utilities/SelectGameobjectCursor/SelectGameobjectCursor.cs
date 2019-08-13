@@ -9,11 +9,13 @@
  */
 
 using cakeslice;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
+
 
 /// <summary>
 /// This class allow have a tracking of objects selected with the cursor
@@ -24,16 +26,28 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
 {
 
     /// <summary>
-    /// The key that activate the function in the gameobject
+    /// The key that activate the action function in the gameobject
     /// </summary>
     [Tooltip("The key that activate the function in the gameobject")]
     public KeyCode triggerKey;
+
+    /// <summary>
+    /// Max distance allow to interact with the obj
+    /// </summary>
+    [Tooltip("Max distance allow to interact with the obj")]
+    public float distMax;
 
     /// <summary>
     /// The gameobject which hit with the ray
     /// </summary>
     [Tooltip("The gameobject which hit with the ray")]
     public GameObject inCursorGameobject;
+
+    /// <summary>
+    /// Indicate if is allow the object selection
+    /// </summary>
+    [Tooltip("Indicate if is allow the object selection")]
+    public bool allowSelect = true;
 
     /// <summary>
     /// Indicate if is allow the multiple selection
@@ -52,9 +66,6 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     /// </summary>
     [Tooltip("The layers that apply in the filter")]
     public List<string> blockLayers;
-
-  
-
 
     /// <summary>
     /// The material that contains the highLighing, that allow change the main texture
@@ -81,9 +92,17 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     public int colorSelect;
 
     /// <summary>
-    /// Previus State of list
+    /// Cursor dot
     /// </summary>
-    public List<string> previousLayerList;
+    [Tooltip("The Canvas Transform of cursor dot")]
+    public GameObject cursorDot;
+
+    /// <summary>
+    /// Color of cursor dot when hit with a object of 
+    /// </summary>
+    public Color cursorDotHoverColor;
+
+
 
     /// <summary>
     /// The original material of selected gameobject, needed to remove the highlighing
@@ -110,10 +129,22 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     /// </summary>
     private bool isHit;
 
-	// Use this for initialization
-	void Start () {
+    /// <summary>
+    /// Store the original color of cursor dot
+    /// </summary>
+    private Color cursorDotOriginalColor;
+
+    /// <summary>
+    /// Indicate if blocked of layers is applied
+    /// </summary>
+    private bool isBlockedApplied = false;
+
+    // Use this for initialization
+    void Start () {
 
         blockLayers = new List<string>(layers);
+        if(cursorDot != null && cursorDot.GetComponent<UnityEngine.UI.Image>() != null)
+            cursorDotOriginalColor = cursorDot.GetComponent<UnityEngine.UI.Image>().color;
     }
 
     bool isTargetLayer(List<string> layers)
@@ -132,12 +163,31 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
         if (!isHit)
         {
             //If previusly had a selectedGameobject hover with the target layer remove the highlighing
-            if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers))
+            if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers)
+                && !isBlockedApplied)
                 if (!gameObjectsSelected.Contains(inCursorGameobject))
-                    inCursorGameobject.GetComponent<Outline>().enabled = false;
+                {
+                    //inCursorGameobject.GetComponent<Outline>().color = 0;
+                    inCursorGameobject.GetComponent<Outline>().enabled = false ;
+                }
+
+            if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers)
+                && isBlockedApplied)
+                if (!gameObjectsSelected.Contains(inCursorGameobject))
+                {
+                    inCursorGameobject.GetComponent<Outline>().color = inCursorGameobject.GetComponent<Outline>().previousColor;
+                }
+
+
+
+            if (cursorDot != null)
+            {
+                cursorDot.GetComponent<UnityEngine.UI.Image>().color = cursorDotOriginalColor;
+            }
 
             //Put the selectedgameobject at null
             inCursorGameobject = null;
+                                
         }
         else
         {
@@ -150,11 +200,18 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
                      && !gameObjectsSelected.Contains(inCursorGameobject))
                 {
                     if (inCursorGameobject.GetComponent<Outline>().color == inCursorGameobject.GetComponent<Outline>().previousColor)
+                    {
+
+
                         inCursorGameobject.GetComponent<Outline>().enabled = false;
-                    
+                    }
                     else
                         inCursorGameobject.GetComponent<Outline>().resetPreviousColor();
-                    
+
+                    if (cursorDot != null)
+                    {
+                        cursorDot.GetComponent<UnityEngine.UI.Image>().color = cursorDotOriginalColor;
+                    }
 
                 }
 
@@ -169,8 +226,15 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
                     && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers)
                     && !gameObjectsSelected.Contains(inCursorGameobject))
                 {
+
                     inCursorGameobject.GetComponent<Outline>().changeColor(colorHover);
                     inCursorGameobject.GetComponent<Outline>().enabled = true;
+                    if (cursorDot != null)
+                    {
+                        cursorDotOriginalColor = cursorDot.GetComponent<UnityEngine.UI.Image>().color;
+                        cursorDot.GetComponent<UnityEngine.UI.Image>().color = cursorDotHoverColor;
+                    }
+
                 }
             }
         }
@@ -178,35 +242,53 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
 
     void Update () {
 
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        isHit = Physics.Raycast(ray, out hit, 100f);
+        if(Cursor.lockState == CursorLockMode.Locked)
+            ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        else
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        isHit = Physics.Raycast(ray, out hit, distMax);
+        
+        Debug.DrawRay(Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0f)), transform.forward * distMax, Color.green);
 
         ///if the timescale is 0 (pause the fixedupdate) dont work
-        if(Time.timeScale != 0)
+        if (Time.timeScale != 0 )
         {
-            highlighingHover(isHit);
+            if (!IsPointerOverUIObject())
+                highlighingHover(isHit);
+            else
+                highlighingHover(false);
 
-            doAction();
 
-            //Action when pulse 0 mouse button
-            if (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject())
+            if (isHit)
             {
-                //If the hit gameobject is diferent at the last selectedGameobject and is not null
-                if (inCursorGameobject != null && inCursorGameobject != hit.transform.gameObject)
+                doAction();
+
+
+                //Action when pulse 0 mouse button
+                if (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject() && allowSelect)
                 {
-                    //add the selectedGameobject at the list gameObjectsSelect
-                    selectGameObject();
-                }
-                else
-                {
-                    //If the click is over the same gameobject call selectGameObject to deselect
-                    if (inCursorGameobject != null)
+                    //If the hit gameobject is diferent at the last selectedGameobject and is not null
+                    if (inCursorGameobject != null && inCursorGameobject != hit.transform.gameObject)
                     {
+                        //add the selectedGameobject at the list gameObjectsSelect
                         selectGameObject();
-                        inCursorGameobject = null;
+                    }
+                    else
+                    {
+                        //If the click is over the same gameobject call selectGameObject to deselect
+                        if (inCursorGameobject != null)
+                        {
+                            selectGameObject();
+                            inCursorGameobject = null;
+                        }
                     }
                 }
+
             }
+            else
+                doAction();
+            
         } 
     }
 
@@ -256,6 +338,8 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     public void highlighingAndBlockByTag(string tag)
     {
         clearSelection();
+       
+
         foreach (var gm in GameObject.FindGameObjectsWithTag(tag))
             highlighingGameobject(gm, 2, tag);
 
@@ -265,6 +349,7 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     public void highlighingAndBlockByTag(string tag, int color = 2)
     {
         clearSelection();
+        
         foreach (var gm in GameObject.FindGameObjectsWithTag(tag))
             highlighingGameobject(gm, color, tag);
 
@@ -274,7 +359,7 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     public void clearAllHighlighing()
     {
         IEnumerable<string> diferentsLayers = layers.Except(blockLayers);
-
+        
         if (diferentsLayers.Count() == 0)
             foreach(var i in blockLayers)
             {
@@ -319,19 +404,28 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     public void blockLayer(string layer)
     {
         //blockLayers.Clear();
+       
         IEnumerable<string> diferentsLayers = layers.Except(blockLayers);
 
         if (diferentsLayers.Count() == 0)
             blockLayers.Clear();
      
         if (!blockLayers.Contains(layer))
+        {
             blockLayers.Add(layer);
+            isBlockedApplied = true;
+        }
         else
         {
             blockLayers.Remove(layer);
             if(blockLayers.Count() == 0)
+            {
+                isBlockedApplied = false;
+
                 foreach(var i in layers)
                     blockLayers.Add(i);
+            }
+
 
         }
     }
@@ -340,6 +434,7 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
     {
         IEnumerable<string> diferentsLayers = layers.Except(blockLayers);
 
+        clearSelection();
         if (diferentsLayers.Count() != 0)
         {
             for(int i = 0; i < blockLayers.Count(); i++)
@@ -469,10 +564,30 @@ public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
 
     public void doAction()
     {
-        if (Input.GetKeyDown(triggerKey) && inCursorGameobject != null && inCursorGameobject.GetComponent<TransformActuator>() != null)
-            inCursorGameobject.GetComponent<TransformActuator>().doAction();
-    }
+        if (Input.GetKeyDown(triggerKey) && inCursorGameobject != null )
+        {
+            foreach (AudioActuator act in inCursorGameobject.GetComponents<AudioActuator>())
+                inCursorGameobject.GetComponent<AudioActuator>().doAction();
 
-   
+            foreach (TransformActuator act in inCursorGameobject.GetComponents<TransformActuator>())
+                inCursorGameobject.GetComponent<TransformActuator>().doAction();
+        }
+
+        //change the text of cursor dot
+
+        if (inCursorGameobject != null && inCursorGameobject.GetComponent<Outline>() != null
+                   && isTargetLayer(inCursorGameobject.GetComponent<Outline>().layers)
+                   && !gameObjectsSelected.Contains(inCursorGameobject))
+        {   
+            if (cursorDot != null && cursorDot.GetComponentInChildren<TMPro.TextMeshProUGUI>() != null &&
+                inCursorGameobject.GetComponent<Actuator>() != null)
+                cursorDot.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = inCursorGameobject.GetComponent<Actuator>().actionName;
+        }
+        else if (cursorDot != null && cursorDot.GetComponentInChildren<TMPro.TextMeshProUGUI>() != null)
+            cursorDot.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "";
+
+
+
+    }
 
 }

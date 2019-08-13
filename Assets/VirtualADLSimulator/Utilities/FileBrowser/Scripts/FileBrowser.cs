@@ -15,6 +15,8 @@ using System.IO;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Diagnostics;
+using System.Linq;
 
 /// <summary>
 /// Provide the necesary logic for manage a filebrowser that allow read and write files
@@ -32,10 +34,17 @@ public class FileBrowser : MonoBehaviour {
     public string startPath;
 
     /// <summary>
-    /// Represent the directory icon to show in the screen
+    /// Start path by default documents?
     /// </summary>
-    [Tooltip("Represent the directory icon to show in the screen")]
+    [Tooltip("Start path by default documents?")]
+    public bool startPathInDocuments = false;
+
+    /// <summary>
+    /// Represent the directory or file icon to show in the screen
+    /// </summary>
+    [Tooltip("Represent the directory or file icon to show in the screen")]
     public FileBrowserItem dirItem;
+
     /// <summary>
     /// Represent the file icon to show in the screen
     /// </summary>
@@ -46,7 +55,13 @@ public class FileBrowser : MonoBehaviour {
     /// Is the grid that contains the elements of file browser
     /// </summary>
     [Tooltip("Is the grid that contains the elements of file browser")]
-    public GridLayoutGroup gridContent;
+    public GridLayoutGroup contentBrowser;
+
+    /// <summary>
+    /// Is the text that contains the file content
+    /// </summary>
+    [Tooltip("Is the text that contains the file content")]
+    public TextMeshProUGUI fileContent;
 
     /// <summary>
     /// Show folders
@@ -55,35 +70,90 @@ public class FileBrowser : MonoBehaviour {
     public bool showFolders;
 
     /// <summary>
+    /// Extension filter, separate by commas
+    /// </summary>
+    [Tooltip("Extension filter")]
+    public string[] extensionFilter;
+
+    /// <summary>
     /// List of Files in browser
     /// </summary>
     private List<FileBrowserItem> listFile = new List<FileBrowserItem>();
+
+    /// <summary>
+    /// The boton to open a file in system brownser
+    /// </summary>
+    [Tooltip("The boton to open a file in system brownser")]
+    public Button openInBrowserBtn;
 
 
     /// <summary>
     /// The actual Path
     /// </summary>
     [Tooltip("Is the actual path of filebrowser")]
-    private string actualPath;
+    private string actualPath = "";
 
-    private void Awake()
+    /// <summary>
+    /// The actual File Selected
+    /// </summary>
+    [Tooltip("Is the actual file selected")]
+    public string fileSelected;
+
+
+    void Awake()
     {
-        
+
+    }
+
+    private void Start()
+    {
+        if(openInBrowserBtn != null)
+            openInBrowserBtn.onClick.AddListener(delegate {
+                openFileInBrowser(fileSelected);
+            });
+    }
+
+
+    // Update is called once per frame
+    private void Update () {
+
+            
+
+
+    }
+
+    private void OnEnable()
+    {
+        if (startPathInDocuments)
+            if (startPath == "")
+                actualPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\VirtualADLSimulator";
+            else
+            {
+                actualPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\VirtualADLSimulator";
+
+                if(existInActualPath(startPath))
+                    actualPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\VirtualADLSimulator\\" + startPath;
+            }
+        else
+            if (startPath == "")
+                actualPath = Application.persistentDataPath;
+            else
+                actualPath = Application.persistentDataPath + "\\" + startPath;
+
+
+        //UnityEngine.Debug.Log("Actual Path " + actualPath);
+
         //Refresh the files list in a current directory
-        if(listFile.Count == 0)
-            refreshGridContent((startPath == "")?Application.persistentDataPath : Application.persistentDataPath + "/" + startPath);
+        /*if (listFile.Count == 0)*/
+            refreshGridContentOfActualPath();
+
+        if (fileSelected != "" && fileContent != null)
+        {
+            StopAllCoroutines();
+            StartCoroutine(openTextFile(fileSelected));
+        }
+            
     }
-
-    // Use this for initialization
-    void Start () {
-
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 
     public List<FileBrowserItem> getFileItems()
     {
@@ -96,14 +166,11 @@ public class FileBrowser : MonoBehaviour {
     /// <param name="path"></param>
     public void refreshGridContent(string path)
     {
-
         //remove the old items and take the files and directory
-        gridContent.GetComponent<PopulateGrid>().removeAllElements();
+        contentBrowser.GetComponent<PopulateGrid>().removeAllElements();
         DirectoryInfo dir = new DirectoryInfo(path);
         actualPath = dir.FullName;
         DirectoryInfo[] listOfDir = dir.GetDirectories();
-        FileInfo[] listOfFiles = dir.GetFiles("*.*");
-        listFile.Clear();
 
         //Create a general fileBrowserItem
         FileBrowserItem item = dirItem;
@@ -118,7 +185,7 @@ public class FileBrowser : MonoBehaviour {
             item.GetComponent<FileBrowserItem>().isFolder = true;
             item.GetComponent<FileBrowserItem>().fileBrowser = this;
             //add at gridcontent
-            gridContent.GetComponent<PopulateGrid>().addElement(Instantiate(item.gameObject, gridContent.transform));
+            contentBrowser.GetComponent<PopulateGrid>().addElement(Instantiate(item.gameObject, contentBrowser.transform));
 
             foreach (DirectoryInfo d in listOfDir)
             {
@@ -127,23 +194,47 @@ public class FileBrowser : MonoBehaviour {
                 item.GetComponent<FileBrowserItem>().fileBrowser = this;
                 //add at gridcontent
                
-                gridContent.GetComponent<PopulateGrid>().addElement(Instantiate(item.gameObject, gridContent.transform));
+                contentBrowser.GetComponent<PopulateGrid>().addElement(Instantiate(item.gameObject, contentBrowser.transform));
             }
         }
-           
 
-        //add all of files
-        item = fileItem;
-        foreach (FileInfo f in listOfFiles)
+        FileInfo[] listOfFiles = new FileInfo[0];
+
+        listFile.Clear();
+        if (extensionFilter.Length == 0)
         {
-            item.GetComponent<FileBrowserItem>().text.text = f.Name;
-            item.GetComponent<FileBrowserItem>().absolutePath = f.FullName;
-            item.GetComponent<FileBrowserItem>().fileBrowser = this;
-            //add at gridcontent and a list of files
-            GameObject gm = Instantiate(item.gameObject, gridContent.transform);
-            listFile.Add(gm.GetComponent<FileBrowserItem>());
-            gridContent.GetComponent<PopulateGrid>().addElement(gm);
+            listOfFiles = dir.GetFiles("*.*");
+            FileBrowserItem i = fileItem;
+            foreach (FileInfo f in listOfFiles)
+            {
+                i.GetComponent<FileBrowserItem>().text.text = f.Name;
+                i.GetComponent<FileBrowserItem>().absolutePath = f.FullName;
+                i.GetComponent<FileBrowserItem>().fileBrowser = this;
+                //add at gridcontent and a list of files
+                GameObject gm = Instantiate(i.gameObject, contentBrowser.transform);
+                listFile.Add(gm.GetComponent<FileBrowserItem>());
+                contentBrowser.GetComponent<PopulateGrid>().addElement(gm);
+            }
         }
+
+        foreach (var e in extensionFilter)
+        {
+            listOfFiles = dir.GetFiles("*." + e);
+            //add all of files
+            FileBrowserItem i = fileItem;
+            foreach (FileInfo f in listOfFiles)
+            {
+                i.GetComponent<FileBrowserItem>().text.text = f.Name;
+                i.GetComponent<FileBrowserItem>().absolutePath = f.FullName;
+                i.GetComponent<FileBrowserItem>().fileBrowser = this;
+                //add at gridcontent and a list of files
+                GameObject gm = Instantiate(i.gameObject, contentBrowser.transform);
+                listFile.Add(gm.GetComponent<FileBrowserItem>());
+                contentBrowser.GetComponent<PopulateGrid>().addElement(gm);
+            }
+
+        }
+
     }
 
 
@@ -169,24 +260,55 @@ public class FileBrowser : MonoBehaviour {
             writer.Close();
         }
         
+        
     }
+
+
+    public IEnumerator openTextFile(string name)
+    {
+        /*
+        if (!fileContent.transform.parent.transform.parent.gameObject.activeSelf)
+        {*/
+            fileSelected = name;
+            fileContent.transform.parent.transform.parent.gameObject.SetActive(true);
+            String s = "";
+
+            StreamReader sr = new StreamReader(new FileStream(name, FileMode.Open, FileAccess.Read, FileShare.ReadWrite | FileShare.Delete));
+            fileContent.text = sr.ReadToEnd();
+            while (fileContent.transform.parent.transform.parent.gameObject.activeSelf)
+            {
+                while ((s = sr.ReadLine()) != null)
+                {
+                    fileContent.text += s + "\n";// para que funcionen los saltos de linea 
+
+                    yield return new WaitForSecondsRealtime(0.01f);
+                }
+                yield return new WaitForSecondsRealtime(0.1f);
+            }
+
+            /*if (!fileContent.transform.parent.transform.parent.gameObject.activeSelf)
+                fileSelected = null;*/
+
+            sr.Close();
+        //}
+
+    } 
 
     public string[] readFileInActualPath(string name)
     {
-        return File.ReadAllLines(actualPath + "/" + name);
+        return File.ReadAllLines(actualPath + "\\" + name);
     }
 
     public void createFileInActualPath(string name, string text)
     {
-        //if(existInActualPath(name))
-
-        
-        File.WriteAllText(actualPath + "/" + name, text);
+        File.WriteAllText(actualPath + "\\" + name, text);
     }
 
-    public bool existInActualPath(string name)
+    public bool existInActualPath(string name, string path = "")
     {
-        if (File.Exists(actualPath + "/" + name))
+        if (path == "")
+            path = actualPath;
+        if (File.Exists(path + "\\" + name) || Directory.Exists(path + "\\" + name))
             return true;
         else
             return false;
@@ -195,10 +317,98 @@ public class FileBrowser : MonoBehaviour {
 
     public void deleteFileInActualPath(string name)
     {
-        if (File.Exists(actualPath + "/" + name))
-            File.Delete(actualPath + "/" + name);
+        if (File.Exists(actualPath + "\\" + name))
+            File.Delete(actualPath + "\\" + name);
     }
 
-    
 
+    public string getActualPath()
+    {
+        return actualPath;
+    }
+    
+    public void createFolder(string name, string path = "")
+    {
+        if (path == "")
+            path = actualPath;
+
+        if (!Directory.Exists(path + "\\" + name))
+            Directory.CreateDirectory(path + "\\" + name);
+    }
+
+    public bool removeFolder(string name, string path = "", bool recursive = false)
+    {
+        if (path == "")
+            path = actualPath;
+
+        try
+        {
+            if (Directory.Exists(path + "\\" + name))
+                Directory.Delete(path + "\\" + name, recursive);
+
+            return true;
+        }catch(Exception e)
+        {
+            return false;
+        }
+
+    }
+
+    public void openFileInBrowser(string path = "")
+    {
+        string tmp;
+
+        if (path == "")
+            tmp = fileSelected;
+        else
+            tmp = path;
+
+        if (fileSelected != null)
+        {
+            string cmd = "explorer.exe";
+            string arg = "/select, " + tmp;
+            Process.Start(cmd, arg);
+        }
+        else
+        {
+            string cmd = "explorer.exe";
+            string arg = actualPath;
+            Process.Start(cmd, arg);
+        }
+    }
+
+    public bool hasContent(string path = "")
+    {
+        if (path == "")
+            path = actualPath;
+        try
+        {
+            //UnityEngine.Debug.Log(Directory.GetFiles(path).Length);
+            if (Directory.GetFiles(path).Length > 0)
+                return true;
+            else
+                return false;
+        }
+        catch (Exception e)
+        {
+            throw e;
+        }
+    }
+
+    public void deselectFile()
+    {
+        fileSelected = "";
+        
+    }
+
+    public string getPathOfFileInActualPath(string fileName)
+    {
+        foreach(string f in Directory.GetFiles(actualPath))
+        {
+            if (f.Split('\\').ToList().Last() == fileName)
+                return f;
+        }
+
+        return "";
+    }
 }

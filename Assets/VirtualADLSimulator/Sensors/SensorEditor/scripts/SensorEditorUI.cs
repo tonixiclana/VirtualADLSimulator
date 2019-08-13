@@ -109,13 +109,15 @@ public class SensorEditorUI : MonoBehaviour {
         if (!editSensorLayout.activeSelf)
             editSensorLayout.SetActive(true);
 
-        GameObject addSensorTitleGm = new GameObject("AddSensorTitle");
+        Destroy(GameObject.Find("AddSensorTitle"));
+        GameObject addSensorTitleGmAux = new GameObject("AddSensorTitle");
+        addSensorTitleGmAux.AddComponent<TextMeshProUGUI>().text = "Sensors availables for this Element";
+        addSensorTitleGmAux.GetComponent<TextMeshProUGUI>().fontSize = 60;
+        addSensorTitleGmAux.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Center;
 
-        addSensorTitleGm.AddComponent<TextMeshProUGUI>().text = "Sensors availables for this Element";
-        addSensorTitleGm.GetComponent<TextMeshProUGUI>().fontSize = 60;
-        addSensorTitleGm.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Center;
+        GameObject addSensorTitleGm = Instantiate(addSensorTitleGmAux, sensorPropertiesContent.transform);
+        Destroy(addSensorTitleGmAux);
 
-        addSensorTitleGm = Instantiate(addSensorTitleGm, sensorPropertiesContent.transform);
         sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(addSensorTitleGm);
         foreach (var sensor in availableSensors)
         {
@@ -132,7 +134,7 @@ public class SensorEditorUI : MonoBehaviour {
                         editSensor(inEditGameobject.GetComponentInChildren<Sensor>());
                     });
 
-                editor.GetComponentInChildren<Text>().text = sensor.GetType().Name;
+                editor.GetComponentInChildren<TextMeshProUGUI>().text = sensor.GetType().Name;
                 editor.GetComponent<SensorDescriptionPopUp>().setDescription(getDescriptionOfClass(sensor.GetType()));
                 sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(editor);
             }   
@@ -148,17 +150,26 @@ public class SensorEditorUI : MonoBehaviour {
 
         sensorPropertiesContent.GetComponent<PopulateGrid>().removeAllElements();
 
-        GameObject addSensorTitleGm = new GameObject("EditSensorTitle");
+        Destroy(GameObject.Find("EditSensorTitle"));
+        GameObject editSensorTitleGmAux = new GameObject("EditSensorTitle");
+        editSensorTitleGmAux.AddComponent<TextMeshProUGUI>().text = "Edit sensor options";
+        editSensorTitleGmAux.GetComponent<TextMeshProUGUI>().fontSize = 60;
+        editSensorTitleGmAux.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Center;
 
-        addSensorTitleGm.AddComponent<TextMeshProUGUI>().text = "Edit Sensor Properties";
-        addSensorTitleGm.GetComponent<TextMeshProUGUI>().fontSize = 60;
-        addSensorTitleGm.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Center;
+        GameObject editSensorTitleGm = Instantiate(editSensorTitleGmAux, sensorPropertiesContent.transform);
+        Destroy(editSensorTitleGmAux);
+        sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(editSensorTitleGm);
 
-        addSensorTitleGm = Instantiate(addSensorTitleGm, sensorPropertiesContent.transform);
-        sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(addSensorTitleGm);
+        GameObject removeButton = Instantiate(deleteSensorButton.gameObject, sensorPropertiesContent.transform);
 
-        
-        
+        removeButton.GetComponent<Button>().onClick.AddListener(
+            delegate {
+                removeInEditSensor();
+                listSensorTypesInGUI();
+            });
+
+        sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(removeButton);
+
         foreach (var prop in currentInEditSensor.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance))
         {
             //Debug.Log(prop.Name);
@@ -169,29 +180,29 @@ public class SensorEditorUI : MonoBehaviour {
                 editor = Instantiate(stringPropertyEditor, sensorPropertiesContent.transform);
 
                 editor.GetComponentInChildren<TextMeshProUGUI>().text = prop.Name;
+                editor.GetComponent<TMP_InputField>().contentType = TMP_InputField.ContentType.Alphanumeric;
                 try
                 {
                     editor.GetComponent<TMP_InputField>().text = prop.GetValue(currentInEditSensor).ToString();
+
                 }
                 catch (Exception e)
                 {
                     Debug.Log(prop.Name);
                 }
-                
 
                 editor.GetComponent<SensorDescriptionPopUp>().setDescription(getDescriptionOfAttribute(currentInEditSensor.GetType(), prop.Name));
 
-                
+                editor.GetComponent<TMP_InputField>().onValueChanged.AddListener(delegate {
+                    changeFieldValue(currentInEditSensor, prop, editor.GetComponent<TMP_InputField>().text);
+                });
+
                 editor.GetComponent<TMP_InputField>().onSelect.AddListener(delegate {
-                    foreach(var shortCut in FindObjectsOfType<ShortCutKeysEditMode>()){
+                    foreach (var shortCut in FindObjectsOfType<ShortCutKeysEditMode>())
+                    {
                         shortCut.enabled = false;
                     }
                     FindObjectOfType<FreeCamera>().enabled = false;
-                });
-                
-
-                editor.GetComponent<TMP_InputField>().onValueChanged.AddListener(delegate {
-                    changeFieldValue(currentInEditSensor, prop, editor.GetComponent<TMP_InputField>().text);
                 });
 
                 editor.GetComponent<TMP_InputField>().onDeselect.AddListener(delegate {
@@ -201,7 +212,7 @@ public class SensorEditorUI : MonoBehaviour {
                     }
                     FindObjectOfType<FreeCamera>().enabled = true;
                 });
-
+                
                 sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(editor);
             }
             else
@@ -210,11 +221,19 @@ public class SensorEditorUI : MonoBehaviour {
                 editor = Instantiate(stringPropertyEditor, sensorPropertiesContent.transform);
 
                 editor.GetComponentInChildren<TextMeshProUGUI>().text = prop.Name;
+                editor.GetComponent<TMP_InputField>().contentType = TMP_InputField.ContentType.DecimalNumber;
                 editor.GetComponent<TMP_InputField>().text = prop.GetValue(currentInEditSensor).ToString();
                 editor.GetComponent<SensorDescriptionPopUp>().setDescription(getDescriptionOfAttribute(currentInEditSensor.GetType(), prop.Name));
 
                 editor.GetComponent<TMP_InputField>().onValueChanged.AddListener(delegate {
-                    changeFieldValue(currentInEditSensor, prop, float.Parse(editor.GetComponent<TMP_InputField>().text));
+                    try
+                    {
+                        changeFieldValue(currentInEditSensor, prop, float.Parse(editor.GetComponent<TMP_InputField>().text));
+                    }
+                    catch (Exception exp)
+                    {
+                        Debug.Log("Exception with the user input: " + exp);
+                    }
                 });
 
                 sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(editor);
@@ -237,17 +256,7 @@ public class SensorEditorUI : MonoBehaviour {
             }
         }
         
-        GameObject removeButton = Instantiate(deleteSensorButton.gameObject, sensorPropertiesContent.transform);
 
-        removeButton.GetComponent<Button>().onClick.AddListener(
-            delegate {
-                removeInEditSensor();
-                listSensorTypesInGUI();
-            });
-
-        removeButton.GetComponentInChildren<Text>().text = "Remove Sensor";
-
-        sensorPropertiesContent.GetComponent<PopulateGrid>().addElement(removeButton);
         
     }
 

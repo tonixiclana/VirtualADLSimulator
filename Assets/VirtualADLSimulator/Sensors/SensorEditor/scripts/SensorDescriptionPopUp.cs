@@ -17,11 +17,21 @@ public class SensorDescriptionPopUp : MonoBehaviour {
 	
     public void setDescription(string str)
     {
-        popUp.GetComponent<TextMeshProUGUI>().text = str;
+        popUp.GetComponentInChildren<TextMeshProUGUI>().text = str;
     }
 
-	// Update is called once per frame
-	void Update () {
+    public void showPopUp()
+    {
+        popUp.SetActive(true);
+    }
+
+    public void hidePopUp()
+    {
+        popUp.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update () {
 	}
 
 }

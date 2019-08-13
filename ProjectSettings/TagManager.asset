@@ -12,6 +12,8 @@ TagManager:
   - Drawer
   - Tap
   - DoorFrame
+  - Window
+  - HomeAppliances
   layers:
   - Default
   - TransparentFX

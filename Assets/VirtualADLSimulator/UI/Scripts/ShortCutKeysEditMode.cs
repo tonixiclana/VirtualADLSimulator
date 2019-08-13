@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class ShortCutKeysEditMode : MonoBehaviour {
 
-    public KeyCode openRegistryActivityMenu = KeyCode.R;
-    public GameObject registryActivityMenu;
+    //public KeyCode openRegistryActivityMenu = KeyCode.R;
+    //public GameObject registryActivityMenu;
     public KeyCode changeCameraMode = KeyCode.Q;
     public GameObject editModeCamera;
     public GameObject firtsPersonModeCamera;
     public GameObject character;
     public GameObject editModeInGameMenuOption;
-    public GameObject experimentModeInGameMenuOption;
+    public MeshRenderer ceiling;
     public GameObject editSensorlayout;
 
+    
     public void changeToExperimentMode()
     {
         foreach (var s in FindObjectsOfType<SelectGameobjectCursor>())
@@ -23,10 +24,10 @@ public class ShortCutKeysEditMode : MonoBehaviour {
 
 
         editModeCamera.SetActive(false);
-        experimentModeInGameMenuOption.SetActive(false);
+        //experimentModeInGameMenuOption.SetActive(false);
         editModeInGameMenuOption.SetActive(true);
         firtsPersonModeCamera.SetActive(true);
-
+        ceiling.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         character.GetComponent<FirstPersonCamera>().enabled = true;
  
         character.GetComponent<PlayerController>().enabled = true;
@@ -44,7 +45,7 @@ public class ShortCutKeysEditMode : MonoBehaviour {
         character.GetComponent<FirstPersonCamera>().enabled = false;
         character.GetComponent<PlayerController>().currentSpeed = 0;
         character.GetComponent<PlayerController>().enabled = false;
-        experimentModeInGameMenuOption.SetActive(true);
+        ceiling.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
         foreach (var s in FindObjectsOfType<SelectGameobjectCursor>())
             s.clearSelection();
         editModeCamera.SetActive(true);
@@ -55,7 +56,7 @@ public class ShortCutKeysEditMode : MonoBehaviour {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
-
+    
     // Use this for initialization
     void Start () {
 		
@@ -63,7 +64,7 @@ public class ShortCutKeysEditMode : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(openRegistryActivityMenu))
+        /*if (Input.GetKeyDown(openRegistryActivityMenu))
         {
             registryActivityMenu.SetActive(!registryActivityMenu.activeSelf);
 
@@ -79,8 +80,8 @@ public class ShortCutKeysEditMode : MonoBehaviour {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
-        }
-
+        }*/
+        
         if (Input.GetKeyDown(changeCameraMode))
         {
             if (editModeCamera.activeSelf)

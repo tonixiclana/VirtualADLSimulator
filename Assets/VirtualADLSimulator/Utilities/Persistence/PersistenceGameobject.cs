@@ -88,6 +88,12 @@ public class PersistenceGameobject : MonoBehaviour
 
             if (jObj.GetValue("Type").ToString() == typeof(PersistenceTextMesh).ToString())
                 jObj.ToObject<PersistenceTextMesh>().addComponentInGameobject(gameObject);
+
+            if (jObj.GetValue("Type").ToString() == typeof(PersistenceAudioSource).ToString())
+                jObj.ToObject<PersistenceAudioSource>().addComponentInGameobject(gameObject);
+
+            if (jObj.GetValue("Type").ToString() == typeof(PersistenceLight).ToString())
+                jObj.ToObject<PersistenceLight>().addComponentInGameobject(gameObject);
         }
     }
 
@@ -100,6 +106,11 @@ public class PersistenceGameobject : MonoBehaviour
 
         if (typeof(T) == typeof(Material))
             foreach (var gm in Resources.LoadAll<Material>(folder))
+                if (gm.name == name)
+                    return (T)Convert.ChangeType(gm, typeof(T));
+
+        if (typeof(T) == typeof(AudioClip))
+            foreach (var gm in Resources.LoadAll<AudioClip>(folder))
                 if (gm.name == name)
                     return (T)Convert.ChangeType(gm, typeof(T));
 
@@ -191,6 +202,18 @@ public class PersistenceGameobject : MonoBehaviour
                     PersistenceTextMesh persistenceTextMesh = new PersistenceTextMesh();
                     persistenceTextMesh.loadComponentInfo(gameObject);
                     persistenceInfo.serializableComponents.Add(persistenceTextMesh);
+                    break;
+
+                case "UnityEngine.AudioSource":
+                    PersistenceAudioSource persistenceAudioSource = new PersistenceAudioSource();
+                    persistenceAudioSource.loadComponentInfo(gameObject);
+                    persistenceInfo.serializableComponents.Add(persistenceAudioSource);
+                    break;
+
+                case "UnityEngine.Light":
+                    PersistenceLight persistenceLight = new PersistenceLight();
+                    persistenceLight.loadComponentInfo(gameObject);
+                    persistenceInfo.serializableComponents.Add(persistenceLight);
                     break;
             } 
         }
