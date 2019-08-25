@@ -20,11 +20,12 @@ Points:
 - It is allowed to change the date and time at which the experiment is registered
 - The simulation included a day - night Simulator.
 
+You can read the User Manual in the following document:
+https://mega.nz/#!0xhEXKDS!h2rBuK4qESlHq118NuHp8GYsqljqF-sBmVklC842_nA
 
+You can test the last version of simulator V0.3.1 from https://mega.nz/#!8ppRhIbY!yhd2p6x4x5hMA1gmVoRebhRgPwYcj8m-mvKo_OHieYg
 Use instructions:
 
 * Unzip the file and run VirtualADLSimulator.exe
 
-
-
-You can test the last version of simulator V0.3.1 from https://mega.nz/#!8ppRhIbY!yhd2p6x4x5hMA1gmVoRebhRgPwYcj8m-mvKo_OHieYg
+You can download the Unity Package from: https://mega.nz/#!pwpj2KDD!OtvHv5Rc4GYjNAun74wOgzT9Rcuc34cNzn7LKbUNI4g
