@@ -20,6 +20,14 @@ Points:
 - It is allowed to change the date and time at which the experiment is registered
 - The simulation included a day - night Simulator.
 
+https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/1.png
+https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/2.png
+https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/3.png
+https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/4.png
+https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/5.png
+https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/6.png
+
+
 You can read the User Manual in the following document:
 https://mega.nz/#!0xhEXKDS!h2rBuK4qESlHq118NuHp8GYsqljqF-sBmVklC842_nA
 
