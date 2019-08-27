@@ -1,5 +1,5 @@
 # VirtualADLSimulator
-Virtual Simulator is a simulator made in Unity, that simulate the working of a smart environment, allow interact with the environment and get a file with a output signals sensors.
+Virtual Simulator is a simulator made in Unity, that simulate the working of a smart environment, allow interact with the environment and get a file with a output signals sensors that can be used for algorithms to recognize daily day activities.
 
 The smart environment available is the CEATIC smart lab of University of Jaén. More info of this proyect: https://ceatic.ujaen.es/es/smartlabweb
 
@@ -20,14 +20,6 @@ Points:
 - It is allowed to change the date and time at which the experiment is registered
 - The simulation included a day - night Simulator.
 
-https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/1.png
-https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/2.png
-https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/3.png
-https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/4.png
-https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/5.png
-https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/6.png
-
-
 You can read the User Manual in the following document:
 https://mega.nz/#!0xhEXKDS!h2rBuK4qESlHq118NuHp8GYsqljqF-sBmVklC842_nA
 
@@ -37,3 +29,11 @@ Use instructions:
 * Unzip the file and run VirtualADLSimulator.exe
 
 You can download the Unity Package from: https://mega.nz/#!pwpj2KDD!OtvHv5Rc4GYjNAun74wOgzT9Rcuc34cNzn7LKbUNI4g
+
+
+![alt text](https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/1.png) 
+![alt text](https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/2.png) 
+![alt text](https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/3.png) 
+![alt text](https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/4.png) 
+![alt text](https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/5.png) 
+![alt text](https://raw.githubusercontent.com/tonixiclana/VirtualADLSimulator/master/6.png) 
