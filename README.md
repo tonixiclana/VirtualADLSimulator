@@ -21,7 +21,7 @@ Points:
 - The simulation included a day - night Simulator.
 
 You can read the User Manual in the following document:
-https://mega.nz/#!0xhEXKDS!h2rBuK4qESlHq118NuHp8GYsqljqF-sBmVklC842_nA
+https://mega.nz/#!wlZ3jSYR!SETwk3OgcGWiUDGxqsfvondLeWIBl8nIRQ_A3zvL8xw
 
 You can test the last version of simulator V0.3.1 from https://mega.nz/#!8ppRhIbY!yhd2p6x4x5hMA1gmVoRebhRgPwYcj8m-mvKo_OHieYg
 Use instructions:
