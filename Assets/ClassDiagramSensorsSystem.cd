@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ContactSensor">
+    <Position X="0.5" Y="13" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAiAAAAAAAABAAAAAAAAAAICAQAAAABAAAFA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\ContactSensor\ContactSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensorEditorUI">
+    <Position X="0.5" Y="6.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABjCAIAAgAAAAAAAAAABQAAQIFiACAgAAABQ=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensorEditor\scripts\SensorEditorUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapacitiveProximitySensor">
+    <Position X="3" Y="13" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAiAAAAAAAABAAAAAAAAAAIAMQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\CapacitiveProximitySensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensFloorUnderlayMatLr">
+    <Position X="6.75" Y="13" Width="4.25" />
+    <InheritanceLine Type="Sensor" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.75" Y="12.232" />
+        <Point X="7.75" Y="12.625" />
+        <Point X="8.875" Y="12.625" />
+        <Point X="8.875" Y="13" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAiAAAAAAAABACAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\SensFloorUnderlayMatLr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensFloorUnderlaySfLr">
+    <Position X="12" Y="13" Width="3.5" />
+    <InheritanceLine Type="Sensor" FixedFromPoint="true">
+      <Path>
+        <Point X="7.75" Y="12.232" />
+        <Point X="7.75" Y="12.625" />
+        <Point X="13.75" Y="12.625" />
+        <Point X="13.75" Y="13" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAYiAAAAAAAABAAAAAQAAACAAAAAAAAAgAAGA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\SensFloorUnderlaySfLr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sensor">
+    <Position X="6" Y="6.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAZAAAgAAAAAIQAACCwCQAgIgAAADEEAAAwBAAIAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\Sensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SensorCodeViewer">
+    <Position X="6.25" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BAABAgAAAiAACAAAAAAUAAAAAAAAAAAIAAAAgAAACEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensorCodeViewer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RegistryActivityManager">
+    <Position X="10.75" Y="6.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>EQUAEAAAACAAIAAAAAEAgAgAAgAAQBAAAAAgAAAACGA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\RegistryActivityManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ISensor">
+    <Position X="10.75" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\ISensor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -37,11 +37,6 @@ public class RegistryActivityManager : MonoBehaviour {
     [Tooltip("The list of listened sensors")]
     public List<Sensor> _sensors = new List<Sensor>();
 
-    /// <summary>
-    /// The vector with the values of sensors listened
-    /// </summary>
-    [Tooltip("The vector with the values of sensors listened")]
-    public List<float> _values;
 
     /// <summary>
     /// The flag that indicate if export data or not
@@ -84,7 +79,6 @@ public class RegistryActivityManager : MonoBehaviour {
     /// </summary>
     [Tooltip("Button to create new experiment")]
     public Button _newExperimentButton;
-
 
     private void Awake()
     {
@@ -354,7 +348,7 @@ public class RegistryActivityManager : MonoBehaviour {
         if (_fileBrowser != null && _exportData)
         {
             //Debug.Log("Hello: " + eventNotification + " : " + _fileNameInput.text );
-            _fileBrowser.editFileInActualPath(FindObjectOfType<DayNight>().currentDateTime.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss:fffff") + "\t" + eventNotification, _fileNameInput.text + ".hst");
+            _fileBrowser.editFileInActualPath(FindObjectOfType<DayNight>().currentDateTime.ToString("yyyy-MM-dd HH:mm:ss:fffff") + "\t" + eventNotification, _fileNameInput.text + ".hst");
 
         }
     }

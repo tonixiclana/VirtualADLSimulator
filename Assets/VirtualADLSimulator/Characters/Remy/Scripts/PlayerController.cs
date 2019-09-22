@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
     /// The walk speed of the Character
     /// </summary>
     [Tooltip("Walk Speed")]
-    public float walkSpeed = 2;
+    public float walkSpeed = 1;
 
     /// <summary>
     /// The run speed of the Character
@@ -36,9 +36,9 @@ public class PlayerController : MonoBehaviour {
     public float runSpeed = 6;
 
     /// <summary>
-    /// Time for setup the Smooth of the animation
+    /// Smoothdamp of the movement increment
     /// </summary>
-    [Tooltip("Time for setup the Smooth of the animation ")]
+    [Tooltip("Smoothdamp of the movement increment")]
     public float speedSmoothTime = 0.1f;
 
     /// <summary>

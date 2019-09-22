@@ -12,8 +12,9 @@ public class SensorCodeViewer : MonoBehaviour {
 
     Sensor[] sensorArray;
     private Coroutine coroutine;
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 
         sensorArray =  GameObject.FindObjectsOfType<Sensor>() as Sensor[];
         //this.transform.Rotate(new Vector3(0,90,0));

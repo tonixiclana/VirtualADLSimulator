@@ -22,7 +22,7 @@ using UnityEngine.EventSystems;
 /// </summary>
 [RequireComponent(typeof(Camera))]
 [System.Serializable]
-public class SelectGameobjectCursor : MonoBehaviour, IActuatorTrigger
+public class SelectGameobjectCursor : MonoBehaviour, IActuator
 {
 
     /// <summary>

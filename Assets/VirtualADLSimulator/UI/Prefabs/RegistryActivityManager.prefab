@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224235669623424448}
   - component: {fileID: 114132549906297306}
+  - component: {fileID: 114956880400425962}
   m_Layer: 5
   m_Name: RegistryActivityManager
   m_TagString: Untagged
@@ -38,24 +39,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e28042b13cec3747a0906e43a60f7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fileBrowser: {fileID: 0}
-  _sensors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _fileBrowser: {fileID: 114956880400425962}
+  _sensors: []
   _values: []
   _exportData: 0
   _nameOfActivityInput: {fileID: 0}
@@ -63,6 +48,30 @@ MonoBehaviour:
   _fileNameInput: {fileID: 0}
   _startRecordButton: {fileID: 0}
   _stopRecordButton: {fileID: 0}
+  _newExperimentButton: {fileID: 0}
+--- !u!114 &114956880400425962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435740580561870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b449a4636396d47b9119db97adac19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  confirmMessage: {fileID: 0}
+  startPath: 
+  startPathInDocuments: 1
+  dirItem: {fileID: 114657945599799878, guid: e17462cc49851f442a7913adb938bfec, type: 2}
+  fileItem: {fileID: 114076991110931738, guid: 3fc70aad1b1b8ff458b8c6f24441ee86, type: 2}
+  contentBrowser: {fileID: 0}
+  fileContent: {fileID: 0}
+  showFolders: 0
+  extensionFilter:
+  - hst
+  openInBrowserBtn: {fileID: 0}
+  fileSelected: 
 --- !u!224 &224235669623424448
 RectTransform:
   m_ObjectHideFlags: 1
@@ -78,6 +87,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.00007751721}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}

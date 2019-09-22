@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="PlayerController">
+    <Position X="3.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAIAgAARAAAAAAggACBgMAAAAAAAAABA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Characters\Remy\Scripts\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FirstPersonCamera">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABMAigAAAAAAAAAEAAAAAAAAAgAAAQAAAgIAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Characters\Remy\Scripts\FirstPersonCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionDetect">
+    <Position X="3.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAAIAAAAAAAAAAIAAAAAMAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Characters\Remy\Scripts\CollisionDetect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandDown">
+    <Position X="5.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Characters\Remy\Scripts\HandDown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemyCollider">
+    <Position X="0.5" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAGAAACAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Characters\Remy\Scripts\RemyCollider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

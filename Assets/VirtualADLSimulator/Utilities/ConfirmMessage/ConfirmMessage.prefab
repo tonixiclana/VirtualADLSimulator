@@ -460,6 +460,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: -1
+  yesButton: {fileID: 1056146376939262}
+  noButton: {fileID: 1267844617956512}
+  okButton: {fileID: 1056146376939262}
 --- !u!114 &114269859091065372
 MonoBehaviour:
   m_ObjectHideFlags: 1

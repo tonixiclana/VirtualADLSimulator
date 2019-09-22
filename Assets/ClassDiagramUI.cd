@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="GameObjectRotate">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\GameObjectRotate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListSavedGames">
+    <Position X="2.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAQAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\ListSavedGames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseMenu">
+    <Position X="4" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAAAQAIAAAAAAAAAAAQgCQgQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\PauseMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneAndURLLoader">
+    <Position X="5.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgQAABAAAAAAAAAAIAAAQAAAAABAQAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\SceneAndURLLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShortCutKeysEditMode">
+    <Position X="0.5" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QAQcAAAAAKAAAAAAAAECABAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\ShortCutKeysEditMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -70,7 +70,7 @@ public class SensFloorUnderlaySfLr : Sensor {
             this.exportDetailPosition = value;
         }
     }
- 
+
     void Awake()
     {
 

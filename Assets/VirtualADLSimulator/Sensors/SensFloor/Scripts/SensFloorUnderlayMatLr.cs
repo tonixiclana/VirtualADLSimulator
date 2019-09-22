@@ -40,7 +40,6 @@ public class SensFloorUnderlayMatLr : Sensor{
     /// </summary>
     private static int _id = 0;
 
-
     void Start () {
 
             foreach (var sensor in GetComponentsInChildren<CapacitiveProximitySensor>())

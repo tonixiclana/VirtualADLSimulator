@@ -31,12 +31,6 @@ public class FirstPersonCamera : MonoBehaviour
     public bool lockCursor = true;
 
     /// <summary>
-    /// To enable or no the cursor movement
-    /// </summary>
-    [Tooltip("To enable or no the cursor movement")]
-    public bool enableCursorMovement = true;
-
-    /// <summary>
     /// The sensivity in each axe
     /// </summary>
     [Tooltip("The sensivity in each axe")]

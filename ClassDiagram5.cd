@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Actuator">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\Actuator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransformActuator">
+    <Position X="0.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEEAAAACAAAAAAAAAAAAAAABCKAQCAGAAAQBIAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\TransformActuator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="IActuatorTrigger">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\ActuatorTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IActuator">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\IActuator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

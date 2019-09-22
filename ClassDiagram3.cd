@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ContactSensor">
+    <Position X="3.5" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAiAAAAAAAABAAAAAAAAAAICAQAAAABAAAFA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\ContactSensor\ContactSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilterBySensorMenu">
+    <Position X="4.5" Y="11.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAQACBCAIIAAAAAAAAAABAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensorEditor\scripts\FilterBySensorMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensorDescriptionPopUp">
+    <Position X="8" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAACgEAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensorEditor\scripts\SensorDescriptionPopUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensorEditorUI">
+    <Position X="0.5" Y="11.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABjCAIAAgAAAAAAAAAABQAAQIFiACAgAAABQ=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensorEditor\scripts\SensorEditorUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapacitiveProximitySensor">
+    <Position X="0.5" Y="7.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAiAAAAAAAABAAAAAAAAAAIAMQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\CapacitiveProximitySensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensFloorUnderlayMatLr">
+    <Position X="9.75" Y="7.75" Width="4.25" />
+    <InheritanceLine Type="Sensor" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="6.5" Y="6.732" />
+        <Point X="6.5" Y="7.393" />
+        <Point X="11.875" Y="7.393" />
+        <Point X="11.875" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAiAAAAAAAABACAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\SensFloorUnderlayMatLr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensFloorUnderlaySfLr">
+    <Position X="6" Y="7.75" Width="3.5" />
+    <InheritanceLine Type="Sensor" FixedFromPoint="true">
+      <Path>
+        <Point X="6.5" Y="6.732" />
+        <Point X="6.5" Y="7.375" />
+        <Point X="7.75" Y="7.375" />
+        <Point X="7.75" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAYiAAAAAAAABAAAAAQAAACAAAAAAAAAgAAGA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensFloor\Scripts\SensFloorUnderlaySfLr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sensor">
+    <Position X="4.75" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAZAAAgAAAAAIQAACCwCQAgIgAAADEEAAAwBAAIAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\Sensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SensorCodeViewer">
+    <Position X="0.5" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BAABAgAAAiAACAAAAAAUAAAAAAAAAAAIAAAAgAAACEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\SensorCodeViewer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RegistryActivityManager">
+    <Position X="10.25" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>EQUAEAAAACAAIAAAAAEAgAgAAgAAQBAIAAAgAAAACGA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\RegistryActivityManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceTransformActuator" Collapsed="true">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEEAAAAAAAAAAIAAAEAAAAIBAKAQCAFAAAQBIAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceTransformActuator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceAudioSource" Collapsed="true">
+    <Position X="5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAIAAAAAAAAAAAAgAAABABAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceAudioSource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceCapacitiveProximitySensor" Collapsed="true">
+    <Position X="11.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCapacitiveProximitySensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceCollider" Collapsed="true">
+    <Position X="20.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAAAAAAAAAAAAACAAAAAAAAAEEAIBAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCollider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceComponent&lt;T&gt;" Collapsed="true">
+    <Position X="15.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceContactSensor" Collapsed="true">
+    <Position X="14" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceContactSensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceGameobject" Collapsed="true">
+    <Position X="32.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAGAAAAAAiAAAgABBAAAAAAAAAAAAAAAAAQAIAAAAkA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceGameobject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceInfo" Collapsed="true">
+    <Position X="34" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceLight" Collapsed="true">
+    <Position X="2.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAAAAAAACAoAAEAAABCAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceManager" Collapsed="true">
+    <Position X="35.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAiABYEIBIAAEEAQAAAgAAAQQAAAgCAACAEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceMeshFilter" Collapsed="true">
+    <Position X="16.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshFilter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceMeshRenderer" Collapsed="true">
+    <Position X="23" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAgCAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceTextMesh" Collapsed="true">
+    <Position X="25.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAABAACAgAAAAAgAAAAAAAJBAAAAAAEAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshText.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceOutline" Collapsed="true">
+    <Position X="27.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAACAAAAAAAAAAACABAAABAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceOutline.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceRigidbody" Collapsed="true">
+    <Position X="29.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAACAAQAAIAAAAAAAAAABAAQAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceRigidbody.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceSensFloorUnderlayMatLr" Collapsed="true">
+    <Position X="7.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensFloorUnderlayMatLr.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceSensFloorUnderlaySfLr" Collapsed="true">
+    <Position X="9.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensFloorUnderlaySfLr.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceSensor&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAggAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceTransform" Collapsed="true">
+    <Position X="18.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAACIAAAAAAAAAAAAAAAAAAACAAEAABAAABCAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceTransform.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SelectGameobjectCursor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUKAEAMgCIAQgAQgAAAIAeEAAAAEAaAKAwABkABEBA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\SelectGameobjectCursor\SelectGameobjectCursor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FreeCamera" Collapsed="true">
+    <Position X="35.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABMAigAAIAgAABAAAAAAgAAABAIAAQAACAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\FreeCamera\FreeCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FPSDisplay" Collapsed="true">
+    <Position X="34" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAQEAAAAAAAIQAAAQAAAAAAAEABAAAIAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\FPSCounter\FPSDisplay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileBrowser" Collapsed="true">
+    <Position X="39.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBRCABAAACICTAAAABAGBABBAEAAGAAAhAEAKAEADEE=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\FileBrowser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileBrowserItem" Collapsed="true">
+    <Position X="41" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAQCAAAAQIAQAAAAEAIAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\FileBrowserItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PopulateGrid" Collapsed="true">
+    <Position X="39.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAACgAAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\FileBrowser\Scripts\PopulateGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DayNight" Collapsed="true">
+    <Position X="37.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACwEgAEAIiAAEAAEAAIJQAAAAA0AEAgBIAQEgAgAAEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\DayNightSystem\DayNight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DatePicker" Collapsed="true">
+    <Position X="35.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAnAAAAAiAAAAAAAAAAAQAAAAQEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\DayNightSystem\DatePicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfirmMessage" Collapsed="true">
+    <Position X="34" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAiAIQAAAAAQAAAAQAAAAEAAEAAAgAAAAAIA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\ConfirmMessage\ConfirmMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransformActuator" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEEAAAACAAAAAAAAAAAAAAABCKAQCAGAAAQBIAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\TransformActuator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyScriptEditor" Collapsed="true">
+    <Position X="34" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\TransformActuator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioActuator" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\AudioActuator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AudioActuatorEditor" Collapsed="true">
+    <Position X="32.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\AudioActuator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\Actuator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShortCutKeysEditMode" Collapsed="true">
+    <Position X="34" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQcAAAAAKAAAAAAAAECABAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\ShortCutKeysEditMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneAndURLLoader" Collapsed="true">
+    <Position X="41" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAABAAAAAAAAAAIAAAQAAAAABAQAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\SceneAndURLLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseMenu" Collapsed="true">
+    <Position X="41" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAAAQAIAAAAAAAAAAAQgCQgQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\PauseMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuSceneLoader" Collapsed="true">
+    <Position X="32.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\MenuSceneLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListSavedGames" Collapsed="true">
+    <Position X="41" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAQAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\ListSavedGames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObjectRotate" Collapsed="true">
+    <Position X="37.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\UI\Scripts\GameObjectRotate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerController" Collapsed="true">
+    <Position X="37.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAIAgAARAAAAAAggACBgMAAAAAAAAABA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Characters\Remy\Scripts\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FirstPersonCamera" Collapsed="true">
+    <Position X="32.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABMAigAAAAAAAAAEAAAAAAAAAgAAAQAAAgIAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Characters\Remy\Scripts\FirstPersonCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.OutlineEffect" Collapsed="true">
+    <Position X="39.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADABAADQASACRmAABAEhAAIAEwBARBEIQBAEFCIECkA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\OutlineEffect\OutlineEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.OutlineAnimation" Collapsed="true">
+    <Position X="37.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\OutlineEffect\OutlineAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.Outline" Collapsed="true">
+    <Position X="35.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAIAAQEAAAIBAAAAAAAAAACIAACABAAASEA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\OutlineEffect\Outline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.LinkedSet&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAgBAAAAAABAAAAAABAAEAAAAAAAQAAAAAABQAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\OutlineEffect\LinkedSet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ISensor">
+    <Position X="0.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Sensors\ISensor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IPersistenceComponent&lt;T&gt;" Collapsed="true">
+    <Position X="35.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\IPersistenceComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IActuator" Collapsed="true">
+    <Position X="32.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\IActuator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IActuatorTrigger" Collapsed="true">
+    <Position X="34" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Actuator\ActuatorTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

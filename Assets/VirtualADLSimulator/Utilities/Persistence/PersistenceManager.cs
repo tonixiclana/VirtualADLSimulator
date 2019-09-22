@@ -15,7 +15,7 @@ public class PersistenceManager : MonoBehaviour {
 
 
      public List<PersistenceGameobject> persistenceGameobjects;
-    public List<GameObject> gmL = new List<GameObject>();
+    private List<GameObject> gmL = new List<GameObject>();
 
     /// <summary>
     /// The filebrowser object relational with this registryactivitymanager

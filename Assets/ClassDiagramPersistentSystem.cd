@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="PersistenceTransformActuator">
+    <Position X="11.25" Y="5.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AIAEEAAAAAAAAAAIAAAEAAAAIBAKAQCAFAAAQBIAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceTransformActuator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceAudioSource">
+    <Position X="11.25" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAIAAAAAAAAAAAAgAAABABAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceAudioSource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceCapacitiveProximitySensor">
+    <Position X="8.75" Y="11.25" Width="3.25" />
+    <InheritanceLine Type="PersistenceSensor&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="9.875" Y="7.752" />
+        <Point X="9.875" Y="10.932" />
+        <Point X="10.375" Y="10.932" />
+        <Point X="10.375" Y="11.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCapacitiveProximitySensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceCollider">
+    <Position X="18" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAAAAAAAAAAAAACAAAAAAAAAEEAIBAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceCollider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceComponent&lt;T&gt;" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceContactSensor">
+    <Position X="16.5" Y="11.25" Width="2.75" />
+    <InheritanceLine Type="PersistenceSensor&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="9.875" Y="7.752" />
+        <Point X="9.875" Y="10.922" />
+        <Point X="17.875" Y="10.922" />
+        <Point X="17.875" Y="11.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceContactSensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceLight">
+    <Position X="8.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAAAAAAACAoAAEAAABCAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceMeshFilter">
+    <Position X="14.5" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshFilter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceMeshRenderer">
+    <Position X="17.75" Y="5.75" Width="3" />
+    <InheritanceLine Type="PersistenceComponent&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="17.625" Y="1.062" />
+        <Point X="17.625" Y="5.417" />
+        <Point X="19.25" Y="5.417" />
+        <Point X="19.25" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAgCAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshRenderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceTextMesh">
+    <Position X="21" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAABAACAgAAAAAgAAAAAAAJBAAAAAAEAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceMeshText.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceOutline">
+    <Position X="24" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAAAACAAAAAAAAAAACABAAABAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceOutline.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceRigidbody">
+    <Position X="14.75" Y="5.75" Width="2.75" />
+    <InheritanceLine Type="PersistenceComponent&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="17.625" Y="1.062" />
+        <Point X="17.625" Y="5.349" />
+        <Point X="16.125" Y="5.349" />
+        <Point X="16.125" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAACAAQAAIAAAAAAAAAABAAQAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceRigidbody.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceSensFloorUnderlayMatLr">
+    <Position X="19.75" Y="11.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensFloorUnderlayMatLr.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceSensFloorUnderlaySfLr">
+    <Position X="12.75" Y="11.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensFloorUnderlaySfLr.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PersistenceSensor&lt;T&gt;">
+    <Position X="9" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAggAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersistenceTransform">
+    <Position X="21" Y="5.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAACIAAAAAAAAAAAAAAAAAAACAAEAABAAABCAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\PersistenceTransform.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SavegameInfo">
+    <Position X="24.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAEQAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\SavegameInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IPersistenceComponent&lt;T&gt;" Collapsed="true">
+    <Position X="14" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Assets\VirtualADLSimulator\Utilities\Persistence\IPersistenceComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

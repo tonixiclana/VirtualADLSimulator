@@ -6,7 +6,7 @@ Assets/VirtualADLSimulator/Scenes/MainMenu.unity
 Assets/VirtualADLSimulator/Scenes/MainScene.unity
 SceneListEnd?
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LevelReset
-2b6d887da38979dc8cff6b04dbfca9fd Assembly-CSharp.dll:.PersistenceManager
+2b82cdefe8b8ccf839471cfaa0663935 Assembly-CSharp.dll:.PersistenceManager
 cbe6f4cecf0515c504b0aff5f6156f1c Assembly-CSharp.dll:.DatePicker
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 738fce54ff073c3cf706465196cca7f9 Assembly-CSharp.dll:.SceneAndURLLoader
@@ -227,7 +227,7 @@ b109bba716c2380e2bf01f9ca97985ab Assembly-CSharp-firstpass.dll:UnityStandardAsse
 bed58173d81ab85fd250dd6cef7990ef Assembly-CSharp.dll:.PlayerController
 eaf0bcdb10d442a4029d615f41d09957 Unity.TextMeshPro.dll:TMPro.TextContainer
 c2daf7792de51cf467f50f93b36954bf Assembly-CSharp.dll:.ShortCutKeysEditMode
-a6039b8961dfcaca25ddcbe265f7376c Assembly-CSharp.dll:.FirstPersonCamera
+2477a462c1a5202952319eb593f3b19a Assembly-CSharp.dll:.FirstPersonCamera
 cf7d1c378b2dd5f84b77e4055ebacc06 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.CarSelfRighting
 e5930b3f3763871ca43745d91dd968d4 Assembly-CSharp.dll:.ChatController
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterBasic
@@ -290,10 +290,9 @@ e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTool
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 5e662ce00ebc5bdabf8eabe267788a5a Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.DynamicShadowSettings
-3868d297d92a4bf7baee25d04a82be97 Assembly-CSharp.dll:.RegistryActivityManager
+0b867164141c57e1f562ac51f19e440f Assembly-CSharp.dll:.RegistryActivityManager
 f323f056e5fad3139eb86276a7c8be38 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Aeroplane.JetParticleEffect
 296a0f2bcc175b56e1e31e01138cf441 Assembly-CSharp.dll:.temp
-b1665faa1f03d8ff9b1b1b0cdf32ecda Assembly-CSharp.dll:.MenuSceneLoader
 e94afbfdec9270cda3f1ff0bf5196021 Assembly-CSharp.dll:.Camera_WASD_movement
 5a06c18b6aa904558ea6e46718fcc738 Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.NoiseAndGrain
 1dfc4d60914e7337a82796a42db50dd2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleActivatorMenu
