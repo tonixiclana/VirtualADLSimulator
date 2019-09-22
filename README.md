@@ -23,7 +23,7 @@ Points:
 You can read the User Manual in the following document:
 https://mega.nz/#!wlZ3jSYR!SETwk3OgcGWiUDGxqsfvondLeWIBl8nIRQ_A3zvL8xw
 
-You can test the last version of simulator V0.3.1 from https://mega.nz/#!8ppRhIbY!yhd2p6x4x5hMA1gmVoRebhRgPwYcj8m-mvKo_OHieYg
+You can test the last version of simulator V0.3.2 from https://mega.nz/#!Bt4hnKYK!c_ZIVhowaPK2zYz8XJ9AIyYjJfrBkyITsIENb3zYf4I
 Use instructions:
 
 * Unzip the file and run VirtualADLSimulator.exe
