@@ -1,7 +1,7 @@
 # VirtualADLSimulator
 Virtual Simulator is a simulator made in Unity, that simulate the working of a smart environment, allow interact with the environment and get a file with a output signals sensors that can be used for algorithms to recognize daily day activities.
 
-The smart environment available is the CEATIC smart lab of University of Jaén. More info of this proyect: https://ceatic.ujaen.es/es/smartlabweb
+The smart environment available is the CEATIC smart lab of University of Jaén. More info of this proyect: https://www.ujaen.es/centros/ceatic/servicios/smartlab
 
 The app allow manage a set of a sensor:
 
